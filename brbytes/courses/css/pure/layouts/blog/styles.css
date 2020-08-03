@@ -247,6 +247,17 @@ h3 {
   }
 
   #login-panel {
-      width: 40%;
+      width: 35%;
       background-color: #c1e7c0;
+  }
+
+  input {
+      width: 80%;
+      border: 1.5px gray solid;
+      border-radius: 4px;
+      margin-bottom: 5px;
+  }
+
+  form {
+      margin: 5px;
   }
