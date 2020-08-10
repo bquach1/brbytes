@@ -1,9 +1,22 @@
+.post-description {
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
+}
+a {
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+}
+a:hover,a:focus {
+  text-decoration: underline;
+}
+
 .accordion {
     background-color: #7c94cc;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 180%;
+    width: 95%;
     text-align: left;
     border: none;
     outline: none;
@@ -30,6 +43,7 @@
 
   .panel {
     padding: 0 18px;
+    width: 80%;
     background-color: rgb(211, 229, 255);
     max-height: 0;
     overflow: hidden;
@@ -48,12 +62,12 @@
   }
 
   #login {
-      width:25%;
+      width:20%;
       background-color: rgb(80, 197, 129);
   }
 
   #login-panel {
-      width: 35%;
+      width: 30%;
       background-color: #c1e7c0;
   }
 

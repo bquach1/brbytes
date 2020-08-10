@@ -12,3 +12,16 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function loginSel(){ 
+   let coursePrefixes = document.getElementById("coursePrefixes").value.split(",");
+   let coursePrefix = document.getElementById("section_prefix"); 
+   for (let prefix of coursePrefixes){
+   	coursePrefix.value = prefix;
+	login();
+   }
+}
+
+function studentValidated(stuId){
+   // Things to do when student is validated.
+}
