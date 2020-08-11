@@ -81,3 +81,9 @@ a:hover,a:focus {
   form {
       margin: 5px;
   }
+
+  .sidebar-holder{
+      margin-top:50%; 
+      margin-left:2.5%; 
+      margin-right: 2.5%;
+  }
