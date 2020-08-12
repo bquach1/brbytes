@@ -87,3 +87,11 @@ a:hover,a:focus {
       margin-left:2.5%; 
       margin-right: 2.5%;
   }
+  #sidebar-main{
+    width:24%;
+    top:-10px;
+    height:105%
+  }
+  .posts-holder{
+    margin-left:25%;
+  }
