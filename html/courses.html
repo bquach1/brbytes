@@ -6,27 +6,28 @@
     <title>BRBYTES - Courses</title>
     <link rel="stylesheet" href="/courses/assets/css/w3.css">
     <link rel="stylesheet" href="css/courses-styles.css">
-    <link rel="stylesheet" href="courses/ssets/css/w3-theme.indigo.css">
+    <link rel="stylesheet" href="/courses/assets/css/w3-theme-indigo.css">
   </head>
     <body>
-      <div class="w3-sidebar w3-bar-block w3-theme-l1" id="sidebar-main">
-        <div class="sidebar-holder">
-          <img class="w3-image w3-bar-item" src="images/brbytescombined.png" alt="BRBytes Logo">
-          <h2 class="w3-center w3-text-light-gray w3-bar-item">Baton Rouge</h2>
-          <h4 class="w3-center w3-text-light-gray w3-bar-item"><i>Bringing Youth Technology, Education, and Success</i></h3>
-          <div class="w3-center w3-bar-item">
-              <a class="w3-button w3-hover-khaki w3-text-light-gray w3-border-bottom" href="courses/">Students</a>
-              <a class="w3-button w3-hover-khaki w3-text-light-gray w3-border-bottom" href="cms/login">Teachers</a>
-              <a class="w3-button w3-hover-khaki w3-text-light-gray w3-border-bottom" href="Rationale/">About</a>
-              <!--
-              <a class="w3-button w3-hover-khaki w3-border-bottom" href="https://cloud.brbytes.org/s/e5exKmQq8rwkCZg">Summer PD</a>
-              -->
-          </div>
+      <div class="w3-row">
+        <div class="w3-col m3 w3-bar-block w3-theme-l1 br-sidebar">
+          <div class="sidebar-holder">
+            <img class="w3-image" src="images/brbytescombined.png" alt="BRBytes Logo">
+            <h2 class="w3-center w3-text-light-gray br-tagline">Baton Rouge</h2>
+            <h4 class="w3-center w3-text-light-gray br-tagline"><i>Bringing Youth Technology, Education, and Success</i></h3>
+            <div class="w3-center w3-bar-item">
+                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="courses/">Students</a>
+                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="cms/login">Teachers</a>
+                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="Rationale/">About</a>
+                <!--
+                <a class="w3-button w3-hover-khaki w3-border-bottom" href="https://cloud.brbytes.org/s/e5exKmQq8rwkCZg">Summer PD</a>
+                -->
+            </div>
+        </div>
       </div>
-    </div>
 
-    <div class="posts-holder">
-              <h1 class="course-header">Fall Courses 2020</h1>
+    <div class="w3-col m9 l9 w3-padding-large">
+              <h1 class="w3-border-bottom">Fall Courses 2020</h1>
               <script src=assets/js/coursePage.js></script>
               <button class="accordion" id="login">Login</button>
               <div class="panel" id="login-panel">
@@ -36,7 +37,7 @@
                     <label for="student_code">Student Code:</label><br>
                     <input type="text" id="student_code" name="student_code"><br><br>
 		                <Button onclick="loginSel()">Login</button>
-            </div>
+              </div>
 
               <button class="accordion">Lorem High School</button>
               <div class="panel">
@@ -107,7 +108,7 @@
           <input type="hidden" id="coursePrefixes" value="ict/20c,dma/20c,cyber/20c,dma/20c,scs/20c">
           <script src="assets/js/coursePage.js"></script>
           <script src="js/selectionPage.js"></script>
-
       </div>
+    </div>
     </body>
 </html>
