@@ -1,128 +1,37 @@
-let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
-let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
-let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
-
-let SCS = {color = "green", name = "SCS"}
-
-let ICT = {color = "indigo", name = "ICT"}
-
-let CEW = {color = "purple", name = "CEW"}
-
-let CYB = {color = "pink", name = "CYB"}
-
-let DMA = {color = "teal", name = "DMA"}
-
-let NON = {color = "black", name = ""}
-
-let badges =
-    \(badgeList : List {color : Text, name : Text})->
 ''
-${concatMap {color : Text, name : Text} (λ(n : {color : Text, name : Text}) -> "<a class=\"w3-${n.color} w3-small w3-padding-small\" href=\"#\">${n.name}</a>\n") badgeList}
+${post  "Community of Practice Meetings" "Juana Moreno" NON
 ''
-
-let author =
-    \(name : Text)->
-''
-<a class="w3-text-grey w3-opacity w3-small" href="#">By ${name}</a>
-''
-
-let post = 
-    \(title : Text) ->
-    \(name : Text) ->
-    \(badgeList : List {color : Text, name : Text}) ->
-    \(content : Text) ->
-''
-<section class="post">
-    <h2>${title}</h2>
-    <header class="post-header">
-	${author name}<br>${badges badgeList}
-    </header>
-    <div class="post-description">
-        ${content}
-</section>
-''
-
-let image =
-    \(filename : Text) ->
-let num = "300"
-in
-''
-<img src="${filename}"
-     style="border: #000000 4px solid; width:100%; max-width:300px;" />
-''
-
-let youtubeVideo =
-    \(link : Text) ->
-''
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/${link}">
-</iframe>
-''
-
-let pdf =
-    \(filename : Text) ->
-''
-<object
-  data="${filename}"
-  type="application/pdf"
-  width="60%"
-  height="400vh">
-  <iframe
-    src="${filename}"
-    width="60%"
-    height="400vh"
-    style="border: none;">
-    <p>Your browser does not support PDFs.
-      <a href = "${filename}">Download the PDF</a>.</p>
-  </iframe>
-</object>
-''
-
-let video = 
-    \(filename : Text) ->
-''
-<video width="320" height="240" controls>
-  <source src="${filename}" type="video/mp4">
-  <source src="${filename}" type="video/ogg">
-Your browser does not support the video tag.
-/video>
-''
-
-let olderPostHeader =
-''
-<h1 class="w3-small w3-border-bottom w3-opacity">Older Posts</h1>
-''
-
-in
-
-''
-${post  "Community of Practice Meetings" "Juana Moreno" [NON]
-''
-
-We are rebranding our traditional *Saturday PD sessions* as *Community of Practice Meetings* to emphasize the building of a community of practice among the BRBytes. Also, meetings are no longer just on saturdays, as we have no alternative dates on weekdays to accomodate everyoneone's preferences.
-
 
 ### Upcoming Meetings
 
-**Saturday, October 31 at 9am** is the date for the next Community of Practice meeting.
-
-If you cannot attend, the *make-up* day will be Thursday, November 5 at 6pm.
+- Next meeting is one of these two dates (at your choice):
+    - **Tuesday, Dec 8 at 6pm**
+    - **Saturday, Dec 12 at 9am**
 
 ### Past Meetings
 
-The slides from the [October 3rd and 15th](https://cloud.brbytes.org/s/TCxMGMg9rPEiWDX) meetings are now available.
+- *Saturday, October 31 at 9am* (alternative date was *Thursday, November 5 at 6pm*)
 
-[${image "https://dev.brbytes.org/images/October-PD-thumb.png"}](https://cloud.brbytes.org/s/TCxMGMg9rPEiWDX)
+- [October 3rd and 15th](https://cloud.brbytes.org/s/TCxMGMg9rPEiWDX).
+
+The Community of Practice Meetings were formerly known as *Saturday PD sessions*.
+The meetings are no longer just on saturdays, as we now have alternative dates
+on weekdays to accomodate everyoneone's preferences.
+
 ''}
 
-${post "We are launching a monthly newsletter" "Jessica Moon" [SCS, ICT, CEW, CYB, DMA]
+${post "NewsLetters" "Jessica Moon" [SCS, ICT, CEW, CYB, DMA]
 ''
 
-Here is our [October Issue](https://cloud.brbytes.org/s/xwgJZArNADRwqTZ)
- 
-${pdf "images/NewsLetter-Oct20.pdf"}
+#### Current issue
 
-### Contributions are welcome!
+${pdf "assets/NewsLetter-Nov20.pdf" 800}
+
+#### Past issues
+
+- [October 2020](assets/NewsLetter-Oct20.pdf)
+
+#### Contributions are welcome!
 
 Please share your experiences with other BRBytes educators.
 ''}
@@ -206,10 +115,14 @@ Here is the contact information for the **BRBytes** grant (NSF and USDoE):
 
 ''}
 
+<!--
+
 ${post "Test" "Ian Chen" [SCS, ICT, CEW, CYB, DMA]
 ''
 
 ${youtubeVideo "vnM63ly2lag"}
 ''}
+
+-->
 
 ''
