@@ -94,5 +94,7 @@ let olderPostHeader =
 <h1 class="w3-small w3-border-bottom w3-opacity">Older Posts</h1>
 ''
 
+let x = \(_ : Text) -> ""
+
 in
 

@@ -10,7 +10,8 @@ ${post  "Community of Practice Meetings" "Juana Moreno" NON
 
 ### Past Meetings
 
-- *Saturday, October 31 at 9am* (alternative date was *Thursday, November 5 at 6pm*)
+- *Saturday, November 14* (alternative date was *Tuesday, November 17*)
+- *Saturday, October 31* (alternative date was *Thursday, November 5*)
 
 - [October 3rd and 15th](https://cloud.brbytes.org/s/TCxMGMg9rPEiWDX).
 
@@ -115,14 +116,14 @@ Here is the contact information for the **BRBytes** grant (NSF and USDoE):
 
 ''}
 
-<!--
+${x ''
 
 ${post "Test" "Ian Chen" [SCS, ICT, CEW, CYB, DMA]
 ''
 
 ${youtubeVideo "vnM63ly2lag"}
-''}
 
--->
+''}
+''}
 
 ''
