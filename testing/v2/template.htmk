@@ -8,7 +8,7 @@
     <title>BRBytes &ndash; LSU Computing Pathway &ndash; Fall 2020</title>
     <link rel="stylesheet" href="/courses/assets/css/w3.css">
     <link rel="stylesheet" href="/courses/assets/css/w3-theme-indigo.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/landing-styles.css">
 </head>
 <body>
     <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-padding w3-small">

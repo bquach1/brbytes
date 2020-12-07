@@ -3,7 +3,8 @@ let flexBoxContainer =
 ''
 <div class="flexbox-container">
 ${content}
-</div>''
+</div>
+''
 
 let flexBoxItem =
     \(title : Text)->
