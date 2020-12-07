@@ -1,0 +1,45 @@
+.sticky {
+    position: fixed;
+    width: 100%
+}
+.footer {
+    bottom: 0;
+}
+.no-margin {
+    margin:0;
+} 
+#navigation-hamburger {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+.flexbox-container {
+    display: flex; 
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.flexbox-item {
+    margin: 10px;
+    width: 30%;
+    flex: 1 1 300px;
+}
+ul {
+    padding-left: inherit;
+}
+#main-div {
+    padding: 100px 10% 100px 10%;
+}
+@media only screen and (max-width: 1230px) {
+    #navigation-header {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1230px) {
+    #navigation-hamburger {
+        display: none;
+    }
+    #navigation-menu {
+        display: none!important;
+    }
+}
