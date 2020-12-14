@@ -1,5 +1,5 @@
 ''
-${main-padding "1"
+${main-div "1" "left"
 ''
 ${twoThirdsContainer
 ''

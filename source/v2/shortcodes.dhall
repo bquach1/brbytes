@@ -1,8 +1,9 @@
-let main-padding =
+let main-div =
    \(padding : Text)->
+   \(alignment : Text)->
    \(content : Text)->
 ''
-<div style="padding: 0 ${padding}%;">
+<div id="main-div" style="padding: 100px ${padding}%; text-align: ${alignment};">
 ${content}
 </div>
 ''
