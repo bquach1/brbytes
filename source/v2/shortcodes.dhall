@@ -47,8 +47,8 @@ ${text5}
 ''
 
 let coloredHeader = 
-    \(size : Text)->
     \(color : Text)->
+    \(size : Text)->
     \(content : Text)->
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
