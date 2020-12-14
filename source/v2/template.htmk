@@ -24,17 +24,17 @@
             <div id="navigation-hamburger" class="w3-bar-item w3-right">
                 <a href="#" class="w3-xlarge w3-bar-item w3-button" onclick="showMobileMenu()"><strong>&#9776</strong></a>
             </div>
-            <div id="navigation-header" class="w3-bar-block w3-right">
+            <div class="w3-bar-block w3-right">
                 <div class="w3-row w3-right">
                     <p><em>Contact BRBytes: <a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
                 </div>               
-                <div class="w3-row w3-text-indigo">
+                <div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
                     <a class="w3-padding" href="#"><strong>PARENTS</strong></a>
                     <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
-                    <a class="w3-padding" href="/Rationale/"><strong>ABOUT</strong></a>
-                    <a style="padding-left:16px;" href="#"><strong>NEWSLETTERS</strong></a>
+                    <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
+                    <a style="padding-left:16px;" href="/Rationale/"><strong>ABOUT</strong></a>
                 </div>
             </div>
         </div>
@@ -43,9 +43,8 @@
             <a href="/courses/"><strong>STUDENTS</strong></a><br>
             <a href="#"><strong>PARENTS</strong></a><br>
             <a href="#"><strong>SCHOOLS</strong></a><br>
-            <a href="/Rationale/"><strong>ABOUT</strong></a><br>
             <a href="#"><strong>NEWSLETTERS</strong></a><br>
-            <a href="#"><strong>CONTACT</strong></a>
+            <a href="/Rationale/"><strong>ABOUT</strong></a><br>
         </div>
     </div>
     <!--this div contains the body of the page-->

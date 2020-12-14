@@ -48,12 +48,17 @@ ul {
 #main-div {
     padding: 100px 10% 100px 10%;
 }
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 695px) {
+    #navigation-email {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1019px) {
     #navigation-header {
         display: none;
     }
 }
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 1020px) {
     #navigation-hamburger {
         display: none;
     }
