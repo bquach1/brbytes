@@ -24,6 +24,24 @@ a {
     width: 30%;
     flex: 1 1 300px;
 }
+.table-container {
+    display: table; 
+    border-spacing: 5px; 
+    margin: 0 auto;
+}
+.table-item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.table-item-small {
+    width: 150px;
+    height: 150px;
+}
+.table-item-large {
+    width: 300px;
+    height: 300px;
+}
 ul {
     padding-left: inherit;
 }
