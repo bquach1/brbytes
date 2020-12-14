@@ -48,8 +48,13 @@ ul {
 #main-div {
     padding: 100px 10% 100px 10%;
 }
+@media only screen and (max-width: 500px) {
+    #navigation-logo-image {
+	display: none;
+    }
+}
 @media only screen and (max-width: 695px) {
-    #navigation-email {
+    #navigation-logo-heading {
         display: none;
     }
 }
