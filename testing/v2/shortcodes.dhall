@@ -25,7 +25,7 @@ let flexBoxImage =
 let leftAlign =
 \(content : Text)->
 ''
-<div class="w3-left-align">
+<div class="w3-left-align w3-container">
 ${content}
 </div>''
 
