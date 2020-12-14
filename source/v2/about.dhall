@@ -18,7 +18,13 @@ Since its formation, BRBytes has attempted to bridge
 this gap in computer science and computational thinking 
 by developing and implementing several middle and high 
 school courses in EBRPSS and surrounding school districts.
-${fiveRings "1" "2" "3" "4" "5"}
+${fiveRings
+"7 Courses Created"
+"41 Teachers Trained"
+"1837 Students"
+"6 Districts"
+"30 Schools"
+}
 ''
 ''
 ${image "images/placeholder2.jpg"}
