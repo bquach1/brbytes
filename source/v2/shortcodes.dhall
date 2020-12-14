@@ -1,3 +1,58 @@
+let main-padding =
+   \(padding : Text)->
+   \(content : Text)->
+''
+<div style="padding: 0 ${padding}%;">
+${content}
+</div>
+''
+
+let twoThirdsContainer =
+    \(smallContent : Text)->
+    \(largeContent : Text)->
+''
+<div class="w3-col m8 w3-padding">${smallContent}</div>
+<div class="w3-col m4 w3-padding">${largeContent}</div>''
+
+let fiveRings = 
+    \(text1 : Text)->
+    \(text2 : Text)->
+    \(text3 : Text)->
+    \(text4 : Text)->
+    \(text5 : Text)->
+''
+<span class="table-container">
+<span style="display: table-row">
+<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+${text1}
+</span>
+<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+${text2}
+</span>
+<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+${text3}
+</span>
+</span>
+</span>
+<span class="table-container">
+<span style="display: table-row">
+<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+${text4}
+</span>
+<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+${text5}
+</span>
+</span>
+</span>
+''
+
+let coloredHeader = 
+    \(size : Text)->
+    \(color : Text)->
+    \(content : Text)->
+''
+<h1 class="w3-text-${color} w3-${size}">${content}</h1>''
+
 let flexBoxContainer = 
     \(content : Text)->
 ''
