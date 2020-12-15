@@ -1,23 +1,23 @@
 <div id="main-div" style="padding: 100px 10%; text-align: center;">
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
 <img src="images/slideshow1.png" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
 <img src="images/slideshow2.jpg" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
 <img src="images/slideshow3.jpg" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
 <div class="w3-left-align w3-padding-small">
