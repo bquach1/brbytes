@@ -31,11 +31,25 @@
                 <div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
-                    <a class="w3-padding" href="#"><strong>PARENTS</strong></a>
-                    <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
+		    <span style="display: inline-block;">
+		    	<a class="w3-padding" href="#" onclick="showDropdown('parents-dropdown')"><strong>PARENTS</strong></a>
+			<div id="parents-dropdown" class="w3-dropdown-content w3-light-grey w3-bar-block">
+			    <a href="#" class="w3-bar-item">Pathways</a>
+			    <a href="#" class="w3-bar-item">Course Descriptions</a>
+			    <a href="#" class="w3-bar-item">Careers in Computing</a>
+			</div>
+		    </span>
+		    <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
                     <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
-                    <a style="padding-left:16px;" href="/Rationale/"><strong>ABOUT</strong></a>
-                </div>
+		    <span style="display: inline-block; padding-left:16px;">
+		    	<a href="#" onclick="showDropdown('about-dropdown')"><strong>ABOUT</strong></a>
+		        <div id="about-dropdown" class="w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
+			    <a href="#" class="w3-bar-item">Overview</a>
+			    <a href="#" class="w3-bar-item">Participating Schools</a>
+			    <a href="#" class="w3-bar-item">Our Team</a>
+			</div>
+		    </span>
+		</div>
             </div>
         </div>
         <div id="navigation-menu" class="w3-hide w3-text-indigo w3-center w3-padding w3-large">
