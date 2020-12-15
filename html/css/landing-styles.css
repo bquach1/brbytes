@@ -53,6 +53,9 @@ ul {
 #main-div {
     padding: 100px 10% 100px 10%;
 }
+.w3-dropdown-content {
+    min-width: 0;
+}
 @media only screen and (max-width: 334px) {
     #navigation-contact {
 	display: none;
