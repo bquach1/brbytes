@@ -53,6 +53,11 @@ ul {
 #main-div {
     padding: 100px 10% 100px 10%;
 }
+@media only screen and (max-width: 334px) {
+    #navigation-contact {
+	display: none;
+    }
+}
 @media only screen and (max-width: 500px) {
     #navigation-logo-image {
 	display: none;
