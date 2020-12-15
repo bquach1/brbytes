@@ -81,7 +81,7 @@ let flexBoxImage =
 let leftAlign =
 \(content : Text)->
 ''
-<div class="w3-left-align w3-container">
+<div class="w3-left-align w3-padding-small">
 ${content}
 </div>''
 
@@ -118,15 +118,11 @@ function showDivs(n) {
 let slideshowImage =
     \(image : Text)->
 ''
-<div class="my-slides w3-cell-row">
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
-</div>
-<div class="w3-cell w3-cell-middle w3-grey">
-<img width="100%" src="${image}">
-</div>
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<div class="my-slides w3-row-padding">
+<div class="w3-display-container" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<img src="${image}" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>''
 

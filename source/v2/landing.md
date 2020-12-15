@@ -1,38 +1,26 @@
 <div id="main-div" style="padding: 100px 10%; text-align: center;">
-<div class="my-slides w3-cell-row">
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
-</div>
-<div class="w3-cell w3-cell-middle w3-grey">
-<img width="100%" src="images/slideshow1.png">
-</div>
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<div class="my-slides w3-row-padding">
+<div class="w3-display-container" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<img src="images/slideshow1.png" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
-<div class="my-slides w3-cell-row">
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
-</div>
-<div class="w3-cell w3-cell-middle w3-grey">
-<img width="100%" src="images/slideshow2.jpg">
-</div>
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<div class="my-slides w3-row-padding">
+<div class="w3-display-container" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<img src="images/slideshow2.jpg" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
-<div class="my-slides w3-cell-row">
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
-</div>
-<div class="w3-cell w3-cell-middle w3-grey">
-<img width="100%" src="images/slideshow3.jpg">
-</div>
-<div class="w3-cell w3-cell-middle w3-jumbo">
-<a href="#" class="w3-text-indigo" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<div class="my-slides w3-row-padding">
+<div class="w3-display-container" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<img src="images/slideshow3.jpg" style="width: 100%;">
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
 </div>
 </div>
-<div class="w3-left-align w3-container">
+<div class="w3-left-align w3-padding-small">
 BRBytes was formed through a Research Practitioner Partnership between East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU) to bridge the gap in computer science and computational thinking education in Louisiana. The program does this by developing and implementing several middle and high school courses in EBRPSS and surrounding school districts.
 </div>
 
@@ -41,7 +29,7 @@ BRBytes was formed through a Research Practitioner Partnership between East Bato
 <div class="w3-light-grey w3-text-indigo">
 <h3 class="w3-padding"><strong>Progress We Have Made</strong></h3>
 </div>
-<div class="w3-left-align w3-container">
+<div class="w3-left-align w3-padding-small">
 - Developed 7 computer science and computational thinking courses for 7-12th grade students
 - Implemented BRBytes curriculum in 30 schools across 6 districts in Louisiana
 - Trained 41 teachers
@@ -55,7 +43,7 @@ BRBytes was formed through a Research Practitioner Partnership between East Bato
 <div class="w3-light-grey w3-text-indigo">
 <h3 class="w3-padding"><strong>Progress We Have Made</strong></h3>
 </div>
-<div class="w3-left-align w3-container">
+<div class="w3-left-align w3-padding-small">
 - Developed 7 computer science and computational thinking courses for 7-12th grade students
 - Implemented BRBytes curriculum in 30 schools across 6 districts in Louisiana
 - Trained 41 teachers
@@ -83,7 +71,7 @@ Test image in box
 <div class="w3-light-grey w3-text-indigo">
 <h3 class="w3-padding"><strong>Progress We Have Made</strong></h3>
 </div>
-<div class="w3-left-align w3-container">
+<div class="w3-left-align w3-padding-small">
 - Developed 7 computer science and computational thinking courses for 7-12th grade students
 - Implemented BRBytes curriculum in 30 schools across 6 districts in Louisiana
 - Trained 41 teachers
