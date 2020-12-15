@@ -22,7 +22,7 @@
                 <p class="no-margin">Education and Success</p>
             </div>
             <div id="navigation-hamburger" class="w3-bar-item w3-right">
-                <a href="#" class="w3-xlarge w3-bar-item w3-button" onclick="showMobileMenu()"><strong>&#9776</strong></a>
+                <a href="#" class="w3-xlarge w3-bar-item w3-button" onclick="showDropdown('navigation-menu')"><strong>&#9776</strong></a>
             </div>
             <div class="w3-bar-block w3-right">
                 <div class="w3-row w3-right">
@@ -57,8 +57,8 @@
             <img class="w3-margin-left w3-margin-right" src="/images/Logos/nsf.png" height="40vh">
     </div>
     <script>
-	function showMobileMenu() {
-          var x = document.getElementById("navigation-menu");
+	function showDropdown(dropdown) {
+          var x = document.getElementById(dropdown);
           if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
           } else { 

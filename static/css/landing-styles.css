@@ -71,7 +71,7 @@ ul {
 @media only screen and (max-width: 1019px) {
     #navigation-header {
         display: none;
-    }
+    } 
 }
 @media only screen and (min-width: 1020px) {
     #navigation-hamburger {
