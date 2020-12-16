@@ -62,7 +62,7 @@ BRBytes was formed through a Research Practitioner Partnership between East Bato
 <h3 class="w3-padding"><strong>State of Computer Science in Louisiana</strong></h3>
 </div>
 <img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 
 Test image in box
  
@@ -85,7 +85,7 @@ Test image in box
 <h3 class="w3-padding"><strong>State of Computer Science in Louisiana</strong></h3>
 </div>
 <img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 
 Test image in box
  

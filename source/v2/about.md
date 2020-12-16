@@ -40,10 +40,10 @@ school courses in EBRPSS and surrounding school districts.
 
 </div>
 <div class="w3-col m4 w3-padding"><img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 
 <img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 </div>
 
 </div>
