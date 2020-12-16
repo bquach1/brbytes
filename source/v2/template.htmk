@@ -21,8 +21,8 @@
                 <p class="no-margin">Bringing Youth Technology,</p>
                 <p class="no-margin">Education and Success</p>
             </div>
-            <div id="navigation-hamburger" class="w3-bar-item w3-right">
-                <a href="#" class="w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu')"><strong>&#9776</strong></a>
+            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
+                <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
             </div>
             <div class="w3-bar-block w3-right">
                 <div class="w3-row w3-right">
@@ -32,8 +32,8 @@
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
 		    <div class="dropdown-button" style="display: inline-block;">
-		    	<a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown')"><strong>PARENTS</strong></a>
-			<div id="parents-dropdown" class="w3-dropdown-content w3-light-grey w3-bar-block">
+		    	<a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
+			<div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
 			    <a href="#" class="w3-bar-item">Pathways</a>
 			    <a href="#" class="w3-bar-item">Course Descriptions</a>
 			    <a href="#" class="w3-bar-item">Careers in Computing</a>
@@ -42,8 +42,8 @@
 		    <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
                     <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
 		    <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
-		    	<a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown')"><strong>ABOUT</strong></a>
-		        <div id="about-dropdown" class="w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
+		    	<a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
+		        <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
 			    <a href="#" class="w3-bar-item">Overview</a>
 			    <a href="#" class="w3-bar-item">Participating Schools</a>
 			    <a href="#" class="w3-bar-item">Our Team</a>
@@ -52,13 +52,23 @@
 		</div>
             </div>
         </div>
-        <div id="navigation-menu" class="w3-hide w3-text-indigo w3-center w3-padding w3-large">
+        <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
             <a href="/cms/login"><strong>TEACHERS</strong></a><br>
             <a href="/courses/"><strong>STUDENTS</strong></a><br>
-            <a href="#"><strong>PARENTS</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
+	    <div id="parent-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="#">Pathways</a><br>
+		<a href="#">Course Descriptions</a><br>
+		<a href="#">Careers in Computing</a><br>
+	    </div>
             <a href="#"><strong>SCHOOLS</strong></a><br>
             <a href="#"><strong>NEWSLETTERS</strong></a><br>
-            <a href="/Rationale/"><strong>ABOUT</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
+	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="#">Overview</a><br>
+		<a href="#">Participating Schools</a><br>
+		<a href="#">Our Team</a><br>
+	    </div>
         </div>
     </div>
     <!--this div contains the body of the page-->
@@ -74,8 +84,8 @@
 	
 	window.addEventListener('click', function(e) { // closes all dropdown menus if user clicks outside a dropdown menu
             var obj = e.target.parentNode
-            if(!obj.className.includes("w3-dropdown-content") && !obj.className.includes("dropdown-button")) {
-                x = document.getElementsByClassName("w3-dropdown-content");
+            if(!(obj.className.includes("dropdown-content") || obj.className.includes("dropdown-button"))) {
+                x = document.getElementsByClassName("dropdown-content");
                 for(i = 0; i < x.length; i++) { // gets all dropdown-content objects and hides them
                     if(x[i].className.includes("w3-show")) {
                         x[i].className = x[i].className.replace(" w3-show","");
