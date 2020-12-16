@@ -5,8 +5,7 @@ let main-div =
 ''
 <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
 ${content}
-</div>
-''
+</div>''
 
 let twoThirdsContainer =
     \(smallContent : Text)->
@@ -16,26 +15,24 @@ let twoThirdsContainer =
 <div class="w3-col m4 w3-padding">${largeContent}</div>''
 
 let overlappingImageContainer = 
-    \(largeContent : Text)->
+    \(content : Text)->
     \(image : Text)->
 ''
 <div class="w3-row" style="padding-left: 5%;">
 <div class="w3-col m7">
-<div class="w3-center">${largeContent}</div>
+<div class="w3-center">${content}</div>
 </div>
 <div class="w3-col m5 absolute-position-image">
 <img src="${image}" style="width: 100%;">
 </div>
-</div>
-''
+</div>''
 
 let purpleBackgroundContainer =
     \(content : Text)->
 ''
-<div class="w3-row w3-theme-l4 w3-padding-32">
+<div class="w3-row w3-theme-l4" style="padding: 32px 0 64px 0">
 <div class="w3-col m10 w3-bottombar w3-border-indigo" style="padding-left: 5%;">${content}</div>
-</div>
-''
+</div>''
 
 let fiveRings = 
     \(text1 : Text)->
@@ -66,15 +63,13 @@ ${text4}
 ${text5}
 </span>
 </span>
-</span>
-''
+</span>''
 
 let coloredCircle =
     \(color : Text)->
     \(content : Text)->
 ''
-<div class="w3-${color} w3-circle box-item box-item-large">${content}</div>
-''
+<div class="w3-${color} w3-circle box-item box-item-large">${content}</div>''
 
 let coloredHeader = 
     \(color : Text)->
@@ -88,8 +83,7 @@ let flexBoxContainer =
 ''
 <div class="flexbox-container">
 ${content}
-</div>
-''
+</div>''
 
 let flexBoxItem =
     \(title : Text)->
@@ -118,8 +112,7 @@ let image =
 \(filename : Text) ->
 ''
 <img src="${filename}"
-style="width:100%;" />
-''
+style="width:100%;" />''
 
 let slideshowScript =
 ''

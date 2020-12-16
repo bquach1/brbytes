@@ -57,7 +57,7 @@ ul {
 /* boxes */
 .box-item {
     margin: 3%; 
-    padding: 20px; 
+    padding: 25px; 
     display: inline-block; 
     vertical-align: middle;
 }
@@ -68,6 +68,10 @@ ul {
 .box-item-large{ 
     width: 300px; 
     height: 300px; 
+}
+.box-item ul {
+    padding-left: 20px;
+    text-align: left;
 }
 
 /* general helper classes */
