@@ -1,3 +1,12 @@
+/* general html tags */
+a {
+    text-decoration: none;
+}
+ul {
+    padding-left: inherit;
+}
+
+/* template layouting */
 .sticky {
     position: fixed;
     width: 100%;
@@ -6,15 +15,14 @@
 .footer {
     bottom: 0;
 }
-.no-margin {
-    margin:0;
-} 
 #navigation-hamburger {
     vertical-align: middle;
 }
-a {
-    text-decoration: none;
+#main-div {
+    padding: 100px 10% 100px 10%;
 }
+
+/* flexbox */
 .flexbox-container {
     display: flex; 
     width: 100%; 
@@ -25,6 +33,8 @@ a {
     width: 30%;
     flex: 1 1 300px;
 }
+
+/* tables*/
 .table-container {
     display: table; 
     border-spacing: 5px; 
@@ -43,16 +53,38 @@ a {
     width: 300px;
     height: 300px;
 }
+
+/* boxes */
+.box-item {
+    margin: 3%; 
+    padding: 20px; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+.box-item-small {
+    width: 150px; 
+    height: 150px; 
+}
+.box-item-large{ 
+    width: 300px; 
+    height: 300px; 
+}
+
+/* general helper classes */
+.no-margin {
+    margin:0;
+} 
 .my-slides {
     width: 100%;
     z-index: -1;
 }
-ul {
-    padding-left: inherit;
+.absolute-position-image {
+    position: absolute; 
+    right: 0; 
+    padding-left: 5%;
 }
-#main-div {
-    padding: 100px 10% 100px 10%;
-}
+
+/* responsiveness */
 @media only screen and (max-width: 334px) {
     #navigation-contact {
 	display: none;
@@ -64,6 +96,10 @@ ul {
     }
 }
 @media only screen and (max-width: 600px) {
+    .absolute-position-image {
+        position: relative;
+        padding-left: 0;
+    }
     .table-item-small {
         width: 75px;
         height: 75px;
