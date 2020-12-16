@@ -69,6 +69,9 @@ ul {
     width: 300px; 
     height: 300px; 
 }
+.box-item ul {
+    padding-left: 20px;
+}
 
 /* general helper classes */
 .no-margin {

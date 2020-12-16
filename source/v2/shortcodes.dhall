@@ -3,7 +3,7 @@ let main-div =
    \(alignment : Text)->
    \(content : Text)->
 ''
-<div id="main-div" style="padding: 100px ${padding}%; text-align: ${alignment}; overflow: auto;">
+<div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
 ${content}
 </div>
 ''
@@ -14,6 +14,28 @@ let twoThirdsContainer =
 ''
 <div class="w3-col m8 w3-padding">${smallContent}</div>
 <div class="w3-col m4 w3-padding">${largeContent}</div>''
+
+let overlappingImageContainer = 
+    \(largeContent : Text)->
+    \(image : Text)->
+''
+<div class="w3-row" style="padding-left: 5%;">
+<div class="w3-col m7">
+<div class="w3-center">${largeContent}</div>
+</div>
+<div class="w3-col m5 absolute-position-image">
+<img src="${image}" style="width: 100%;">
+</div>
+</div>
+''
+
+let purpleBackgroundContainer =
+    \(content : Text)->
+''
+<div class="w3-row w3-theme-l4 w3-padding-32">
+<div class="w3-col m10 w3-bottombar w3-border-indigo" style="padding-left: 5%;">${content}</div>
+</div>
+''
 
 let fiveRings = 
     \(text1 : Text)->
@@ -45,6 +67,13 @@ ${text5}
 </span>
 </span>
 </span>
+''
+
+let coloredCircle =
+    \(color : Text)->
+    \(content : Text)->
+''
+<div class="w3-${color} w3-circle box-item box-item-large">${content}</div>
 ''
 
 let coloredHeader = 
