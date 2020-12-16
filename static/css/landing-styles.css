@@ -45,14 +45,6 @@ ul {
     text-align: center;
     vertical-align: middle;
 }
-.table-item-small {
-    width: 150px;
-    height: 150px;
-}
-.table-item-large {
-    width: 300px;
-    height: 300px;
-}
 
 /* boxes */
 .box-item {
@@ -61,17 +53,19 @@ ul {
     display: inline-block; 
     vertical-align: middle;
 }
-.box-item-small {
-    width: 150px; 
-    height: 150px; 
-}
-.box-item-large{ 
-    width: 300px; 
-    height: 300px; 
-}
 .box-item ul {
     padding-left: 20px;
     text-align: left;
+}
+
+/* item sizes */
+.item-small {
+    width: 150px; 
+    height: 150px; 
+}
+.item-large{ 
+    width: 300px; 
+    height: 300px; 
 }
 
 /* general helper classes */
