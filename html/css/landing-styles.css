@@ -1,3 +1,11 @@
+/* html tags */
+ul {
+    padding-left: inherit;
+}
+a {
+    text-decoration: none;
+}
+/* classes for template */
 .sticky {
     position: fixed;
     width: 100%;
@@ -6,15 +14,18 @@
 .footer {
     bottom: 0;
 }
+/* helper class */
 .no-margin {
     margin:0;
 } 
+/* ids for template */
 #navigation-hamburger {
     vertical-align: middle;
 }
-a {
-    text-decoration: none;
+#main-div {
+    padding: 100px 10% 100px 10%;
 }
+/* flexbox */
 .flexbox-container {
     display: flex; 
     width: 100%; 
@@ -25,6 +36,7 @@ a {
     width: 30%;
     flex: 1 1 300px;
 }
+/* tables */
 .table-container {
     display: table; 
     border-spacing: 5px; 
@@ -43,16 +55,12 @@ a {
     width: 300px;
     height: 300px;
 }
+/* for the slides on landing page */
 .my-slides {
     width: 100%;
     z-index: -1;
 }
-ul {
-    padding-left: inherit;
-}
-#main-div {
-    padding: 100px 10% 100px 10%;
-}
+/* responsiveness */
 @media only screen and (max-width: 334px) {
     #navigation-contact {
 	display: none;
