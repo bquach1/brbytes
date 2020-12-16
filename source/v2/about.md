@@ -27,7 +27,7 @@ school courses in EBRPSS and surrounding school districts.
 </span>
 </span>
 </span>
-<span class="table-container">
+<span class="table-container" style="margin-bottom: 100px;">
 <span style="display: table-row">
 <span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 6 Districts
@@ -39,10 +39,10 @@ school courses in EBRPSS and surrounding school districts.
 </span>
 
 </div>
-<div class="w3-col m4 w3-padding"><img src="/images/placeholder2.jpg"
+<div class="w3-col m4 w3-padding"><img src="images/placeholder.jpg"
 style="border: #000000 4px solid; width:100%; max-width:300px;" />
 
-<img src="/images/placeholder2.jpg"
+<img src="images/placeholder.jpg"
 style="border: #000000 4px solid; width:100%; max-width:300px;" />
 </div>
 

@@ -35,7 +35,7 @@ ${text3}
 </span>
 </span>
 </span>
-<span class="table-container">
+<span class="table-container" style="margin-bottom: 100px;">
 <span style="display: table-row">
 <span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text4}
