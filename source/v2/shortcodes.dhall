@@ -18,7 +18,7 @@ let overlappingImageContainer =
     \(content : Text)->
     \(image : Text)->
 ''
-<div class="w3-row" style="padding-left: 5%;">
+<div class="w3-row left-padded-div">
 <div class="w3-col m7">
 <div class="w3-center">${content}</div>
 </div>
