@@ -1,4 +1,4 @@
-<div id="main-div" style="padding: 100px 10%; text-align: center;">
+<div id="main-div" style="padding: 100px 10%; text-align: center; overflow: auto;">
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
@@ -62,7 +62,7 @@ BRBytes was formed through a Research Practitioner Partnership between East Bato
 <h3 class="w3-padding"><strong>State of Computer Science in Louisiana</strong></h3>
 </div>
 <img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 
 Test image in box
  
@@ -85,7 +85,7 @@ Test image in box
 <h3 class="w3-padding"><strong>State of Computer Science in Louisiana</strong></h3>
 </div>
 <img src="images/placeholder.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 
 Test image in box
  

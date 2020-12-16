@@ -1,4 +1,4 @@
-<div id="main-div" style="padding: 100px 1%; text-align: left;">
+<div id="main-div" style="padding: 100px 1%; text-align: left; overflow: auto;">
 <div class="w3-col m8 w3-padding"><h1 class="w3-text-indigo w3-xxlarge">What is BRBytes?</h1>
 BRBytes was formed through a Research Practitioner 
 Partnership between East Baton Rouge Parish School 
@@ -39,11 +39,11 @@ school courses in EBRPSS and surrounding school districts.
 </span>
 
 </div>
-<div class="w3-col m4 w3-padding"><img src="/images/placeholder2.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+<div class="w3-col m4 w3-padding"><img src="images/placeholder.jpg"
+style="width:100%; max-width:500px;" />
 
-<img src="/images/placeholder2.jpg"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+<img src="images/placeholder.jpg"
+style="width:100%; max-width:500px;" />
 </div>
 
 </div>

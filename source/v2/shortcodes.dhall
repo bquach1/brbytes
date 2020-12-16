@@ -3,7 +3,7 @@ let main-div =
    \(alignment : Text)->
    \(content : Text)->
 ''
-<div id="main-div" style="padding: 100px ${padding}%; text-align: ${alignment};">
+<div id="main-div" style="padding: 100px ${padding}%; text-align: ${alignment}; overflow: auto;">
 ${content}
 </div>
 ''
@@ -89,7 +89,7 @@ let image =
 \(filename : Text) ->
 ''
 <img src="${filename}"
-style="border: #000000 4px solid; width:100%; max-width:300px;" />
+style="width:100%; max-width:500px;" />
 ''
 
 let slideshowScript =
