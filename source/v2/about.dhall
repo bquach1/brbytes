@@ -27,7 +27,7 @@ ${fiveRings
 }
 ''
 ''
-${image "images/placeholder.jpg"}
-${image "images/placeholder.jpg"}''}
+${paddedImage "images/placeholder.jpg" "10px"}
+${paddedImage "images/placeholder.jpg" "10px"}''}
 ''}
 ''
