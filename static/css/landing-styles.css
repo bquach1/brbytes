@@ -63,6 +63,10 @@ ul {
     width: 150px; 
     height: 150px; 
 }
+.item-medium {
+    width: 225px;
+    height: 225px;
+}
 .item-large{ 
     width: 300px; 
     height: 300px; 
