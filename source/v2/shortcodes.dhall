@@ -120,9 +120,9 @@ let slideshowImage =
 ''
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1)"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
 <img src="${image}" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1)"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
 </div>
 </div>''
 
