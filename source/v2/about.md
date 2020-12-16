@@ -16,23 +16,23 @@ by developing and implementing several middle and high
 school courses in EBRPSS and surrounding school districts.
 <span class="table-container">
 <span style="display: table-row">
-<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class ="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 7 Courses Created
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 41 Teachers Trained
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 1837 Students
 </span>
 </span>
 </span>
 <span class="table-container">
 <span style="display: table-row">
-<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class ="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 6 Districts
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 30 Schools
 </span>
 </span>

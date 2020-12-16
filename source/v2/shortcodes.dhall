@@ -43,23 +43,23 @@ let fiveRings =
 ''
 <span class="table-container">
 <span style="display: table-row">
-<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class ="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text1}
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text2}
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text3}
 </span>
 </span>
 </span>
 <span class="table-container">
 <span style="display: table-row">
-<span class ="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class ="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text4}
 </span>
-<span class="table-item table-item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text5}
 </span>
 </span>
@@ -69,7 +69,7 @@ let coloredCircle =
     \(color : Text)->
     \(content : Text)->
 ''
-<div class="w3-${color} w3-circle box-item box-item-large">${content}</div>''
+<div class="w3-${color} w3-circle box-item item-large">${content}</div>''
 
 let coloredHeader = 
     \(color : Text)->
