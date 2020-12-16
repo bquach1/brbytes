@@ -89,7 +89,7 @@ let image =
 \(filename : Text) ->
 ''
 <img src="${filename}"
-style="width:100%; max-width:500px;" />
+style="width:100%;" />
 ''
 
 let slideshowScript =

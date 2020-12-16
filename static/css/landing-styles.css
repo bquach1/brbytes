@@ -63,7 +63,14 @@ ul {
 	display: none;
     }
 }
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 600px) {
+    .table-item-small {
+        width: 75px;
+        height: 75px;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 700px) {
     #navigation-logo-heading {
         display: none;
     }
