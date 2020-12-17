@@ -140,18 +140,17 @@ let leftAlign =
 ${content}
 </div>''
 
-let paddedImage =
-\(filename : Text)->
-\(padding : Text)->
+let padding = 
+\(amount : Text)->
+\(content : Text)->
 ''
-<img src="images/${filename}"
-style="width:100%; padding: ${padding};"/>''
+<div style="padding: ${amount};">${content}</div>''
 
 let image =
 \(filename : Text)->
 ''
 <img src="images/${filename}"
-style="width:100%;"/>''
+style="width:100%;">''
 
 let slideshowScript =
 ''
