@@ -1,10 +1,29 @@
-let main-div =
+let mainDiv =
    \(padding : Text)->
    \(alignment : Text)->
    \(content : Text)->
 ''
 <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
 ${content}
+</div>''
+
+let cellRow =
+    \(content : Text)->
+''
+<div class="w3-cell-row" style="margin: 32px 0;">${content}</div>
+''
+
+let teamBio =
+    \(image : Text)->
+    \(name : Text)->
+    \(title : Text)->
+    \(about : Text)->
+''
+<div class="w3-cell w3-mobile w3-center" style="width: 33.3%;">
+<img class="w3-circle item-medium" src="${image}">
+<h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
+<h3 class="no-margin" style="font-weight: lighter;"><em>${title}</em></h3>
+<h4 style="width: 70%; margin: auto;">${about}</h4>
 </div>''
 
 let twoThirdsContainer =

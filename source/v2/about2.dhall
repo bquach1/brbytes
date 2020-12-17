@@ -1,5 +1,5 @@
 ''
-${main-div "100px 0 50px 0" "left"
+${mainDiv "100px 0 50px 0" "left"
 ''
 ${overlappingImageContainer 
 ''

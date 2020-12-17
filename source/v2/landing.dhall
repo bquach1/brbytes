@@ -2,7 +2,7 @@ let placeholder = "images/placeholder.jpg"
 in
 
 ''
-${main-div "100px 10%" "center"
+${mainDiv "100px 10%" "center"
 ''
 ${slideshowImage "images/slideshow1.png"}
 ${slideshowImage "images/slideshow2.jpg"}

@@ -1,5 +1,5 @@
 ''
-${main-div "100px 1%" "left"
+${mainDiv "100px 1%" "left"
 ''
 ${twoThirdsContainer
 ''
