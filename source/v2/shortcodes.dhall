@@ -103,11 +103,12 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let largeUnderline =
+let underlinedColoredHeader =
     \(color : Text)->
+    \(size : Text)->
     \(content : Text)->
 ''
-<div class="w3-bottom-bar w3-padding-16 w3-border-${color}">${content}</div>''
+<h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow w3-padding-16" style="width: fit-content;">${content}</h1>''
 
 let flexBoxContainer = 
     \(content : Text)->
