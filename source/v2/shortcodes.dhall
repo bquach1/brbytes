@@ -20,7 +20,7 @@ let teamBio =
     \(about : Text)->
 ''
 <div class="w3-cell w3-mobile w3-center" style="width: 33.3%;">
-<img class="w3-circle item-medium" src="${image}">
+<img class="w3-circle item-medium" src="images/${image}">
 <h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${title}</em></h3>
 <h4 style="width: 70%; margin: auto;">${about}</h4>
@@ -42,7 +42,7 @@ let overlappingImageContainer =
 <div class="w3-center">${content}</div>
 </div>
 <div class="w3-col m5 absolute-position-image">
-<img src="${image}" style="width: 100%;">
+<img src="images/${image}" style="width: 100%;">
 </div>
 </div>''
 
@@ -122,9 +122,9 @@ ${content}
 </div>''
 
 let flexBoxImage =
-\(image : Text)->
+\(filename : Text)->
 ''
-<img class="flexbox-item" src="${image}">''
+<img class="flexbox-item" src="images/${filename}">''
 
 let leftAlign =
 \(content : Text)->
@@ -137,13 +137,13 @@ let paddedImage =
 \(filename : Text)->
 \(padding : Text)->
 ''
-<img src="${filename}"
+<img src="images/${filename}"
 style="width:100%; padding: ${padding};"/>''
 
 let image =
 \(filename : Text)->
 ''
-<img src="${filename}"
+<img src="images/${filename}"
 style="width:100%;"/>''
 
 let slideshowScript =
@@ -170,12 +170,12 @@ function showDivs(n) {
 </script>''
 
 let slideshowImage =
-    \(image : Text)->
+    \(filename : Text)->
 ''
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
-<img src="${image}" style="width: 100%;">
+<img src="images/${filename}" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
 </div>
 </div>''

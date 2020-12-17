@@ -9,7 +9,7 @@ BRBytes was formed through a Research Practitioner Partnership between East Bato
 
 ${coloredCircle "yellow"
 ''
-### By the Numbers
+${coloredHeader "indigo" "xlarge" "By the Numbers"}
 
 - 7 courses developed
 - 41 teachers trained
@@ -19,11 +19,11 @@ ${coloredCircle "yellow"
 ${coloredCircle "yellow"
 ''
 
-### Why Computer Science?
+${coloredHeader "indigo" "xlarge" "Why Computer Science?"}
 
 Louisiana currently ranks last in computer science and computational thinking education with only 16% of public schools teaching these classes.''}
 ''
-"images/placeholder.jpg"}
+"placeholder.jpg"}
 ${purpleBackgroundContainer 
 ''
 

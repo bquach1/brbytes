@@ -13,3 +13,4 @@ build() {
 build landing.dhall
 build about.dhall
 build about2.dhall
+build team.dhall

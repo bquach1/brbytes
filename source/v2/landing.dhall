@@ -1,12 +1,12 @@
-let placeholder = "images/placeholder.jpg"
+let placeholder = "placeholder.jpg"
 in
 
 ''
 ${mainDiv "100px 10%" "center"
 ''
-${slideshowImage "images/slideshow1.png"}
-${slideshowImage "images/slideshow2.jpg"}
-${slideshowImage "images/slideshow3.jpg"}
+${slideshowImage "slideshow1.png"}
+${slideshowImage "slideshow2.jpg"}
+${slideshowImage "slideshow3.jpg"}
 ${leftAlign
 ''
 BRBytes was formed through a Research Practitioner Partnership between East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU) to bridge the gap in computer science and computational thinking education in Louisiana. The program does this by developing and implementing several middle and high school courses in EBRPSS and surrounding school districts.''}
