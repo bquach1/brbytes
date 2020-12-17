@@ -14,5 +14,5 @@ build landing.dhall
 build about.dhall
 build about2.dhall
 build team.dhall
-build courses.dhall
+build course-descriptions.dhall
 build pathways.dhall
