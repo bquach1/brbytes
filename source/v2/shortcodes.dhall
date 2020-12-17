@@ -10,7 +10,7 @@ ${content}
 let cellRow =
     \(content : Text)->
 ''
-<div class="w3-cell-row" style="margin: 32px 0;">${content}</div>
+<div class="w3-cell-row">${content}</div>
 ''
 
 let teamBio =
@@ -19,7 +19,7 @@ let teamBio =
     \(title : Text)->
     \(about : Text)->
 ''
-<div class="w3-cell w3-mobile w3-center" style="width: 33.3%;">
+<div class="w3-cell w3-mobile w3-center" style="width: 33.3%; padding: 32px 0;">
 <img class="w3-circle item-medium" src="images/${image}">
 <h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${title}</em></h3>
