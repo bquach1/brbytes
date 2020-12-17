@@ -40,6 +40,7 @@ next Community of Practice meeting. If you cannot attend the
 make-up day will be Thursday, November 5 at 6pm.
 
 **Past Meetings:** The slides from October 3rd and 15th meetings 
-are now available.''}
+are now available.
+''}
 ''}
 ''

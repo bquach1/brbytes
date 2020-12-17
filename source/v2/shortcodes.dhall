@@ -50,12 +50,12 @@ let purpleBackgroundContainer =
     \(firstContent : Text)->
     \(secondContent : Text)->
 ''
-<div class="w3-theme-l4" style="padding: 32px 0 64px 5%;">
-<div class="w3-row">
+<div class="w3-row w3-theme-l4" style="padding: 32px 5vw 0;">
 <div class="w3-col m7">${firstContent}</div>
 </div>
-<div class="w3-row">
-<div class="w3-col m10 w3-bottombar w3-border-indigo">${secondContent}</div>
+<div class="w3-row w3-theme-l4" style="padding: 0 0 64px;">
+<div class="w3-col m10 w3-bottombar w3-border-indigo">
+<div style="padding-left: 5vw;">${secondContent}</div>
 </div>
 </div>''
 

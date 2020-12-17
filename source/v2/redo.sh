@@ -15,3 +15,4 @@ build about.dhall
 build about2.dhall
 build team.dhall
 build courses.dhall
+build pathways.dhall

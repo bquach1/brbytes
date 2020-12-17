@@ -28,6 +28,6 @@ ${fiveRings
 ''
 ''
 ${padding "10px" "${image "placeholder.jpg"}"}
-${padding "10px" "${image "placeholder.jpg"}"}
+${padding "10px" "${image "placeholder.jpg"}"}''}
 ''}
 ''

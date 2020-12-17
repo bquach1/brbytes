@@ -85,10 +85,10 @@ ul {
 .absolute-position-image {
     position: absolute; 
     right: 0; 
-    padding-left: 5%;
+    padding-left: 5vw;
 }
 .left-padded-div {
-    padding-left: 5%;
+    padding-left: 5vw;
 }
 /* responsiveness */
 @media only screen and (max-width: 334px) {
