@@ -3,11 +3,13 @@ ${main-div "100px 0 50px 0" "left"
 ''
 ${overlappingImageContainer 
 ''
-BRBytes was formed through a Research Practitioner Partnership between East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU) to bridge the gap in computer science and computational thinking education in Louisiana. The program does this by developing and implementing several middle and high school courses in EBRPSS and surrounding school districts.
+${leftAlign
+''
+BRBytes was formed through a Research Practitioner Partnership between East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU) to bridge the gap in computer science and computational thinking education in Louisiana. The program does this by developing and implementing several middle and high school courses in EBRPSS and surrounding school districts.''}
 
 ${coloredCircle "yellow"
 ''
-### By the Number
+### By the Numbers
 
 - 7 courses developed
 - 41 teachers trained
@@ -31,8 +33,8 @@ We are rebranding our traditional Saturday PD sessions as
 Community of Practice Meetings to emphasize the building 
 of a community of practice among the BRBytes teachers. Also, 
 meetings are no longer just on Saturdays, as we now have alternative 
-dates on weekdays to accommodate everyone's preferences.
-
+dates on weekdays to accommodate everyone's preferences.''
+''
 **Upcoming Meetings:** Saturday, October 31 at 9am is the date for the 
 next Community of Practice meeting. If you cannot attend the 
 make-up day will be Thursday, November 5 at 6pm.

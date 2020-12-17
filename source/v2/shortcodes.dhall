@@ -28,10 +28,16 @@ let overlappingImageContainer =
 </div>''
 
 let purpleBackgroundContainer =
-    \(content : Text)->
+    \(firstContent : Text)->
+    \(secondContent : Text)->
 ''
-<div class="w3-row w3-theme-l4" style="padding: 32px 0 64px 0">
-<div class="w3-col m10 w3-bottombar w3-border-indigo" style="padding-left: 5%;">${content}</div>
+<div class="w3-theme-l4" style="padding: 32px 0 64px 5%;">
+<div class="w3-row">
+<div class="w3-col m7">${firstContent}</div>
+</div>
+<div class="w3-row">
+<div class="w3-col m10 w3-bottombar w3-border-indigo">${secondContent}</div>
+</div>
 </div>''
 
 let fiveRings = 
