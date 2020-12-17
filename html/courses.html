@@ -1,114 +1,118 @@
 <!doctype html>
-<html>
-  <head>
+<lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRBYTES - Courses</title>
+    <meta name="description" content="BRBytes Main Page">
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; Fall 2020</title>
     <link rel="stylesheet" href="/courses/assets/css/w3.css">
-    <link rel="stylesheet" href="css/courses-styles.css">
     <link rel="stylesheet" href="/courses/assets/css/w3-theme-indigo.css">
-  </head>
-    <body>
-      <div class="w3-row">
-        <div class="w3-col m3 w3-bar-block w3-theme-l1 br-sidebar">
-          <div class="sidebar-holder">
-            <img class="w3-image" src="images/brbytescombined.png" alt="BRBytes Logo">
-            <h2 class="w3-center w3-text-light-gray br-tagline">Baton Rouge</h2>
-            <h4 class="w3-center w3-text-light-gray br-tagline"><i>Bringing Youth Technology, Education, and Success</i></h3>
-            <div class="w3-center w3-bar-item">
-                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="courses/">Students</a>
-                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="cms/login">Teachers</a>
-                <a class="w3-button w3-hover-indigo w3-text-light-gray w3-border" href="Rationale/">About</a>
-                <!--
-                <a class="w3-button w3-hover-khaki w3-border-bottom" href="https://cloud.brbytes.org/s/e5exKmQq8rwkCZg">Summer PD</a>
-                -->
+    <link rel="stylesheet" href="css/landing-styles.css">
+</head>
+<body>
+    <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-padding w3-small">
+        <div class="w3-bar w3-light-grey w3-cell-row">
+            <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
+		    <a href="/landing.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+            </div>
+            <div id="navigation-logo-heading" class="w3-bar-item">
+                <p class="no-margin">Baton Rouge:</p>
+                <p class="no-margin">Bringing Youth Technology,</p>
+                <p class="no-margin">Education and Success</p>
+            </div>
+            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
+                <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
+            </div>
+            <div class="w3-bar-block w3-right">
+                <div class="w3-row w3-right">
+			<p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
+                </div>               
+                <div id="navigation-header" class="w3-row w3-text-indigo">
+                    <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
+                    <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
+		    <div class="dropdown-button" style="display: inline-block;">
+		    	<a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
+			<div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
+			    <a href="#" class="w3-bar-item">Pathways</a>
+			    <a href="#" class="w3-bar-item">Course Descriptions</a>
+			    <a href="#" class="w3-bar-item">Careers in Computing</a>
+			</div>
+		    </div>
+		    <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
+                    <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
+		    <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
+		    	<a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
+		        <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
+			    <a href="/about.html" class="w3-bar-item">Overview</a>
+			    <a href="#" class="w3-bar-item">Participating Schools</a>
+			    <a href="/team.html" class="w3-bar-item">Our Team</a>
+			</div>
+		    </div>
+		</div>
             </div>
         </div>
-      </div>
-
-    <div class="w3-col m9 l9 w3-padding-large">
-              <h1 class="w3-border-bottom">Fall Courses 2020</h1>
-              <script src=assets/js/coursePage.js></script>
-              <button class="accordion" id="login">Login</button>
-              <div class="panel" id="login-panel">
-		                <input type="hidden" id="section_prefix"/>
-                    <label for="section_code">Section Code:</label><br>
-                    <input type="text" id="section_code" name="section_code"><br>
-                    <label for="student_code">Student Code:</label><br>
-                    <input type="text" id="student_code" name="student_code"><br><br>
-		                <Button onclick="loginSel()">Login</button>
-              </div>
-
-              <button class="accordion">Lorem High School</button>
-              <div class="panel">
-                  <h3 class="w3-border-bottom w3-border-dark-gray">Computing Pathway Courses</h3>
-                  <ul class="w3-ul w3-hoverable">
-                      <li>
-                      <a class="w3-text-dark-grey" href="https://www.brbytes.org/courses/ict/20a/">Intro to Computational Thinking</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cew/20a/">Computing Everywhere</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/scs/20b/">Survey of Computer Science</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cyb/20a/">Cyber Security</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/dma/20a/">Data Manipulation and Analysis</a>
-                      </li>
-                  </ul>
-              </div>
-
-              <button class="accordion">Ipsum High School</button>
-              <div class="panel">
-                  <h3 class="w3-border-bottom w3-border-dark-gray">Computing Pathway Courses</h3>
-                  <ul class="w3-ul w3-hoverable">
-                      <li>
-                      <a class="w3-text-dark-grey" href="https://www.brbytes.org/courses/ict/20a/">Intro to Computational Thinking</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cew/20a/">Computing Everywhere</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/scs/20b/">Survey of Computer Science</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cyb/20a/">Cyber Security</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/dma/20a/">Data Manipulation and Analysis</a>
-                      </li>
-                  </ul>
-              </div>
-
-              <button class="accordion">Dolor High School</button>
-              <div class="panel">
-                  <h3 class="w3-border-bottom w3-border-dark-gray">Computing Pathway Courses</h3>
-                  <ul class="w3-ul w3-hoverable">
-                      <li>
-                      <a class="w3-text-dark-grey" href="https://www.brbytes.org/courses/ict/20a/">Intro to Computational Thinking</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cew/20a/">Computing Everywhere</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/scs/20b/">Survey of Computer Science</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/cyb/20a/">Cyber Security</a>
-                      </li>
-                      <li>
-                      <a class="w3-text-dark-grey" href="/courses/dma/20a/">Data Manipulation and Analysis</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <input type="hidden" id="coursePrefixes" value="ict/20c,dma/20c,cyber/20c,dma/20c,scs/20c">
-          <script src="assets/js/coursePage.js"></script>
-          <script src="js/selectionPage.js"></script>
-      </div>
+        <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
+            <a href="/cms/login"><strong>TEACHERS</strong></a><br>
+            <a href="/courses/"><strong>STUDENTS</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
+	    <div id="parent-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="#">Pathways</a><br>
+		<a href="#">Course Descriptions</a><br>
+		<a href="#">Careers in Computing</a><br>
+	    </div>
+            <a href="#"><strong>SCHOOLS</strong></a><br>
+            <a href="#"><strong>NEWSLETTERS</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
+	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="/about.html">Overview</a><br>
+		<a href="#">Participating Schools</a><br>
+		<a href="/team.html">Our Team</a><br>
+	    </div>
+        </div>
     </div>
-    </body>
+    <!--this div contains the body of the page-->
+	<div id="main-div" style="padding: 100px 4%; text-align: left; overflow: auto;">
+<h1 class="w3-text-indigo w3-xxlarge w3-bottombar w3-border-yellow w3-padding-16" style="width: fit-content;">
+<strong>BRBytes Courses</strong>
+</h1>
+<h1 class="w3-text-indigo w3-xlarge">
+<strong>COMPUTING EVERYWHERE: GRADE 7</strong>
+</h1>
+<h4 id="this-semester-course-will-cover-basic-computer-terminology-and-usage-and-connections-of-computing-and-society-including-ethics-security-and-privacy-in-online-communication.-projects-will-inclue-block-based-programming-programmable-devices-microbit-and-unplugged-activities.-the-primary-goal-of-the-course-is-that-students-reflect-on-how-the-big-ideas-in-computing-creativity-abstraction-data-and-information-algorithms-programming-the-internet-and-global-impact-are-relevant-in-their-lives-and-want-to-learn-more-about-them.">This semester course will cover basic computer terminology and usage, and connections of computing and society, including ethics, security and privacy in online communication. Projects will inclue block-based programming, programmable devices (micro:bit) and unplugged activities. The primary goal of the course is that students reflect on how the Big Ideas in Computing (creativity, abstraction, data and information, algorithms, programming, the Internet, and global impact) are relevant in their lives and want to learn more about them.</h4>
+<h1 class="w3-text-indigo w3-xlarge">
+<strong>INTRODUCTION TO STEM PATHWAYS AND CAREERS: GRADE 7</strong>
+</h1>
+<h4 id="description-needed.">Description needed.</h4>
+</div>       
+    <!--end of body-->
+    <div class="sticky footer w3-container w3-center w3-light-grey w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/usdoe.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/lsu.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/ebrpss.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/nsf.png" height="40vh">
+    </div>
+    <script>
+	
+	window.addEventListener('click', function(e) { // closes all dropdown menus if user clicks outside a dropdown menu
+            var obj = e.target.parentNode
+            if(!(obj.className.includes("dropdown-content") || obj.className.includes("dropdown-button"))) {
+                x = document.getElementsByClassName("dropdown-content");
+                for(i = 0; i < x.length; i++) { // gets all dropdown-content objects and hides them
+                    if(x[i].className.includes("w3-show")) {
+                        x[i].className = x[i].className.replace(" w3-show","");
+                    }
+                }
+            }
+        })
+	function toggleDropdown(dropdown) {
+          var x = document.getElementById(dropdown);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        } 
+    </script>
+</body>
 </html>
