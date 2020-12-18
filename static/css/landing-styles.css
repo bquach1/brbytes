@@ -76,6 +76,9 @@ ul {
 .no-margin {
     margin:0;
 } 
+.left-padded-div {
+    padding-left: 5vw;
+}
 
 /* specific helper classes */
 .my-slides {
@@ -87,9 +90,16 @@ ul {
     right: 0; 
     padding-left: 5vw;
 }
-.left-padded-div {
-    padding-left: 5vw;
+.paragraph-block {
+    padding: 24px 0;
 }
+.paragraph-block h1 {
+    font-weight: 500;
+}
+.paragraph-block *{
+    margin: 0;
+}
+
 /* responsiveness */
 @media only screen and (max-width: 334px) {
     #navigation-contact {

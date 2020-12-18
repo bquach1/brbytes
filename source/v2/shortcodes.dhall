@@ -103,6 +103,16 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
+let paragraphBlock =
+    \(heading : Text)->
+    \(content : Text)->
+''
+<div class="paragraph-block">
+${coloredHeader "indigo" "xxlarge" "${heading}}
+<h4>${content}</h4>
+</div>
+''
+
 let underlinedColoredHeader =
     \(color : Text)->
     \(size : Text)->
