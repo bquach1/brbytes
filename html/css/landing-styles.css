@@ -71,6 +71,7 @@ ul {
     padding: 12px;
 }
 .accordion-box :last-child {
+    padding-top: 0;
     padding-bottom: 0;
 } 
 
@@ -109,7 +110,7 @@ ul {
     -khtml-user-select: none;
     -ms-user-select: none;
 }
-left-padded-div {
+.left-padded-div {
     padding-left: 5vw;
 }
 
