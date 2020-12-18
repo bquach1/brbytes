@@ -26,6 +26,17 @@ let teamBio =
 <h4 style="width: 70%; margin: auto;">${about}</h4>
 </div>''
 
+let thirdsContainer =
+    \(firstContent : Text)->
+    \(secondContent : Text)->
+    \(thirdContent : Text)->
+''
+<div class="w3-row w3-center">
+<div class="w3-col m4">${firstContent}</div>
+<div class="w3-col m4">${secondContent}</div>
+<div class="w3-col m4">${thirdContent}</div>
+</div>''
+
 let twoThirdsContainer =
     \(smallContent : Text)->
     \(largeContent : Text)->

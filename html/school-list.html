@@ -1,0 +1,152 @@
+<!doctype html>
+<lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRBytes Main Page">
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; Fall 2020</title>
+    <link rel="stylesheet" href="/courses/assets/css/w3.css">
+    <link rel="stylesheet" href="/courses/assets/css/w3-theme-indigo.css">
+    <link rel="stylesheet" href="css/landing-styles.css">
+</head>
+<body>
+    <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-padding w3-small">
+        <div class="w3-bar w3-light-grey w3-cell-row">
+            <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
+		    <a href="/landing.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+            </div>
+            <div id="navigation-logo-heading" class="w3-bar-item">
+                <p class="no-margin">Baton Rouge:</p>
+                <p class="no-margin">Bringing Youth Technology,</p>
+                <p class="no-margin">Education and Success</p>
+            </div>
+            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
+                <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
+            </div>
+            <div class="w3-bar-block w3-right">
+                <div class="w3-row w3-right">
+			<p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
+                </div>               
+                <div id="navigation-header" class="w3-row w3-text-indigo">
+                    <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
+                    <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
+		    <div class="dropdown-button" style="display: inline-block;">
+		    	<a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
+			<div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
+			    <a href="/pathways.html" class="w3-bar-item">Pathways</a>
+			    <a href="/course-descriptions.html" class="w3-bar-item">Course Descriptions</a>
+			    <a href="#" class="w3-bar-item">Careers in Computing</a>
+			</div>
+		    </div>
+		    <a class="w3-padding" href="#"><strong>SCHOOLS</strong></a>
+                    <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
+		    <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
+		    	<a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
+		        <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
+			    <a href="/about.html" class="w3-bar-item">Overview</a>
+			    <a href="#" class="w3-bar-item">Participating Schools</a>
+			    <a href="/team.html" class="w3-bar-item">Our Team</a>
+			</div>
+		    </div>
+		</div>
+            </div>
+        </div>
+        <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
+            <a href="/cms/login"><strong>TEACHERS</strong></a><br>
+            <a href="/courses/"><strong>STUDENTS</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
+	    <div id="parent-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="/pathways.html">Pathways</a><br>
+		<a href="/course-descriptions.html">Course Descriptions</a><br>
+		<a href="#">Careers in Computing</a><br>
+	    </div>
+            <a href="#"><strong>SCHOOLS</strong></a><br>
+            <a href="#"><strong>NEWSLETTERS</strong></a><br>
+            <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
+	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
+		<a href="/about.html">Overview</a><br>
+		<a href="#">Participating Schools</a><br>
+		<a href="/team.html">Our Team</a><br>
+	    </div>
+        </div>
+    </div>
+    <!--this div contains the body of the page-->
+	<div id="main-div" style="padding: 100px 10%; text-align: left; overflow: auto;">
+<div class="w3-row w3-center">
+<div class="w3-col m4">
+<div class="w3-grey accordion-box">
+<h3 class="w3-yellow">
+East Baton Rouge Parish Schools
+</h2>
+<p>Liberty High School</p>
+<p>Baton Rouge High School</p>
+<p>Belaire High School</p>
+<p>Broadmoor High School</p>
+</div>
+</div>
+<div class="w3-col m4">
+<div class="w3-grey accordion-box">
+<h3 class="w3-yellow">
+Evangaline Parish Schools
+</h2>
+<p>Mamou High School</p>
+<p>Pine Prairie High School</p>
+<p>Ville Platte High School</p>
+</div>
+<div class="w3-grey accordion-box">
+<h3 class="w3-yellow">
+Pointe Coupee Parish Schools
+</h2>
+<p>Livonia High School</p>
+<p>Stem Magnet Academy</p>
+</div>
+</div>
+<div class="w3-col m4">
+<div class="w3-grey accordion-box">
+<h3 class="w3-yellow">
+Washington Parish Schools
+</h2>
+<p>Franklinton High School</p>
+<p>Pine High School</p>
+</div>
+<div class="w3-grey accordion-box">
+<h3 class="w3-yellow">
+West Feliciana Parish Schools
+</h2>
+<p>West Feliciana High School</p>
+</div>
+</div>
+</div>
+</div>       
+    <!--end of body-->
+    <div class="sticky footer w3-container w3-center w3-light-grey w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/usdoe.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/lsu.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/ebrpss.png" height="40vh">
+            <img class="w3-margin-left w3-margin-right" src="/images/Logos/nsf.png" height="40vh">
+    </div>
+    <script>
+	
+	window.addEventListener('click', function(e) { // closes all dropdown menus if user clicks outside a dropdown menu
+            var obj = e.target.parentNode
+            if(!(obj.className.includes("dropdown-content") || obj.className.includes("dropdown-button"))) {
+                x = document.getElementsByClassName("dropdown-content");
+                for(i = 0; i < x.length; i++) { // gets all dropdown-content objects and hides them
+                    if(x[i].className.includes("w3-show")) {
+                        x[i].className = x[i].className.replace(" w3-show","");
+                    }
+                }
+            }
+        })
+	function toggleDropdown(dropdown) {
+          var x = document.getElementById(dropdown);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        } 
+    </script>
+</body>
+</html>

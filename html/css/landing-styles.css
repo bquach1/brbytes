@@ -62,7 +62,7 @@ ul {
 .accordion-box {
     width: 90%; 
     max-width: 500px;
-    margin: auto; 
+    margin: 24px auto; 
     padding: 16px 0;
 }
 .accordion-box * {
