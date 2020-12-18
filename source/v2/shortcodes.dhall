@@ -117,7 +117,7 @@ let accordionBox =
     \(content : Text)->
 ''
 <div class="w3-grey accordion-box">
-<h2 class="w3-yellow">${heading}</h2>
+<h3 class="w3-yellow">${heading}</h2>
 ${content}</div>''
 
 let underlinedColoredHeader =

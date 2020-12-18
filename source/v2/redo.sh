@@ -15,4 +15,5 @@ build about.dhall
 build about2.dhall
 build team.dhall
 build course-descriptions.dhall
+build course-list.dhall
 build pathways.dhall
