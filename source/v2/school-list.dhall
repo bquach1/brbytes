@@ -3,7 +3,7 @@ ${mainDiv "100px 10%" "left"
 ''
 ${thirdsContainer
 ''
-${accordionBox "East Baton Rouge Parish Schools"
+${accordionBox "ebrps" "East Baton Rouge Parish Schools"
 ''
 Liberty High School
 
@@ -16,7 +16,7 @@ Broadmoor High School
 ''}
 ''
 ''
-${accordionBox "Evangaline Parish Schools"
+${accordionBox "eps" "Evangaline Parish Schools"
 ''
 Mamou High School
 
@@ -25,7 +25,7 @@ Pine Prairie High School
 Ville Platte High School
 
 ''}
-${accordionBox "Pointe Coupee Parish Schools"
+${accordionBox "pcps" "Pointe Coupee Parish Schools"
 ''
 Livonia High School
 
@@ -34,14 +34,14 @@ Stem Magnet Academy
 ''}
 ''
 ''
-${accordionBox "Washington Parish Schools"
+${accordionBox "wps" "Washington Parish Schools"
 ''
 Franklinton High School
 
 Pine High School
 
 ''}
-${accordionBox "West Feliciana Parish Schools"
+${accordionBox "wfps" "West Feliciana Parish Schools"
 ''
 West Feliciana High School
 

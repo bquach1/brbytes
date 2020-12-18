@@ -6,7 +6,7 @@ ${padding "16px 0"
 ### **Students, select your class to sign in.**
 ''}
 
-${accordionBox "Liberty High School"
+${accordionBox "lhs" "Liberty High School"
 ''
 Introduction to Computational Thinking
 
