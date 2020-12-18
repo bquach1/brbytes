@@ -1,4 +1,7 @@
 ''
+---
+title: "Team"
+---
 ${coloredHeader "indigo" "xxxlarge" "**OUR TEAM**"}
 ${cellRow 
 ''

@@ -1,4 +1,7 @@
 ''
+---
+title: "School List"
+---
 ${thirdsContainer
 ''
 ${accordionBox "ebrps" "East Baton Rouge Parish Schools"

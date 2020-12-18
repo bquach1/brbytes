@@ -1,4 +1,7 @@
 ''
+---
+title: "About"
+---
 ${twoThirdsContainer
 ''
 ${coloredHeader "indigo" "xxlarge" "What is BRBytes?"}

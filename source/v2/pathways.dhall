@@ -1,4 +1,7 @@
 ''
+---
+title: "Pathways"
+---
 ${underlinedColoredHeader "indigo" "xxlarge" "**Louisiana Education Pathways and BRBytes**"}
 
 ${smallPadding 

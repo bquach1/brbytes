@@ -1,5 +1,7 @@
 ''
-
+---
+title: "Course Descriptions"
+---
 ${underlinedColoredHeader "indigo" "xxlarge" "**BRBytes Courses**"}
 
 ${paragraphBlock "COMPUTING EVERYWHERE: GRADE 7"

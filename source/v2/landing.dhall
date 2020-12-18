@@ -2,6 +2,9 @@ let placeholder = "placeholder.jpg"
 in
 
 ''
+---
+title: "Landing"
+---
 ${slideshowImage "slideshow1.png"}
 ${slideshowImage "slideshow2.jpg"}
 ${slideshowImage "slideshow3.jpg"}
