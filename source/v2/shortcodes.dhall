@@ -108,7 +108,7 @@ let paragraphBlock =
     \(content : Text)->
 ''
 <div class="paragraph-block">
-${coloredHeader "indigo" "xxlarge" "${heading}}
+${coloredHeader "indigo" "xlarge" "${heading}"}
 <h4>${content}</h4>
 </div>
 ''
