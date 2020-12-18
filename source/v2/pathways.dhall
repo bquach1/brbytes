@@ -1,6 +1,4 @@
 ''
-${mainDiv "100px 4%" "left"
-''
 ${underlinedColoredHeader "indigo" "xxlarge" "**Louisiana Education Pathways and BRBytes**"}
 
 ${smallPadding 
@@ -26,6 +24,5 @@ ${smallPadding
 ${smallPadding
 ''
 #### There are four Pathway options: Biomedical Science, Computing, Digital Media & Arts, and Pre-Engineering. The BRBytes ICT course is required for all Pathways.
-''}
 ''}
 ''

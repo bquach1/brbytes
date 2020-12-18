@@ -1,6 +1,4 @@
 ''
-${mainDiv "100px 0 50px 0" "left"
-''
 ${overlappingImageContainer 
 ''
 ${leftAlign
@@ -41,6 +39,5 @@ make-up day will be Thursday, November 5 at 6pm.
 
 **Past Meetings:** The slides from October 3rd and 15th meetings 
 are now available.
-''}
 ''}
 ''

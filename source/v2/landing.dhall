@@ -2,8 +2,6 @@ let placeholder = "placeholder.jpg"
 in
 
 ''
-${mainDiv "100px 10%" "center"
-''
 ${slideshowImage "slideshow1.png"}
 ${slideshowImage "slideshow2.jpg"}
 ${slideshowImage "slideshow3.jpg"}
@@ -49,6 +47,5 @@ ${flexBoxContainer ''
         Test image in box
         ''}
     ''}
-''}
 ${slideshowScript}
 ''

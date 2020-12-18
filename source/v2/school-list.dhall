@@ -1,6 +1,4 @@
 ''
-${mainDiv "100px 10%" "left"
-''
 ${thirdsContainer
 ''
 ${accordionBox "ebrps" "East Baton Rouge Parish Schools"
@@ -45,7 +43,6 @@ ${accordionBox "wfps" "West Feliciana Parish Schools"
 ''
 West Feliciana High School
 
-''}
 ''}
 ''}
 ''

@@ -6,15 +6,15 @@ build() {
 
     rm -f $filename.md $filename.html
     cat shortcodes.dhall $filename.dhall | premd-exe > $filename.md
-    pandoc --variable format=$2  --template template.htmk -s -o $filename.html $filename.md
+    pandoc --variable padding=$2 --variable alignment=$3  --template template.htmk -s -o $filename.html $filename.md
     rm -f $filename.md
 }
 
-build landing.dhall 1
-build about.dhall 2
-build about2.dhall 3
-build team.dhall 4
-build course-descriptions.dhall 5
-build course-list.dhall 6
-build school-list.dhall 7
-build pathways.dhall 8
+build landing.dhall "100px 10%" "center"
+build about.dhall "100px 1%" "left"
+build about2.dhall "100px 0 50px 0" "left"
+build team.dhall "100px 0 100px 0" "center"
+build course-descriptions.dhall "100px 4%" "left"
+build course-list.dhall "100px 0" "center"
+build school-list.dhall "100px 10%" "left"
+build pathways.dhall "100px 4%" "left"

@@ -1,6 +1,4 @@
 ''
-${mainDiv "100px 1%" "left"
-''
 ${twoThirdsContainer
 ''
 ${coloredHeader "indigo" "xxlarge" "What is BRBytes?"}
@@ -29,5 +27,4 @@ ${fiveRings
 ''
 ${padding "10px" "${image "placeholder.jpg"}"}
 ${padding "10px" "${image "placeholder.jpg"}"}''}
-''}
 ''
