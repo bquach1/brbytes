@@ -68,10 +68,9 @@ ul {
 .accordion-box * {
     text-align: left; 
     margin: 0;
-    padding: 12px;
+    padding: 8px 12px;
 }
-.accordion-box :last-child {
-    padding-top: 0;
+.accordion-box div {
     padding-bottom: 0;
 } 
 
@@ -104,11 +103,12 @@ ul {
 .no-margin {
     margin:0;
 }
-.no-highlight {
+.clickable {
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+    cursor: pointer;
 }
 .left-padded-div {
     padding-left: 5vw;
