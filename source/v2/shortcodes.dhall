@@ -118,7 +118,7 @@ let underlinedColoredHeader =
     \(size : Text)->
     \(content : Text)->
 ''
-<h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow w3-padding-16" style="width: fit-content;">${content}</h1>''
+<h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;">${content}</h1>''
 
 let flexBoxContainer = 
     \(content : Text)->
@@ -155,6 +155,11 @@ let padding =
 \(content : Text)->
 ''
 <div style="padding: ${amount};">${content}</div>''
+
+let smallPadding =
+\(content : Text)->
+''
+${padding "8px 0" "${content}"}''
 
 let image =
 \(filename : Text)->
