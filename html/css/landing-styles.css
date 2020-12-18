@@ -58,6 +58,22 @@ ul {
     text-align: left;
 }
 
+/* accordian boxes */
+.accordion-box {
+    width: 90%; 
+    max-width: 500px;
+    margin: auto; 
+    padding: 16px 0;
+}
+.accordion-box * {
+    text-align: left; 
+    margin: 0;
+    padding: 12px;
+}
+.accordion-box :last-child {
+    padding-bottom: 0;
+}
+
 /* item sizes */
 .item-small {
     width: 150px; 
@@ -72,24 +88,7 @@ ul {
     height: 300px; 
 }
 
-/* general helper classes */
-.no-margin {
-    margin:0;
-} 
-.left-padded-div {
-    padding-left: 5vw;
-}
-
-/* specific helper classes */
-.my-slides {
-    width: 100%;
-    z-index: -1;
-}
-.absolute-position-image {
-    position: absolute; 
-    right: 0; 
-    padding-left: 5vw;
-}
+/* paragraph blocks */
 .paragraph-block {
     padding: 16px 0;
 }
@@ -98,6 +97,25 @@ ul {
 }
 .paragraph-block *{
     margin: 0;
+}
+
+/* general helper classes */
+.no-margin {
+    margin:0;
+} 
+.left-padded-div {
+    padding-left: 5vw;
+}
+
+/* specific element classes */
+.my-slides {
+    width: 100%;
+    z-index: -1;
+}
+.absolute-position-image {
+    position: absolute; 
+    right: 0; 
+    padding-left: 5vw;
 }
 
 /* responsiveness */

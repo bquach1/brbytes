@@ -110,8 +110,15 @@ let paragraphBlock =
 <div class="paragraph-block">
 ${coloredHeader "indigo" "xlarge" "${heading}"}
 <h4>${content}</h4>
-</div>
+</div>''
+
+let accordionBox =
+    \(heading: Text)->
+    \(content : Text)->
 ''
+<div class="w3-grey accordion-box">
+<h2 class="w3-yellow">${heading}</h2>
+${content}</div>''
 
 let underlinedColoredHeader =
     \(color : Text)->
