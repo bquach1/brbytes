@@ -49,6 +49,7 @@
                             <a href="/about2.html" class="w3-bar-item">Our Goals</a>
                             <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
                             <a href="/team.html" class="w3-bar-item">Our Team</a>
+                            <a href="/contact.html" class="w3-bar-item">Contact</a>
 			            </div>
 		            </div>
 		        </div>
@@ -71,6 +72,7 @@
         <a href="/about2.html">Our Goals</a><br>
 		<a href="/coming-soon.html">Participating Schools</a><br>
 		<a href="/team.html">Our Team</a><br>
+        <a href="/contact.html">Contact</a><br>
 	    </div>
         </div>
     </div>
