@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/landing-styles.css">
 </head>
 <body>
-    <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-padding w3-small">
+    <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
         <div class="w3-bar w3-light-grey w3-row">
             <div class="w3-col" style="width: fit-content">
                 <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
@@ -23,7 +23,7 @@
                 </div>
             </div>
 	    $if(default)$
-            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
+            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right" style="padding-top: 0;">
                 <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
             </div>
 	    $endif$
@@ -54,7 +54,7 @@
 			            </div>
 		            </div>
 		        </div>
-			$else$<h1 id="teacher-login-heading" class="w3-text-indigo w3-center no-margin w3-margin-top"><strong>Teacher Login</strong></h1>$endif$
+			$else$<h1 id="teacher-login-heading" class="w3-text-indigo w3-xxxlarge w3-center no-margin"><strong>Teacher Login</strong></h1>$endif$
             </div>
         </div>
         <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
