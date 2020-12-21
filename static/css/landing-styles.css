@@ -1,41 +1,165 @@
+/* general html tags */
+a {
+    text-decoration: none;
+}
+ul {
+    padding-left: inherit;
+}
+
+/* template layouting */
 .sticky {
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index: 1;
 }
 .footer {
     bottom: 0;
 }
-.no-margin {
-    margin:0;
-} 
 #navigation-hamburger {
     vertical-align: middle;
 }
-a {
-    text-decoration: none;
+#main-div {
+    padding: 100px 10% 100px 10%;
 }
+
+/* flexbox */
 .flexbox-container {
     display: flex; 
     width: 100%; 
     flex-wrap: wrap;
 }
 .flexbox-item {
-    margin: 10px;
+    margin: 8px;
     width: 30%;
+    align-items: flex-start;
     flex: 1 1 300px;
 }
-ul {
-    padding-left: inherit;
+
+/* tables*/
+.table-container {
+    display: table; 
+    border-spacing: 5px; 
+    margin: 0 auto;
 }
-#main-div {
-    padding: 100px 10% 100px 10%;
+.table-item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
-@media only screen and (max-width: 1230px) {
-    #navigation-header {
+
+/* boxes */
+.box-item {
+    margin: 3%; 
+    padding: 25px; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+.box-item ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* accordian boxes */
+.accordion-box {
+    width: 90%; 
+    max-width: 500px;
+    margin: 24px auto; 
+    padding: 16px 0;
+}
+.accordion-box * {
+    text-align: left; 
+    margin: 0;
+    padding: 8px 12px;
+}
+.accordion-box div {
+    padding-bottom: 0;
+} 
+
+/* item sizes */
+.item-small {
+    width: 150px; 
+    height: 150px; 
+}
+.item-medium {
+    width: 225px;
+    height: 225px;
+}
+.item-large{ 
+    width: 300px; 
+    height: 300px; 
+}
+
+/* paragraph blocks */
+.paragraph-block {
+    padding: 16px 0;
+}
+.paragraph-block h1 {
+    font-weight: 500;
+}
+.paragraph-block *{
+    margin: 0;
+}
+
+/* general helper classes */
+.no-margin {
+    margin:0;
+}
+.clickable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+.left-padded-div {
+    padding-left: 5vw;
+}
+
+/* specific element classes */
+.my-slides {
+    width: 100%;
+    z-index: -1;
+}
+.absolute-position-image {
+    position: absolute; 
+    right: 0; 
+    padding-left: 5vw;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 500px) {
+    #navigation-contact {
         display: none;
     }
 }
-@media only screen and (min-width: 1230px) {
+@media only screen and (max-width: 600px) {
+    .absolute-position-image {
+        position: relative;
+        padding-left: 0;
+    }
+    .item-small {
+        width: 75px;
+        height: 75px;
+        font-size: 10px;
+    }
+    .left-padded-div {
+    	padding-left: 0;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #navigation-logo-heading {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1019px) {
+    #navigation-header {
+        display: none;
+    }
+    #teacher-login-heading {
+	display: none;
+    }	
+}
+@media only screen and (min-width: 1020px) {
     #navigation-hamburger {
         display: none;
     }
