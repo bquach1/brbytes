@@ -1,3 +1,5 @@
+let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
+
 let accordionBox =
     \(id : Text)->
     \(heading: Text)->
@@ -163,15 +165,21 @@ function showDivs(n) {
 </script>''
 
 let slideshowImage =
-    \(filename : Text)->
+    \(prefix : Text) ->
+    \(filename : Text) ->
 ''
 <div class="my-slides w3-row-padding">
 <div class="w3-display-container" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
-<img src="images/${filename}" style="width: 100%;">
+<img src="images/${prefix}${filename}" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
 </div>
 </div>''
+
+let slideshowImages =
+    \(prefix : Text) ->
+    \(filenames : List Text) ->
+concatMapSep "\n" Text (slideshowImage prefix) filenames
 
 let teamBio =
     \(image : Text)->
