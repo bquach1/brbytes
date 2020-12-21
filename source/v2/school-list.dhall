@@ -6,45 +6,45 @@ ${thirdsContainer
 ''
 ${accordionBox "ebrps" "East Baton Rouge Parish Schools"
 ''
-Liberty High School
+[Liberty High School](/courses)
 
-Baton Rouge High School
+[Baton Rouge High School](/courses)
 
-Belaire High School
+[Belaire High School](/courses)
 
-Broadmoor High School
+[Broadmoor High School](/courses)
 
 ''}
 ''
 ''
 ${accordionBox "eps" "Evangaline Parish Schools"
 ''
-Mamou High School
+[Mamou High School](/courses)
 
-Pine Prairie High School
+[Pine Prairie High School](/courses)
 
-Ville Platte High School
+[Ville Platte High School](/courses)
 
 ''}
 ${accordionBox "pcps" "Pointe Coupee Parish Schools"
 ''
-Livonia High School
+[Livonia High School](/courses)
 
-Stem Magnet Academy
+[Stem Magnet Academy](/courses)
 
 ''}
 ''
 ''
 ${accordionBox "wps" "Washington Parish Schools"
 ''
-Franklinton High School
+[Franklinton High School](/courses)
 
-Pine High School
+[Pine High School](/courses)
 
 ''}
 ${accordionBox "wfps" "West Feliciana Parish Schools"
 ''
-West Feliciana High School
+[West Feliciana High School](/courses)
 
 ''}
 ''}
