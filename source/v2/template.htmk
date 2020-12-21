@@ -27,7 +27,7 @@
             </div>
 	    <div class="w3-bar-block w3-rest w3-right">
                 <div class="w3-row w3-right">
-			        <p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
+			        <p id="navigation-contact"><em>Contact BRBytes: <a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
                 </div>        
 		<div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
@@ -46,6 +46,7 @@
 		    	        <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
 		                <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
                             <a href="/about.html" class="w3-bar-item">Overview</a>
+                            <a href="/about2.html" class="w3-bar-item">Our Goals</a>
                             <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
                             <a href="/team.html" class="w3-bar-item">Our Team</a>
 			            </div>
@@ -67,6 +68,7 @@
             <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
 	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
 		<a href="/about.html">Overview</a><br>
+        <a href="/about2.html">Our Goals</a><br>
 		<a href="/coming-soon.html">Participating Schools</a><br>
 		<a href="/team.html">Our Team</a><br>
 	    </div>

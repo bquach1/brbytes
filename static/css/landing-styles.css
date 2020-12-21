@@ -127,14 +127,9 @@ ul {
 }
 
 /* responsiveness */
-@media only screen and (max-width: 334px) {
-    #navigation-contact {
-	display: none;
-    }
-}
 @media only screen and (max-width: 500px) {
-    #navigation-logo-image {
-	display: none;
+    #navigation-contact {
+        display: none;
     }
 }
 @media only screen and (max-width: 600px) {
