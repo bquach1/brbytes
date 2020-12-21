@@ -20,3 +20,4 @@ build course-list.dhall 100px 0 100px center
 build school-list.dhall 100px 10% 100px left
 build pathways.dhall 100px 4% 100px left
 build coming-soon.dhall 100px 5% 100px center
+build contact.dhall 100px 0 100px center
