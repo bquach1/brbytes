@@ -11,45 +11,47 @@
 </head>
 <body>
     <div class="sticky w3-light-grey w3-bottombar w3-border-yellow w3-padding w3-small">
-        <div class="w3-bar w3-light-grey w3-cell-row">
-            <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
-		    <a href="/landing.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+        <div class="w3-bar w3-light-grey w3-row">
+            <div class="w3-col" style="width: fit-content">
+                <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
+                    <a href="/landing.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+                </div>
+                <div id="navigation-logo-heading" class="w3-bar-item">
+                    <p class="no-margin">Baton Rouge:</p> 
+                    <p class="no-margin">Bringing Youth Technology,</p>
+                    <p class="no-margin">Education and Success</p>
+                </div>
             </div>
-            <div id="navigation-logo-heading" class="w3-bar-item">
-		<p class="no-margin">Baton Rouge:</p> 
-                <p class="no-margin">Bringing Youth Technology,</p>
-                <p class="no-margin">Education and Success</p>
-            </div>
-            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
+	                <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
                 <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
             </div>
-            <div class="w3-bar-block w3-right">
+	    	    <div class="w3-bar-block w3-rest  w3-right ">
                 <div class="w3-row w3-right">
-			<p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
-                </div>               
-                <div id="navigation-header" class="w3-row w3-text-indigo">
+			        <p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
+                </div>        
+				<div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
-		    <div class="dropdown-button" style="display: inline-block;">
-		    	<a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
-			<div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
-			    <a href="/pathways.html" class="w3-bar-item">Pathways</a>
-			    <a href="/course-descriptions.html" class="w3-bar-item">Course Descriptions</a>
-			    <a href="#" class="w3-bar-item">Careers in Computing</a>
-			</div>
-		    </div>
-		    <a class="w3-padding" href="/school-list.html"><strong>SCHOOLS</strong></a>
+		            <div class="dropdown-button" style="display: inline-block;">
+		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
+			            <div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
+                            <a href="/pathways.html" class="w3-bar-item">Pathways</a>
+                            <a href="/course-descriptions.html" class="w3-bar-item">Course Descriptions</a>
+                            <a href="#" class="w3-bar-item">Careers in Computing</a>
+			            </div>
+		            </div>
+		            <a class="w3-padding" href="/school-list.html"><strong>SCHOOLS</strong></a>
                     <a class="w3-padding" href="#"><strong>NEWSLETTERS</strong></a>
-		    <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
-		    	<a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
-		        <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
-			    <a href="/about.html" class="w3-bar-item">Overview</a>
-			    <a href="#" class="w3-bar-item">Participating Schools</a>
-			    <a href="/team.html" class="w3-bar-item">Our Team</a>
-			</div>
-		    </div>
-		</div>
-            </div>
+		            <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
+		    	        <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
+		                <div id="about-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block" style="right: 0;">
+                            <a href="/about.html" class="w3-bar-item">Overview</a>
+                            <a href="#" class="w3-bar-item">Participating Schools</a>
+                            <a href="/team.html" class="w3-bar-item">Our Team</a>
+			            </div>
+		            </div>
+		        </div>
+			            </div>
         </div>
         <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
             <a href="/cms/login"><strong>TEACHERS</strong></a><br>
@@ -70,7 +72,7 @@
 	    </div>
         </div>
     </div>
-    <div id="main-div" style="padding: 100px 0 100; text-align: center; overflow: auto;">
+    <div id="main-div" style="padding: 100px 0 100px; text-align: center; overflow: auto;">
     <!--this div contains the body of the page-->
 	<section id="students-select-your-class-to-sign-in." style="padding: 16px 0;">
 <h3><strong>Students, select your class to sign in.</strong></h3>

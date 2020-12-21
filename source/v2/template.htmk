@@ -22,14 +22,17 @@
                     <p class="no-margin">Education and Success</p>
                 </div>
             </div>
+	    $if(default)$
             <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right">
                 <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
             </div>
-            <div class="w3-bar-block w3-rest">
+	    $endif$
+	    <div class="w3-bar-block w3-rest $if(default)$ w3-right $endif$">
                 <div class="w3-row w3-right">
 			        <p><em><span id="navigation-contact">Contact BRBytes: </span><a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
-                </div>               
-                <div id="navigation-header" class="w3-row w3-hide w3-text-indigo">
+                </div>        
+		$if(default)$
+		<div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
 		            <div class="dropdown-button" style="display: inline-block;">
@@ -51,7 +54,7 @@
 			            </div>
 		            </div>
 		        </div>
-                <h1 class="w3-text-indigo no-margin w3-margin-top"><strong>Teacher Login</strong></h1>
+			$else$<h1 id="teacher-login-heading" class="w3-text-indigo w3-center no-margin w3-margin-top"><strong>Teacher Login</strong></h1>$endif$
             </div>
         </div>
         <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
