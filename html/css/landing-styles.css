@@ -31,6 +31,7 @@ ul {
 .flexbox-item {
     margin: 8px;
     width: 30%;
+    align-items: flex-start;
     flex: 1 1 300px;
 }
 
