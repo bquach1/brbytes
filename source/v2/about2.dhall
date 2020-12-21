@@ -6,7 +6,12 @@ ${overlappingImageContainer
 ''
 ${leftAlign
 ''
-BRBytes was formed through a Research Practitioner Partnership between East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU) to bridge the gap in computer science and computational thinking education in Louisiana. The program does this by developing and implementing several middle and high school courses in EBRPSS and surrounding school districts.''}
+BRBytes was formed through a Research Practitioner Partnership between
+East Baton Rouge Parish School System (EBRPSS) and Louisiana State University
+(LSU) to bridge the gap in computer science and computational thinking
+education in Louisiana. The program does this by developing and implementing
+several middle and high school courses in EBRPSS and surrounding school
+districts.''}
 
 ${coloredCircle "yellow"
 ''
@@ -22,7 +27,8 @@ ${coloredCircle "yellow"
 
 ${coloredHeader "indigo" "xlarge" "Why Computer Science?"}
 
-Louisiana currently ranks last in computer science and computational thinking education with only 16% of public schools teaching these classes.''}
+Louisiana currently ranks last in computer science and computational thinking
+education with only 16% of public schools teaching these classes.''}
 ''
 "placeholder.jpg"}
 ${purpleBackgroundContainer 
