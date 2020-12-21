@@ -8,8 +8,8 @@ title: "Landing"
 ${slideshowImages "Banners/2101/"
     [ "CommunityOfPracticeJanuary.png"
     , "HackAThon.png"
-    , "HackAThon2.png"
     , "NewsletterBannerDecember.png"
+    , "HackAThon2.png"
     ]}
 ${leftAlign
 ''
