@@ -1,6 +1,18 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
 
+let SCS = {color = "green", name = "SCS"}
+
+let ICT = {color = "indigo", name = "ICT"}
+
+let CEW = {color = "purple", name = "CEW"}
+
+let CYB = {color = "pink", name = "CYB"}
+
+let DMA = {color = "teal", name = "DMA"}
+
+let NUL = [] : List {color : Text, name : Text}
+
 let accordionBox =
     \(id : Text)->
     \(heading: Text)->
@@ -15,6 +27,11 @@ let backgroundImage =
     \(filename : Text)->
 ''
 <style>body{background-image: url('images/${filename}');background-size: cover;}</style>''
+
+let badges =
+    \(badgeList : List {color : Text, name : Text})->
+''
+${concatMap {color : Text, name : Text} (λ(n : {color : Text, name : Text}) -> "<a class=\"w3-${n.color} w3-small w3-padding-small\" href=\"#\">${n.name}</a>\n") badgeList}''
 
 let cellRow =
     \(content : Text)->
@@ -199,6 +216,19 @@ let paragraphBlock =
 <div class="paragraph-block">
 ${coloredHeader "indigo" "xlarge" "${heading}"}
 <h4>${content}</h4>
+</div>''
+
+let post = 
+    \(title : Text) ->
+    \(author : Text) ->
+    \(badgeList : List {color : Text, name : Text}) ->
+    \(content : Text) ->
+''
+<div class="post">
+    <h2>${title}</h2><br>
+	<span class="w3-text-grey">${author}</span><br>
+    ${badges badgeList}<br>
+    ${content}
 </div>''
 
 let purpleBackgroundContainer =
