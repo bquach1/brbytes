@@ -15,6 +15,17 @@ let cellRow =
 ''
 <div class="w3-cell-row">${content}</div>''
 
+let centeredContainer =
+    \(content : Text)->
+''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">${content}</div>
+<div class="w3-col s0 l3 w3-container">
+</div>
+</div>''
+
 let coloredCircle =
     \(color : Text)->
     \(content : Text)->
@@ -30,6 +41,10 @@ let coloredHeader =
 
 let courseList =
 ''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">
 <div class="w3-cell-row">
 <div class="w3-cell">
 <ul class="pure-list">
@@ -55,6 +70,10 @@ let courseList =
 <a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="w3-col s0 l3 w3-container">
 </div>
 </div>''
 
@@ -128,6 +147,10 @@ ${content}
 
 let loginForm =
 ''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">
 <div class="w3-cell-row w3-padding-32">
 <div class="w3-cell w3-light-grey w3-padding-16 w3-center">
 <form class="w3-left-align" style="width: fit-content; width: -moz-fit-content; margin: auto;">
@@ -137,6 +160,10 @@ let loginForm =
 <input type="password" placeholder="Password" name="password"><br>
 <button type="submit" class="w3-cell-row w3-button w3-indigo w3-margin-top">Login</button>
 </form>    
+</div>
+</div>
+</div>
+<div class="w3-col s0 l3 w3-container">
 </div>
 </div>''
 
