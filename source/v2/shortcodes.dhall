@@ -225,10 +225,10 @@ let post =
     \(content : Text) ->
 ''
 <div class="post">
-    <h2>${title}</h2><br>
-	<span class="w3-text-grey">${author}</span><br>
-    ${badges badgeList}<br>
-    ${content}
+<h2>${title}</h2><br>
+<span class="w3-text-grey">${author}</span><br>
+${badges badgeList}<br>
+${content}
 </div>''
 
 let purpleBackgroundContainer =
