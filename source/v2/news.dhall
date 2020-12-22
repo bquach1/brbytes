@@ -3,11 +3,12 @@
 title: "News"
 ---
 
-${badges [ICT]}
-
-${badges [SCS, ICT, CEW, CYB, DMA]}
-
-${badges NUL}
-
-${post "Title" "Me" NUL "Hi"}
+${leftAlign
+''
+${post "Title" "Me" [SCS, ICT] 
+''
+What's poppin.
+Brand new whip just hopped in.
+I got options.''}
+''}
 ''
