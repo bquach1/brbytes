@@ -1,4 +1,5 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
+let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
 
 let accordionBox =
     \(id : Text)->
