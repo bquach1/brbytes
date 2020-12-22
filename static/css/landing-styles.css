@@ -114,6 +114,20 @@ ul {
 .left-padded-div {
     padding-left: 5vw;
 }
+.pure-link {
+    display: block;
+    opacity: 1;
+    font-size: 18px;
+    padding: 8px;
+}
+.pure-list {
+    list-style: none; 
+    margin: 0;
+    background-color: rgb(211,211,211,.6);
+}
+.pure-link:hover {
+    background-color: #ffeb3b !important;
+}
 
 /* specific element classes */
 .my-slides {

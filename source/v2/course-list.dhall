@@ -1,21 +1,11 @@
 ''
 ---
-title: "Course List"
+title: "Courses"
 ---
-${padding "16px 0"
-''
-### **Students, select your class to sign in.**
-''}
 
-${accordionBox "lhs" "Liberty High School"
-''
-Introduction to Computational Thinking
+# Fal 2020
 
-Data Manipulation and Analysis
+### Computing Pathway Courses
 
-Cyber Security
-
-Programming for STEM
-
-''}
+${courseList}
 ''

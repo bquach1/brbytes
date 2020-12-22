@@ -28,6 +28,36 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
+let courseList =
+''
+<div class="w3-cell-row">
+<div class="w3-cell">
+<ul class="pure-list">
+<li>
+<a class="pure-link" href="/courses/cew/20c/">Intro to STEM Pathways and Careers</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/cew/20b/lessons.html">Computing Everywhere (without Intro to STEM)</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/cyb/20c/">Cyber Security</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/dma/20c/">Data Manipulation and Analysis</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/ict/20c/index2012.html">Intro to Computational Thinking</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/prg/20c/">Programming for STEM</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
+</li>
+</ul>
+</div>
+</div>''
+
 let fiveRings = 
     \(text1 : Text)->
     \(text2 : Text)->
@@ -93,6 +123,21 @@ let leftAlign =
 ''
 <div class="w3-left-align w3-padding-small">
 ${content}
+</div>''
+
+
+let loginForm =
+''
+<div class="w3-cell-row w3-padding-32">
+<div class="w3-cell w3-light-grey w3-padding-16 w3-center">
+<form class="w3-left-align" style="width: fit-content; width: -moz-fit-content; margin: auto;">
+<label for="username">Username</label><br>
+<input type="text" placeholder="Username" name="username"><br>
+<label for="password">Password</label><br>
+<input type="password" placeholder="Password" name="password"><br>
+<button type="submit" class="w3-cell-row w3-button w3-indigo w3-margin-top">Login</button>
+</form>    
+</div>
 </div>''
 
 let overlappingImageContainer = 
