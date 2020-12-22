@@ -5,14 +5,18 @@ title: "News"
 ${twoThirdsContainer
 ''
 ${pdf "assets/NewsLetter-Nov20.pdf"}''
-"Hi"}
+''
+${coloredHeader "indigo" "xxlarge" "Previous Newsletters"}
+
+### [October](assets/NewsLetter-Oct20.pdf)
+
+### [September](#)
+''}
 
 ${leftAlign
 ''
-${post "Title" "Me" [SCS, ICT] 
+${post "Title" "Author" [SCS, ICT] 
 ''
-What's poppin.
-Brand new whip just hopped in.
-I got options.''}
+Content goes here.''}
 ''}
 ''

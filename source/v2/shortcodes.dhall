@@ -152,7 +152,7 @@ ${content}
 let flexBoxImage =
 \(filename : Text)->
 ''
-<img class="flexbox-item" src="images/${filename}">''
+<img class="flexbox-item" src="images/${filename}" style="height:100%">''
 
 let image =
 \(filename : Text)->
