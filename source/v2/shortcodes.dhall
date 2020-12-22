@@ -218,6 +218,24 @@ ${coloredHeader "indigo" "xlarge" "${heading}"}
 <h4>${content}</h4>
 </div>''
 
+let pdf =
+    \(filename : Text) ->
+''
+<object
+data="${filename}"
+type="application/pdf"
+width="60%"
+height="400vh">
+<iframe
+src="${filename}"
+width="60%"
+height="400vh"
+style="border: none;">
+<p>Your browser does not support PDFs.
+<a href = "${filename}">Download the PDF</a>.</p>
+</iframe>
+</object>''
+
 let post = 
     \(title : Text) ->
     \(author : Text) ->
