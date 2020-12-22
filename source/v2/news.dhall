@@ -2,7 +2,11 @@
 ---
 title: "News"
 ---
-${pdf "images/NewsLetter-Nov20.pdf"}
+${twoThirdsContainer
+''
+${pdf "assets/NewsLetter-Nov20.pdf"}''
+"Hi"}
+
 ${leftAlign
 ''
 ${post "Title" "Me" [SCS, ICT] 

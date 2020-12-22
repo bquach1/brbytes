@@ -224,12 +224,12 @@ let pdf =
 <object
 data="${filename}"
 type="application/pdf"
-width="60%"
-height="400vh">
+width="100%"
+height="500px">
 <iframe
 src="${filename}"
-width="60%"
-height="400vh"
+width="100%"
+height="500px"
 style="border: none;">
 <p>Your browser does not support PDFs.
 <a href = "${filename}">Download the PDF</a>.</p>
@@ -333,11 +333,13 @@ let thirdsContainer =
 </div>''
 
 let twoThirdsContainer =
-    \(smallContent : Text)->
     \(largeContent : Text)->
+    \(smallContent : Text)->
 ''
-<div class="w3-col m8 w3-padding">${smallContent}</div>
-<div class="w3-col m4 w3-padding">${largeContent}</div>''
+<div class="w3-row">
+<div class="w3-col m8 w3-padding">${largeContent}</div>
+<div class="w3-col m4 w3-padding">${smallContent}</div>
+</div>''
 
 let underlinedColoredHeader =
     \(color : Text)->
