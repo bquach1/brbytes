@@ -10,13 +10,10 @@ let accordionBox =
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
 
-let backgroundIMage =
+let backgroundImage =
     \(filename : Text)->
 ''
-<style>
-body{
-background-image: url('images/${filename}');
-background-size: cover;}''
+<style>body{background-image: url('images/${filename}');background-size: cover;}</style>''
 
 let cellRow =
     \(content : Text)->
