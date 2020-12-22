@@ -2,6 +2,7 @@
 ---
 title: "Courses"
 ---
+${backgroundImage "hacking.jpg"}
 
 # Fal 2020
 
