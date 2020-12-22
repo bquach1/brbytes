@@ -31,7 +31,7 @@
                 </div>        
 		<div id="navigation-header" class="w3-row w3-text-indigo">
                     <a class="w3-padding" href="/teacher-login.html"><strong>TEACHERS</strong></a>
-                    <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
+                    <a class="w3-padding" href="/course-list.html"><strong>STUDENTS</strong></a>
 		            <div class="dropdown-button" style="display: inline-block;">
 		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
 			            <div id="parents-dropdown" class="dropdown-content w3-dropdown-content w3-light-grey w3-bar-block">
@@ -57,7 +57,7 @@
         </div>
         <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large">
             <a href="/cms/login"><strong>TEACHERS</strong></a><br>
-            <a href="/courses/"><strong>STUDENTS</strong></a><br>
+            <a href="/course-list.html"><strong>STUDENTS</strong></a><br>
             <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
 	    <div id="parent-dropdown-mobile" class="dropdown-content w3-hide">
 		<a href="/pathways.html">Pathways</a><br>
