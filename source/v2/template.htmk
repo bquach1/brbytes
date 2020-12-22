@@ -30,7 +30,7 @@
 			        <p id="navigation-contact"><em>Contact BRBytes: <a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
                 </div>        
 		<div id="navigation-header" class="w3-row w3-text-indigo">
-                    <a class="w3-padding" href="/cms/login"><strong>TEACHERS</strong></a>
+                    <a class="w3-padding" href="/teacher-login.html"><strong>TEACHERS</strong></a>
                     <a class="w3-padding" href="/courses/"><strong>STUDENTS</strong></a>
 		            <div class="dropdown-button" style="display: inline-block;">
 		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
