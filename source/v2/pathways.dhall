@@ -12,6 +12,14 @@ ${smallPadding
 ${paragraphBlock "LSU STEM Certification Pathways"
 ''
 #### LSU STEM Pathways allow high school students to enroll in project and inquiry based courses to earn industry-promulgated credentials, university-issued certificates, and/or dual enrollment credit.
+
+#### Students can graduate from STEM Pathways with a career-tech diploma or enhance their university-prep diploma with a Silver or Gold STEM Diploma Seal. The Silver Seal is earned by completing the four required courses in one Pathway. The Gold Seal is earned by completing four required courses, plus an additional four courses from that same Pathway.
+
+#### LSU STEM Pathway courses are offered in 35 public and private high schools across 20 Louisiana school districts.
+
+#### There are four Pathway options: Biomedical Sciences, Computing, Digital Media & Arts, and Pre-Engineering. The BRBytes ICT course is required for all Pathways.
+
+#### For more information about the LSU STEM Certification Pathways, visit [https://lsupathways.com/](https://lsupathways.com/).
 ''}
 
 ${smallPadding

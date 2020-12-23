@@ -10,14 +10,13 @@ ${pdf "assets/NewsLetter-Nov20.pdf"}''
 ''
 ${coloredHeader "indigo" "xxlarge" "Previous Newsletters"}
 
-### [October](assets/NewsLetter-Oct20.pdf)
-
-### [September](#)
+### [October 2020](assets/NewsLetter-Oct20.pdf)
 ''}
 
 ${leftAlign
 ''
 ${coloredHeader "indigo" "xxlarge" "Announcements"}
+
 ${post "Title" "Author" [SCS, ICT] 
 ''
 Content goes here.''}
