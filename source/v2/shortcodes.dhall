@@ -33,7 +33,7 @@ let backgroundImage =
 let badges =
     \(badgeList : List {color : Text, name : Text, link : Text})->
 ''
-${concatMap {color : Text, name : Text, link : Text} (λ(n : {color : Text, name : Text, link : Text}) -> "<a class=\"w3-${n.color} w3-small w3-padding-small\" href=\"${n.link}\">${n.name}</a>\n") badgeList}''
+${concatMap {color : Text, name : Text, link : Text} (λ(n : {color : Text, name : Text, link : Text}) -> "<a class=\"badge w3-${n.color} w3-small w3-padding-small\" href=\"${n.link}\">${n.name}</a>\n") badgeList}''
 
 let cellRow =
     \(content : Text)->

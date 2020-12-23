@@ -141,10 +141,10 @@
     right: 0; 
     padding-left: 5vw;
 }
-.post a {
+.badge {
     text-decoration: none;
 }
-.post a:hover {
+.badge:hover {
     text-decoration: underline;
 }
 
