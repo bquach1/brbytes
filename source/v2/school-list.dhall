@@ -2,6 +2,8 @@
 ---
 title: "School List"
 ---
+#### **Students, select your school to be taken to your school's course listing and sign in to your class.**
+
 ${thirdsContainer
 ''
 ${accordionBox "ebrps" "East Baton Rouge Parish Schools"
