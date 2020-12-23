@@ -42,10 +42,10 @@ ${paragraphBlock "East Baton Rouge Parish School System and Baton Rouge Communit
 ${smallPadding
 ''
 #### CTEC offers two programs of study for Computer Science.
-''}
 
 - IT Programming coursework focuses on creating and compiling your own programs. It includes training in C++ and JAVA.
 - IT Networking focuses on building computers, networking and secure infrastructure. It provides opportunities to earn certifications in CompTia and CIW, as well as dual enrollment with BRCC.
+''}
 
 ${smallPadding
 ''
