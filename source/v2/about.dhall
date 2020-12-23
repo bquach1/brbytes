@@ -23,6 +23,9 @@ To address workforce needs, the Louisiana Department of Education (LDoE) partner
 In 2019, BRBytes applied for and received two grants: the National Science Foundation’s
 Computer Science for All: Research Practitioner Partnerships Grant; and the U.S. Department of Education Office of Elementary and Secondary Education’s Education Innovation and Research (EIR) Program—Early-Phase Grant. Funds from these grants are currently facilitating the growth of BRBytes and research into the benefits of the curriculum.
 
+${coloredHeader "indigo" "xxlarge" "Why computational thinking and computer science?"}
+Computer and mathematical occupations are expected to have one of the largest 10-year job growth rates in Louisiana. Despite this growing need for a workforce well-versed in computer science, Louisiana is currently last in computer science education, with only 16% of public schools teaching courses on computer science or computational thinking. BRBytes is developing and implementing courses in schools across the state that will train students in these fields to prepare them for future careers. In addition, though the curriculum focuses on computer science and computational thinking, it does so with emphasis on mathematics to improve student understanding of Algebra 1 and Geometry.
+
 ''
 ''
 ${padding "10px" "${image "placeholder.jpg"}"}
