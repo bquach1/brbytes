@@ -1,17 +1,19 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
 
-let SCS = {color = "green", name = "SCS"}
+let SCS = {color = "green", name = "SCS", link = "#"}
 
-let ICT = {color = "indigo", name = "ICT"}
+let ICT = {color = "indigo", name = "ICT", link = "#"}
 
-let CEW = {color = "purple", name = "CEW"}
+let CEW = {color = "purple", name = "CEW", link = "#"}
 
-let CYB = {color = "pink", name = "CYB"}
+let CYB = {color = "pink", name = "CYB", link = "#"}
 
-let DMA = {color = "teal", name = "DMA"}
+let DMA = {color = "teal", name = "DMA", link = "#"}
 
-let NONE = [] : List {color : Text, name : Text}
+let NONE = [] : List {color : Text, name : Text, link : Text}
+
+let ALL = [SCS, ICT, CEW, CYB, DMA]
 
 let accordionBox =
     \(id : Text)->
@@ -29,9 +31,9 @@ let backgroundImage =
 <style>body{background-image: url('images/${filename}');background-size: cover;}</style>''
 
 let badges =
-    \(badgeList : List {color : Text, name : Text})->
+    \(badgeList : List {color : Text, name : Text, link : Text})->
 ''
-${concatMap {color : Text, name : Text} (λ(n : {color : Text, name : Text}) -> "<a class=\"w3-${n.color} w3-small w3-padding-small\" href=\"#\">${n.name}</a>\n") badgeList}''
+${concatMap {color : Text, name : Text, link : Text} (λ(n : {color : Text, name : Text, link : Text}) -> "<a class=\"w3-${n.color} w3-small w3-padding-small\" href=\"${n.link}\">${n.name}</a>\n") badgeList}''
 
 let cellRow =
     \(content : Text)->
@@ -239,7 +241,7 @@ style="border: none;">
 let post = 
     \(title : Text) ->
     \(author : Text) ->
-    \(badgeList : List {color : Text, name : Text}) ->
+    \(badgeList : List {color : Text, name : Text, link : Text}) ->
     \(content : Text) ->
 ''
 <div class="post">
