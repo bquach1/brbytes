@@ -18,7 +18,7 @@ let accordionBox =
     \(heading: Text)->
     \(content : Text)->
 ''
-<div class="w3-grey accordion-box">
+<div class="w3-grey accordion-box plain-links">
 <h2 class="w3-yellow w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
@@ -64,7 +64,7 @@ let coloredHeader =
 
 let courseList =
 ''
-<div class="w3-row">
+<div class="w3-row plain-links">
 <div class="w3-col s0 l3 w3-container">
 </div>
 <div class="w3-col s12 l6">
@@ -295,7 +295,7 @@ let slideshowImage =
     \(prefix : Text) ->
     \(filename : Text) ->
 ''
-<div class="my-slides w3-row-padding">
+<div class="my-slides w3-row-padding plain-links">
 <div class="w3-display-container" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
 <img src="images/${prefix}${filename}" style="width: 100%;">

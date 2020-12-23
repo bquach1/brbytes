@@ -13,12 +13,6 @@
 #main-div {
     padding: 100px 10% 100px 10%;
 }
-#navigation-header a {
-    text-decoration: none;
-}
-#navigation-menu a {
-    text-decoration: none;
-}
 
 /* flexbox */
 .flexbox-container {
@@ -115,6 +109,10 @@
 .left-padded-div {
     padding-left: 5vw;
 }
+.plain-links a {
+    text-decoration: none;
+}
+/* classes based on pure-css framework */
 .pure-link {
     display: block;
     opacity: 1;
