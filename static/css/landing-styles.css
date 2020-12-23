@@ -2,9 +2,6 @@
 a {
     text-decoration: none;
 }
-ul {
-    padding-left: inherit;
-}
 
 /* template layouting */
 .sticky {
@@ -33,6 +30,9 @@ ul {
     width: 30%;
     align-items: flex-start;
     flex: 1 1 300px;
+}
+.flexbox-item ul {
+    padding-left: inherit;
 }
 
 /* tables*/
