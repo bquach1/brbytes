@@ -11,7 +11,7 @@ let CYB = {color = "pink", name = "CYB"}
 
 let DMA = {color = "teal", name = "DMA"}
 
-let NUL = [] : List {color : Text, name : Text}
+let NONE = [] : List {color : Text, name : Text}
 
 let accordionBox =
     \(id : Text)->
@@ -245,7 +245,7 @@ let post =
 <div class="post">
 <h2>${title}</h2>  
 <div>
-<span class="w3-text-grey">${author}</span>  
+<span class="w3-text-grey w3-opacity">By ${author}</span>  
 ${badges badgeList}<br>  
 ${content}</div>
 </div>''
