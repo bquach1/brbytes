@@ -19,6 +19,7 @@ ${coloredHeader "indigo" "xxlarge" "Announcements"}
 
 ${post "Community of Practice Meetings" "Juana Moreno" NONE 
 ''
+
 ### Upcoming Meetings
 - Next meeting is one of these two dates (at your choice):
     - **Thursday, Jan 21 at 6pm**

@@ -246,7 +246,7 @@ let post =
 <h2>${title}</h2>  
 <div>
 <span class="w3-text-grey w3-opacity">By ${author}</span>  
-${badges badgeList}<br>  
+${badges badgeList}  
 ${content}</div>
 </div>''
 
