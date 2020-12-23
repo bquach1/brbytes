@@ -55,7 +55,7 @@ Pathway-specific courses were also approved for each of the 11 Jump Start 2.0 Pa
 ${post "Going back to School" "John Underwood" ALL
 ''
 
-We here at the LSU Computing Pathways want to reach out to you with all our best thoughts and hopes that you have weathered our recent storms safely. We know that this is a time of great stress, recovery, and hard work for so many in our educational family. The LSU team is here to offer academic and technical support as you recover. We want you to know we are here to lend a helping hand and offer ideas/tools to help you with the upcoming process of restating classes. This year has been a unique year of educational challenges, but as a team we will make it a successful one.''}
+We here at the LSU Computing Pathways want to reach out to you with all our best thoughts and hopes that you have weathered our recent storms safely. We know that this is a time of great stress, recovery, and hard work for so many in our educational family. The LSU team is here to offer academic and technical support as you recover. We want you to know we are here to lend a helping hand and offer ideas/tools to help you with the upcoming process of restating classes. This year has been a unique year of educational challenges, but as a team we will make it a successful one.
 
 Please be safe, take care of your loved ones, continue being amazing educators, and know we are here to help.
 ''}
@@ -90,6 +90,6 @@ Here is the contact information for the **BRBytes** grant (NSF and USDoE):
 
 - **BRBytes Principal Investigator** [Juana Moreno](mailto:moreno@brbytes.org) &#9742; (225) 578-7586 &#128241; (225) 436-6870
 - **EBRPSS-LSU Partnership Instructional Specialist:** [John Underwood](mailto:junderwood@brbytes.org) &#128241; (337) 351-9655
-
+''}
 ''}
 ''
