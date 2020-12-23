@@ -34,19 +34,14 @@ education with only 16% of public schools teaching these classes.''}
 ${purpleBackgroundContainer 
 ''
 
-${coloredHeader "indigo" "xxlarge" "**UPDATES**"}
-
-We are rebranding our traditional Saturday PD sessions as 
-Community of Practice Meetings to emphasize the building 
-of a community of practice among the BRBytes teachers. Also, 
-meetings are no longer just on Saturdays, as we now have alternative 
-dates on weekdays to accommodate everyone's preferences.''
+${coloredHeader "indigo" "xxlarge" "**OUR GOALS**"}
 ''
-**Upcoming Meetings:** Saturday, October 31 at 9am is the date for the 
-next Community of Practice meeting. If you cannot attend the 
-make-up day will be Thursday, November 5 at 6pm.
+''
 
-**Past Meetings:** The slides from October 3rd and 15th meetings 
-are now available.
+1. Increase principal, counselor and parent awareness about careers in computing and the importance of equity in the recruiting and advising of students in the area of computer science
+2. Increase the number of minority teachers from the existing pool of teachers who are willing and ready to teach computing courses
+3. Encourage the use of culturally responsive practices and pedagogies to inspire traditionally underrepresented groups to enter the field of computer science
+4. Increase student engagement in computing courses and their preparedness for further computing programs
+5. Promote student awareness and aspirations towards computing careers starting in middle school
 ''}
 ''
