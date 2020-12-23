@@ -64,12 +64,12 @@ let coloredHeader =
 
 let courseList =
 ''
-<div class="w3-row plain-links">
+<div class="w3-row">
 <div class="w3-col s0 l3 w3-container">
 </div>
 <div class="w3-col s12 l6">
 <div class="w3-cell-row">
-<div class="w3-cell">
+<div class="w3-cell plain-links">
 <ul class="pure-list">
 <li>
 <a class="pure-link" href="/courses/cew/20c/">Intro to STEM Pathways and Careers</a>
