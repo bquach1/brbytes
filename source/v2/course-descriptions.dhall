@@ -41,14 +41,14 @@ CompTIA A+ certification exams.
 
 ${paragraphBlock "INTERACTIVE COMPUTING: GRADES 10-12"
 ''
-#### Prerequisite: Introduction to Computational Thinking
+#### *Prerequisite: Introduction to Computational Thinking*
 
 #### This year-long course is for students in 10th grade and up. It focuses on the nuisances of programming for interacting with the real world in two representative areas: autonomous robots and the front end of web applications. Students learn how to iteratively approximate a software model to the realities of the physical hardware, how to write test suites and how to systematically debug their programs. Through fun and engaging projects, the students learn problem solving skills, such as programming robots to navigate mazes and play soccer, developing on-line pages to read sensors and control actuators in greenhouses, and automating devices at home with Internet of Things (IoT) technologies.
 ''}
 
 ${paragraphBlock "PROGRAMMING FOR STEM: GRADES 11-12"
 ''
-#### Prerequisite: Intro to Computational Thinking and either Data Manipulation and Analysis or Interactive Computing
+#### *Prerequisite: Intro to Computational Thinking and either Data Manipulation and Analysis or Interactive Computing*
 
 #### This year-long course expands the practice of software development in a variety of settings, so that students acquire a broad set of programming skills and a deeper understanding of software engineering principles. Students learn to plan, design and implement relatively large programming projects that require background research and teamwork. Topics include simulations, games and interactive online applications. Robust program design and sound software engineering practices are emphasized throughout the course.
 ''}
