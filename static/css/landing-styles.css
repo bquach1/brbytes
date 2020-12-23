@@ -95,23 +95,6 @@
     margin: 0;
 }
 
-/* general helper classes */
-.no-margin {
-    margin:0;
-}
-.clickable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-    cursor: pointer;
-}
-.left-padded-div {
-    padding-left: 5vw;
-}
-.plain-links a {
-    text-decoration: none;
-}
 /* classes based on pure-css framework */
 .pure-link {
     display: block;
@@ -130,6 +113,24 @@
     text-decoration: none;
 }
 
+/* general helper classes */
+.no-margin {
+    margin:0;
+}
+.clickable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+.left-padded-div {
+    padding-left: 5vw;
+}
+.plain-links a {
+    text-decoration: none;
+}
+
 /* specific element classes */
 .my-slides {
     width: 100%;
@@ -139,6 +140,12 @@
     position: absolute; 
     right: 0; 
     padding-left: 5vw;
+}
+.post a {
+    text-decoration: none;
+}
+.post a:hover {
+    text-decoration: underline;
 }
 
 /* responsiveness */
