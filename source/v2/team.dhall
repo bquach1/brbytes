@@ -11,20 +11,20 @@ ${teamBio "WilliamDines.jpg" "Name" "Job Title" "About"}''}
 ${cellRow 
 ''
 ${teamBio "MichaelGee.jpg" "Name" "Job Title" "About"}
-${teamBio "ChristopherLarson.jpg" "Name" "Job Title" "About"}
-${teamBio "BryceLee.jpg" "Name" "Job Title" "About"}''}
+${teamBio "ChristophLarson.jpg" "Name" "Job Title" "About"}
+${teamBio "BryceLee.png" "Name" "Job Title" "About"}''}
 ${cellRow 
 ''
 ${teamBio "TimothyLee.jpg" "Name" "Job Title" "About"}
-${teamBio "ModhuparnaManna.jpg" "Name" "Job Title" "About"}
+${teamBio "ModhuparnaManna.png" "Name" "Job Title" "About"}
 ${teamBio "JessicaMoon.jpg" "Name" "Job Title" "About"}''}
 ${cellRow 
 ''
-${teamBio "DebNorman.jpg" "Name" "Job Title" "About"}
+${teamBio "DeborahNorman.jpeg" "Name" "Job Title" "About"}
 ${teamBio "TomilolaOlaoye.jpg" "Name" "Job Title" "About"}
-${teamBio "JackThibodeaux" "Name" "Job Title" "About"}''}
+${teamBio "JackThibodeaux.jpg" "Name" "Job Title" "About"}''}
 ${cellRow 
 ''
 ${teamBio "SirazumTisha.jpg" "Name" "Job Title" "About"}
-${teamBio "KhanhVu.jpg" "Name" "Job Title" "About"}
+${teamBio "KhanhVu.png" "Name" "Job Title" "About"}''}
 ''
