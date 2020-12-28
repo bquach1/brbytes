@@ -1,6 +1,6 @@
 ''
 ---
-title: "About"
+title: "Our Goals"
 ---
 ${overlappingImageContainer 
 ''
