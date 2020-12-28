@@ -249,9 +249,9 @@ let post =
 <div class="post w3-card w3-margin-bottom">
 <div class="accent-color w3-padding">
 <h2>${title}</h2>  
-<div class="w3-text-grey w3-opacity">By ${author}</div>
+<div>By <span class="w3-text-indigo">${author}</span></div>
+${badges badgeList}
 </div>
-${badges badgeList}  
 <div class="w3-padding">${content}</div>
 </div>''
 
