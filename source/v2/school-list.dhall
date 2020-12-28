@@ -1,3 +1,6 @@
+let placeholderLink = "/courses.html"
+in
+
 ''
 ---
 title: "School List"
@@ -10,113 +13,113 @@ ${thirdsContainer
 ''
 ${accordionBox "ascension" "Acension Parish Schools"
 ''
-[East Ascension High School](/courses)
+[East Ascension High School](${placeholderLink})
 ''}
 
 ${accordionBox "centralCommunity" "Central Community School System"
 ''
-[Central High School](/courses)
+[Central High School](${placeholderLink})
 ''}
 
 ${accordionBox "cityOfBaker" "City of Baker Schools"
 ''
-[Baker High School](/courses)
+[Baker High School](${placeholderLink})
 ''}
 
 ${accordionBox "delhiCharter" "Delhi Charter School District"
 ''
-[Delhi Charter School](/courses)
+[Delhi Charter School](${placeholderLink})
 ''}
 
 
 ${accordionBox "eastBatonRouge" "East Baton Rouge Parish Schools"
 ''
-[Baton Rouge Magnet High School](/courses)
+[Baton Rouge Magnet High School](${placeholderLink})
 
-[Baton Rouge Center for Visual and Performing Arts](/courses)
+[Baton Rouge Center for Visual and Performing Arts](${placeholderLink})
 
-[Belaire High School](/courses)
+[Belaire High School](${placeholderLink})
 
-[Broadmoor High School](/courses)
+[Broadmoor High School](${placeholderLink})
 
-[Glen Oaks High School](/courses)
+[Glen Oaks High School](${placeholderLink})
 
-[Istrouma High School](/courses)
+[Istrouma High School](${placeholderLink})
 
-[Liberty High School](/courses)
+[Liberty High School](${placeholderLink})
 
-[McKinley High School](/courses)
+[McKinley High School](${placeholderLink})
 
-[Northeast High School](/courses)
+[Northeast High School](${placeholderLink})
 
-[Scotlandville High School](/courses)
+[Scotlandville High School](${placeholderLink})
 
-[Tara High School](/courses)
+[Tara High School](${placeholderLink})
 
-[Woodlawn High School](/courses)
+[Woodlawn High School](${placeholderLink})
 ''}
 
 ${accordionBox "evangeline" "Evangeline Parish School District"
 ''
-[Ville Platte High School](/courses)
+[Ville Platte High School](${placeholderLink})
 ''}
 ''
 ''
 ${accordionBox "livingston" "Livingston Parish Public School System"
 ''
-[Denham Springs High School](/courses)
+[Denham Springs High School](${placeholderLink})
 ''}
 
 ${accordionBox "orleans" "Orleans Parish School District"
 ''
-[Benjamin Franklin High School](/courses)
+[Benjamin Franklin High School](${placeholderLink})
 ''}
 
 ${accordionBox "pointeCoupee" "Pointe Coupee Parish Public School"
 ''
-[Livonia High School](/courses)
+[Livonia High School](${placeholderLink})
 
-[STEM Magnet Academy](/courses)
+[STEM Magnet Academy](${placeholderLink})
 ''}
 
 ${accordionBox "rapides" "Rapides Parish Public School"
 ''
-[Peabody Magnet High School](/courses)
+[Peabody Magnet High School](${placeholderLink})
 ''}
 ${accordionBox "stHelena" "St. Helena Parish School District"
 ''
-[St. Helena College and Career Academy](/courses)
+[St. Helena College and Career Academy](${placeholderLink})
 ''}
 
 ${accordionBox "stJames" "St. James Parish Schools"
 ''
-[Science and Math Academy](/courses)
+[Science and Math Academy](${placeholderLink})
 ''}
 ''
 ''
 ${accordionBox "stMartin" "St. Martin Parish Schools"
 ''
-[St. Martin High School](/courses)
+[St. Martin High School](${placeholderLink})
 ''}
 
 ${accordionBox "tangipahoa" "Tangipahoa Parish Schools"
 ''
-[Ponchatoula High School](/courses)
+[Ponchatoula High School](${placeholderLink})
 ''}
 
 ${accordionBox "washington" "Washington Parish Schools"
 ''
-[Pine High School](/courses)
+[Pine High School](${placeholderLink})
 ''}
 
 ${accordionBox "westFeliciana" "West Feliciana Parish Schools"
 ''
-[West Feliciana High School](/courses)
+[West Feliciana High School](${placeholderLink})
 ''}
 
 ${accordionBox "zachary" "Zachary Community Schools"
 ''
-[Zachary High School](/courses)
+[Zachary High School](${placeholderLink})
 ''}
 ''}
 
@@ -126,58 +129,58 @@ ${thirdsContainer
 ''
 ${accordionBox "central2" "Central Community School System"
 ''
-[Central Middle School](/courses)
+[Central Middle School](${placeholderLink})
 ''}
 
 ${accordionBox "eastBatonRouge2" "East Baton Rouge Parish School System"
 ''
-[Brookstown Middle School](/courses)
+[Brookstown Middle School](${placeholderLink})
 
-[Capitol Middle School](/courses)
+[Capitol Middle School](${placeholderLink})
 
-[IDEA Bridge Charter School](/courses)
+[IDEA Bridge Charter School](${placeholderLink})
 
-[Istrouma Middle School](/courses)
+[Istrouma Middle School](${placeholderLink})
 
-[Mayfair Laboratory School](/courses)
+[Mayfair Laboratory School](${placeholderLink})
 
-[Southeast Middle School](/courses)
+[Southeast Middle School](${placeholderLink})
 
-[Woodlawn Middle School](/courses)
+[Woodlawn Middle School](${placeholderLink})
 
-[Westdale Middle School](/courses)
+[Westdale Middle School](${placeholderLink})
 ''}
 ''
 ''
 ${accordionBox "delhi2" "Delhi Charter School District"
 ''
-[Delhi Charter School](/courses)
+[Delhi Charter School](${placeholderLink})
 ''}
 
 ${accordionBox "rapides2" "Rapides Parish Public Schools"
 ''
-[Alexandria Middle Magnet School](/courses)
+[Alexandria Middle Magnet School](${placeholderLink})
 ''}
 
 ${accordionBox "stHelena2" "St. Helena Parish School District"
 ''
-[St. Helena College and Career Academy](/courses)
+[St. Helena College and Career Academy](${placeholderLink})
 ''}
 ''
 ''
 ${accordionBox "stJohn2" "St. John the Baptist Parish Public School"
 ''
-[East St. John Preparatory Academy](/courses)
+[East St. John Preparatory Academy](${placeholderLink})
 ''}
 
 ${accordionBox "stMartin2" "St. Martin Parish Schools"
 ''
-[St. Martinville Junior High School](/courses)
+[St. Martinville Junior High School](${placeholderLink})
 ''}
 
 ${accordionBox "washington2" "Washington Parish Schools"
 ''
-[Pine Junior High School](/courses)
+[Pine Junior High School](${placeholderLink})
 ''}
 ''}
 ''
