@@ -21,7 +21,7 @@ let accordionBox =
     \(content : Text)->
 ''
 <div class="w3-grey accordion-box plain-links">
-<h2 class="w3-amber w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
+<h2 class="w3-yellow w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
 
@@ -70,7 +70,7 @@ let courseList =
 <div class="w3-col s0 l3 w3-container">
 </div>
 <div class="w3-col s12 l6">
-<div class="w3-cell-row">
+<div class="w3-cell-row w3-accent">
 <div class="w3-cell plain-links">
 <ul class="pure-list">
 <li>
@@ -145,7 +145,7 @@ let flexBoxItem =
     \(content : Text)->
 ''
 <div class="w3-grey w3-padding flexbox-item">
-<div class="accent-color w3-text-indigo">
+<div class="w3-accent w3-text-indigo">
 <h3 class="w3-padding"><strong>${title}</strong></h3>
 </div>
 ${content} 
@@ -177,7 +177,7 @@ let loginForm =
 </div>
 <div class="w3-col s12 l6">
 <div class="w3-cell-row w3-padding-32">
-<div class="w3-cell accent-color w3-padding-16 w3-center">
+<div class="w3-cell w3-accent w3-padding-16 w3-center">
 <form class="w3-left-align" style="width: fit-content; width: -moz-fit-content; margin: auto;">
 <label for="username">Username</label><br>
 <input type="text" placeholder="Username" name="username"><br>
