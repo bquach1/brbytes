@@ -106,6 +106,7 @@
     list-style: none; 
     margin: 0;
     padding-left: inherit;
+    background-color: rgb(225, 225, 225, .6);
 }
 .pure-link:hover {
     background-color: #ffeb3b !important;

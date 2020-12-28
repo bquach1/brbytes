@@ -1,4 +1,4 @@
-let placeholderLink = "/courses.html"
+let placeholderLink = "/course-list.html"
 in
 
 ''
