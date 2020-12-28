@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/landing-styles.css">
 </head>
 <body class="background-color">
-    <div class="sticky accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
+    <div class="sticky accent-color w3-bottombar w3-border-amber w3-small" style="padding: 8px 16px 0;">
         <div class="accent-color w3-bar w3-row">
             <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
                 <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
@@ -81,7 +81,7 @@
 	$body$       
     <!--end of body-->
     </div>
-    <div class="sticky footer accent-color w3-container w3-center w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
+    <div class="sticky footer accent-color w3-container w3-center w3-topbar w3-border-amber w3-padding-large w3-hide-small">
             <img class="w3-margin-left w3-margin-right" src="/images/Logos/usdoe.png" height="40vh">
             <img class="w3-margin-left w3-margin-right" src="/images/Logos/lsu.png" height="40vh">
             <img class="w3-margin-left w3-margin-right" src="/images/Logos/ebrpss.png" height="40vh">
