@@ -40,7 +40,7 @@
                             <a href="/coming-soon.html" class="w3-bar-item">Careers in Computing</a>
 			            </div>
 		            </div>
-		            <a class="w3-padding" href="/coming-soon.html"><strong>SCHOOLS</strong></a>
+		            <a class="w3-padding" href="/participating-schools.html"><strong>SCHOOLS</strong></a>
                     <div class="dropdown-button" style="display: inline-block;">
 		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('news-dropdown'); return false;"><strong>NEWS</strong></a>
 			            <div id="news-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
@@ -70,7 +70,7 @@
 		<a href="/course-descriptions.html">Course Descriptions</a><br>
 		<a href="/coming-soon.html">Careers in Computing</a><br>
 	    </div>
-            <a href="/coming-soon.html"><strong>SCHOOLS</strong></a><br>
+            <a href="/participating-schools.html"><strong>SCHOOLS</strong></a><br>
             <a class="dropdown-button" href="#" onclick="toggleDropdown('news-dropdown-mobile'); return false;"><strong>NEWS</strong></a><br>
 	    <div id="news-dropdown-mobile" class="dropdown-content w3-hide">
 		<a href="/newsletters.html">Newsletters</a><br>
