@@ -70,7 +70,7 @@ let courseList =
 <div class="w3-col s0 l3 w3-container">
 </div>
 <div class="w3-col s12 l6">
-<div class="w3-cell-row accent-color">
+<div class="w3-cell-row">
 <div class="w3-cell plain-links">
 <ul class="pure-list">
 <li>
