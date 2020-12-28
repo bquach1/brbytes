@@ -70,7 +70,7 @@ let courseList =
 <div class="w3-col s0 l3 w3-container">
 </div>
 <div class="w3-col s12 l6">
-<div class="w3-cell-row">
+<div class="w3-cell-row w3-accent">
 <div class="w3-cell plain-links">
 <ul class="pure-list">
 <li>
@@ -145,7 +145,7 @@ let flexBoxItem =
     \(content : Text)->
 ''
 <div class="w3-grey w3-padding flexbox-item">
-<div class="w3-light-grey w3-text-indigo">
+<div class="w3-accent w3-text-indigo">
 <h3 class="w3-padding"><strong>${title}</strong></h3>
 </div>
 ${content} 
@@ -177,7 +177,7 @@ let loginForm =
 </div>
 <div class="w3-col s12 l6">
 <div class="w3-cell-row w3-padding-32">
-<div class="w3-cell w3-light-grey w3-padding-16 w3-center">
+<div class="w3-cell w3-accent w3-padding-16 w3-center">
 <form class="w3-left-align" style="width: fit-content; width: -moz-fit-content; margin: auto;">
 <label for="username">Username</label><br>
 <input type="text" placeholder="Username" name="username"><br>
