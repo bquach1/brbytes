@@ -23,3 +23,4 @@ build coming-soon.dhall 100px 5% 100px center
 build contact.dhall 100px 0 100px center
 build teacher-login.dhall 100px 0 100px center
 build newsletters.dhall 100px 10% 100px center
+build announcements.dhall 100px 10% 100px center
