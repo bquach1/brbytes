@@ -7,8 +7,6 @@ title: "School List"
 ---
 #### **Students, select your school to be taken to your school's course listing and sign in to your class.**
 
-${coloredHeader "indigo" "xlarge" "**High Schools**"}
-
 ${thirdsContainer
 ''
 ${accordionBox "ascension" "Acension Parish Schools"
@@ -18,6 +16,8 @@ ${accordionBox "ascension" "Acension Parish Schools"
 
 ${accordionBox "centralCommunity" "Central Community School System"
 ''
+[Central Middle School](${placeholderLink})
+
 [Central High School](${placeholderLink})
 ''}
 
@@ -34,19 +34,29 @@ ${accordionBox "delhiCharter" "Delhi Charter School District"
 
 ${accordionBox "eastBatonRouge" "East Baton Rouge Parish Schools"
 ''
-[Baton Rouge Magnet High School](${placeholderLink})
-
 [Baton Rouge Center for Visual and Performing Arts](${placeholderLink})
+
+[Baton Rouge Magnet High School](${placeholderLink})
 
 [Belaire High School](${placeholderLink})
 
 [Broadmoor High School](${placeholderLink})
 
+[Brookstown Middle School](${placeholderLink})
+
+[Capitol Middle School](${placeholderLink})
+
 [Glen Oaks High School](${placeholderLink})
+
+[IDEA Bridge Charter School](${placeholderLink})
+
+[Istrouma Middle School](${placeholderLink})
 
 [Istrouma High School](${placeholderLink})
 
 [Liberty High School](${placeholderLink})
+
+[Mayfair Laboratory School](${placeholderLink})
 
 [McKinley High School](${placeholderLink})
 
@@ -54,9 +64,15 @@ ${accordionBox "eastBatonRouge" "East Baton Rouge Parish Schools"
 
 [Scotlandville High School](${placeholderLink})
 
+[Southeast Middle School](${placeholderLink})
+
 [Tara High School](${placeholderLink})
 
+[Woodlawn Middle School](${placeholderLink})
+
 [Woodlawn High School](${placeholderLink})
+
+[Westdale Middle School](${placeholderLink})
 ''}
 
 ${accordionBox "evangeline" "Evangeline Parish School District"
@@ -84,6 +100,8 @@ ${accordionBox "pointeCoupee" "Pointe Coupee Parish Public School"
 
 ${accordionBox "rapides" "Rapides Parish Public School"
 ''
+[Alexandria Middle Magnet School](${placeholderLink})
+
 [Peabody Magnet High School](${placeholderLink})
 ''}
 ${accordionBox "stHelena" "St. Helena Parish School District"
@@ -97,8 +115,14 @@ ${accordionBox "stJames" "St. James Parish Schools"
 ''}
 ''
 ''
+${accordionBox "stJohn" "St. John the Baptist Parish Public School"
+''
+[East St. John Preparatory Academy](${placeholderLink})
+''}
 ${accordionBox "stMartin" "St. Martin Parish Schools"
 ''
+[St. Martinville Junior High School](${placeholderLink})
+
 [St. Martin High School](${placeholderLink})
 ''}
 
@@ -109,6 +133,8 @@ ${accordionBox "tangipahoa" "Tangipahoa Parish Schools"
 
 ${accordionBox "washington" "Washington Parish Schools"
 ''
+[Pine Junior High School](${placeholderLink})
+
 [Pine High School](${placeholderLink})
 ''}
 
@@ -120,67 +146,6 @@ ${accordionBox "westFeliciana" "West Feliciana Parish Schools"
 ${accordionBox "zachary" "Zachary Community Schools"
 ''
 [Zachary High School](${placeholderLink})
-''}
-''}
-
-${coloredHeader "indigo" "xlarge" "**Middle Schools**"}
-
-${thirdsContainer
-''
-${accordionBox "central2" "Central Community School System"
-''
-[Central Middle School](${placeholderLink})
-''}
-
-${accordionBox "eastBatonRouge2" "East Baton Rouge Parish School System"
-''
-[Brookstown Middle School](${placeholderLink})
-
-[Capitol Middle School](${placeholderLink})
-
-[IDEA Bridge Charter School](${placeholderLink})
-
-[Istrouma Middle School](${placeholderLink})
-
-[Mayfair Laboratory School](${placeholderLink})
-
-[Southeast Middle School](${placeholderLink})
-
-[Woodlawn Middle School](${placeholderLink})
-
-[Westdale Middle School](${placeholderLink})
-''}
-''
-''
-${accordionBox "delhi2" "Delhi Charter School District"
-''
-[Delhi Charter School](${placeholderLink})
-''}
-
-${accordionBox "rapides2" "Rapides Parish Public Schools"
-''
-[Alexandria Middle Magnet School](${placeholderLink})
-''}
-
-${accordionBox "stHelena2" "St. Helena Parish School District"
-''
-[St. Helena College and Career Academy](${placeholderLink})
-''}
-''
-''
-${accordionBox "stJohn2" "St. John the Baptist Parish Public School"
-''
-[East St. John Preparatory Academy](${placeholderLink})
-''}
-
-${accordionBox "stMartin2" "St. Martin Parish Schools"
-''
-[St. Martinville Junior High School](${placeholderLink})
-''}
-
-${accordionBox "washington2" "Washington Parish Schools"
-''
-[Pine Junior High School](${placeholderLink})
 ''}
 ''}
 ''
