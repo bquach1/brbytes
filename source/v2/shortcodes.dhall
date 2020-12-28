@@ -1,19 +1,55 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
+let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
+
+let SCS = {color = "green", name = "SCS", link = "#"}
+
+let ICT = {color = "indigo", name = "ICT", link = "#"}
+
+let CEW = {color = "purple", name = "CEW", link = "#"}
+
+let CYB = {color = "pink", name = "CYB", link = "#"}
+
+let DMA = {color = "teal", name = "DMA", link = "#"}
+
+let NONE = [] : List {color : Text, name : Text, link : Text}
+
+let ALL = [SCS, ICT, CEW, CYB, DMA]
 
 let accordionBox =
     \(id : Text)->
     \(heading: Text)->
     \(content : Text)->
 ''
-<div class="w3-grey accordion-box">
+<div class="w3-grey accordion-box plain-links">
 <h2 class="w3-yellow w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
+
+let backgroundImage =
+    \(filename : Text)->
+''
+<style>body{background-image: url('images/${filename}');background-size: cover;}</style>''
+
+let badges =
+    \(badgeList : List {color : Text, name : Text, link : Text})->
+''
+${concatMap {color : Text, name : Text, link : Text} (λ(n : {color : Text, name : Text, link : Text}) -> "<a class=\"badge w3-${n.color} w3-small w3-padding-small\" href=\"${n.link}\">${n.name}</a>\n") badgeList}''
 
 let cellRow =
     \(content : Text)->
 ''
 <div class="w3-cell-row">${content}</div>''
+
+let centeredContainer =
+    \(content : Text)->
+''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">${content}</div>
+<div class="w3-col s0 l3 w3-container">
+</div>
+</div>''
 
 let coloredCircle =
     \(color : Text)->
@@ -27,6 +63,44 @@ let coloredHeader =
     \(content : Text)->
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
+
+let courseList =
+''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">
+<div class="w3-cell-row">
+<div class="w3-cell plain-links">
+<ul class="pure-list">
+<li>
+<a class="pure-link" href="/courses/cew/20c/">Intro to STEM Pathways and Careers</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/cew/20b/lessons.html">Computing Everywhere (without Intro to STEM)</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/cyb/20c/">Cyber Security</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/dma/20c/">Data Manipulation and Analysis</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/ict/20c/index2012.html">Intro to Computational Thinking</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/prg/20c/">Programming for STEM</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w3-col s0 l3 w3-container">
+</div>
+</div>''
 
 let fiveRings = 
     \(text1 : Text)->
@@ -80,7 +154,7 @@ ${content}
 let flexBoxImage =
 \(filename : Text)->
 ''
-<img class="flexbox-item" src="images/${filename}">''
+<img class="flexbox-item" src="images/${filename}" style="height:100%">''
 
 let image =
 \(filename : Text)->
@@ -93,6 +167,29 @@ let leftAlign =
 ''
 <div class="w3-left-align w3-padding-small">
 ${content}
+</div>''
+
+
+let loginForm =
+''
+<div class="w3-row">
+<div class="w3-col s0 l3 w3-container">
+</div>
+<div class="w3-col s12 l6">
+<div class="w3-cell-row w3-padding-32">
+<div class="w3-cell w3-light-grey w3-padding-16 w3-center">
+<form class="w3-left-align" style="width: fit-content; width: -moz-fit-content; margin: auto;">
+<label for="username">Username</label><br>
+<input type="text" placeholder="Username" name="username"><br>
+<label for="password">Password</label><br>
+<input type="password" placeholder="Password" name="password"><br>
+<button type="submit" class="w3-cell-row w3-button w3-indigo w3-margin-top">Login</button>
+</form>    
+</div>
+</div>
+</div>
+<div class="w3-col s0 l3 w3-container">
+</div>
 </div>''
 
 let overlappingImageContainer = 
@@ -121,6 +218,38 @@ let paragraphBlock =
 <div class="paragraph-block">
 ${coloredHeader "indigo" "xlarge" "${heading}"}
 <h4>${content}</h4>
+</div>''
+
+let pdf =
+    \(filename : Text) ->
+''
+<object
+data="${filename}"
+type="application/pdf"
+width="100%"
+height="500px">
+<iframe
+src="${filename}"
+width="100%"
+height="500px"
+style="border: none;">
+<p>Your browser does not support PDFs.
+<a href = "${filename}">Download the PDF</a>.</p>
+</iframe>
+</object>''
+
+let post = 
+    \(title : Text) ->
+    \(author : Text) ->
+    \(badgeList : List {color : Text, name : Text, link : Text}) ->
+    \(content : Text) ->
+''
+<div class="post">
+<h2>${title}</h2>  
+<div>
+<span class="w3-text-grey w3-opacity">By ${author}</span>  
+${badges badgeList}  
+${content}</div>
 </div>''
 
 let purpleBackgroundContainer =
@@ -168,7 +297,7 @@ let slideshowImage =
     \(prefix : Text) ->
     \(filename : Text) ->
 ''
-<div class="my-slides w3-row-padding">
+<div class="my-slides w3-row-padding plain-links">
 <div class="w3-display-container" style="width: 100%;">
 <a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
 <img src="images/${prefix}${filename}" style="width: 100%;">
@@ -188,7 +317,7 @@ let teamBio =
     \(about : Text)->
 ''
 <div class="w3-cell w3-mobile w3-center" style="width: 33.3%; padding: 32px 0;">
-<img class="w3-circle item-medium" src="images/${image}">
+<img class="w3-circle item-medium" src="images/Headshots/${image}" style="object-fit: cover;">
 <h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${title}</em></h3>
 <h4 style="width: 70%; margin: auto;">${about}</h4>
@@ -206,11 +335,13 @@ let thirdsContainer =
 </div>''
 
 let twoThirdsContainer =
-    \(smallContent : Text)->
     \(largeContent : Text)->
+    \(smallContent : Text)->
 ''
-<div class="w3-col m8 w3-padding">${smallContent}</div>
-<div class="w3-col m4 w3-padding">${largeContent}</div>''
+<div class="w3-row">
+<div class="w3-col m8 w3-padding">${largeContent}</div>
+<div class="w3-col m4 w3-padding">${smallContent}</div>
+</div>''
 
 let underlinedColoredHeader =
     \(color : Text)->

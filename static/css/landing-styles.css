@@ -1,11 +1,3 @@
-/* general html tags */
-a {
-    text-decoration: none;
-}
-ul {
-    padding-left: inherit;
-}
-
 /* template layouting */
 .sticky {
     position: fixed;
@@ -33,6 +25,9 @@ ul {
     width: 30%;
     align-items: flex-start;
     flex: 1 1 300px;
+}
+.flexbox-item ul {
+    padding-left: inherit;
 }
 
 /* tables*/
@@ -100,6 +95,24 @@ ul {
     margin: 0;
 }
 
+/* classes based on pure-css framework */
+.pure-link {
+    display: block;
+    opacity: 1;
+    font-size: 18px;
+    padding: 8px;
+}
+.pure-list {
+    list-style: none; 
+    margin: 0;
+    padding-left: inherit;
+    background-color: rgb(211,211,211,.6);
+}
+.pure-link:hover {
+    background-color: #ffeb3b !important;
+    text-decoration: none;
+}
+
 /* general helper classes */
 .no-margin {
     margin:0;
@@ -114,6 +127,9 @@ ul {
 .left-padded-div {
     padding-left: 5vw;
 }
+.plain-links a {
+    text-decoration: none;
+}
 
 /* specific element classes */
 .my-slides {
@@ -124,6 +140,12 @@ ul {
     position: absolute; 
     right: 0; 
     padding-left: 5vw;
+}
+.badge {
+    text-decoration: none;
+}
+.badge:hover {
+    text-decoration: underline;
 }
 
 /* responsiveness */
