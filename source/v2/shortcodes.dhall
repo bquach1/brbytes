@@ -156,6 +156,15 @@ let flexBoxImage =
 ''
 <img class="flexbox-item" src="images/${filename}" style="height:100%">''
 
+let headerDropdown =
+    \(id : Text)->
+    \(heading: Text)->
+    \(content : Text)->
+''
+<h2 class="clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
+<div id="${id}" class="w3-hide">${content}</div>
+''  
+
 let image =
 \(filename : Text)->
 ''
