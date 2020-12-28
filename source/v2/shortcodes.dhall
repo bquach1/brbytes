@@ -223,7 +223,7 @@ ${coloredHeader "indigo" "xlarge" "${heading}"}
 let pdf =
     \(filename : Text) ->
 ''
-<object
+<object class="w3-hide-small"
 data="${filename}"
 type="application/pdf"
 width="100%"
@@ -236,7 +236,8 @@ style="border: none;">
 <p>Your browser does not support PDFs.
 <a href = "${filename}">Download the PDF</a>.</p>
 </iframe>
-</object>''
+</object>
+<a class="w3-hide-medium w3-hide-large" href="${filename}">Newsletter</a>''
 
 let post = 
     \(title : Text) ->
