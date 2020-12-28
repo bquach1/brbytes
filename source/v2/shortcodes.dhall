@@ -246,12 +246,13 @@ let post =
     \(badgeList : List {color : Text, name : Text, link : Text}) ->
     \(content : Text) ->
 ''
-<div class="post w3-card w3-padding w3-margin-bottom">
+<div class="post w3-card w3-margin-bottom">
+<div class="accent-color w3-padding">
 <h2>${title}</h2>  
-<div>
-<span class="w3-text-grey w3-opacity">By ${author}</span>  
+<div class="w3-text-grey w3-opacity">By ${author}</div>
+</div>
 ${badges badgeList}  
-${content}</div>
+<div class="w3-padding">${content}</div>
 </div>''
 
 let purpleBackgroundContainer =
