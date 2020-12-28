@@ -244,7 +244,7 @@ let post =
     \(badgeList : List {color : Text, name : Text, link : Text}) ->
     \(content : Text) ->
 ''
-<div class="post">
+<div class="post w3-padding-16 w3-border-bottom">
 <h2>${title}</h2>  
 <div>
 <span class="w3-text-grey w3-opacity">By ${author}</span>  
