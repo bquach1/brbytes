@@ -238,7 +238,7 @@ style="border: none;">
 <a href = "${filename}">Download the PDF</a>.</p>
 </iframe>
 </object>
-<a class="w3-hide-medium w3-hide-large w3-xxlarge" href="${filename}">${name}</a>''
+<h3><a class="w3-hide-medium w3-hide-large" href="${filename}">${name}</a></h3>''
 
 let post = 
     \(title : Text) ->
