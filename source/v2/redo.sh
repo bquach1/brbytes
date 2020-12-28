@@ -13,7 +13,7 @@ build() {
 
 build landing.dhall 100px 10% 100px center
 build about.dhall 100px 1% 100px left
-build about2.dhall 100px 0 50px left
+build goals.dhall 100px 0 50px left
 build team.dhall 100px 0 100px center
 build course-descriptions.dhall 100px 4% 100px left
 build course-list.dhall 100px 0 100px center
