@@ -30,7 +30,7 @@ ${coloredHeader "indigo" "xlarge" "Why Computer Science?"}
 Louisiana currently ranks last in computer science and computational thinking
 education with only 16% of public schools teaching these classes.''}
 ''
-"placeholder.jpg"}
+"brogan-westfel.jpg"}
 ${purpleBackgroundContainer 
 ''
 

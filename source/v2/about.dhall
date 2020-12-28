@@ -28,6 +28,6 @@ Computer and mathematical occupations are expected to have one of the largest 10
 
 ''
 ''
-${padding "10px" "${image "placeholder.jpg"}"}
-${padding "10px" "${image "placeholder.jpg"}"}''}
+${padding "10px" "${image "geauxhack19-cl.jpg"}"}
+${padding "10px" "${image "steam-expo.jpg"}"}''}
 ''
