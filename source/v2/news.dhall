@@ -6,7 +6,7 @@ ${twoThirdsContainer
 ''
 ${coloredHeader "indigo" "xxlarge" "Current Newsletter"}
 
-${pdf "assets/NewsLetter-Nov20.pdf"}''
+${pdf "assets/NewsLetter-Nov20.pdf" "November 2020"}''
 ''
 ${coloredHeader "indigo" "xxlarge" "Previous Newsletters"}
 

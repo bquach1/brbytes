@@ -222,6 +222,7 @@ ${coloredHeader "indigo" "xlarge" "${heading}"}
 
 let pdf =
     \(filename : Text) ->
+    \(name : Text)->
 ''
 <object class="w3-hide-small"
 data="${filename}"
@@ -237,7 +238,7 @@ style="border: none;">
 <a href = "${filename}">Download the PDF</a>.</p>
 </iframe>
 </object>
-<a class="w3-hide-medium w3-hide-large" href="${filename}">Newsletter</a>''
+<a class="w3-hide-medium w3-hide-large w3-xxlarge" href="${filename}">${name}</a>''
 
 let post = 
     \(title : Text) ->
