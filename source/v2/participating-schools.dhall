@@ -8,11 +8,13 @@ ${accordionBox "district1-1" "District1"
 ''
 ${accordionBox "school1" "School1"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 ''}
 ''
@@ -21,20 +23,24 @@ ${accordionBox "district2" "District2"
 ''
 ${accordionBox "school2-1" "School1"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 
 ${accordionBox "school2-2" "School2"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 ''}
 ''
@@ -43,29 +49,35 @@ ${accordionBox "district3" "District3"
 ''
 ${accordionBox "school3-1" "School1"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 
 ${accordionBox "school3-2" "School2"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 
 ${accordionBox "school3-3" "School3"
 ''
-[teacher1](#)
+[website](#)
 
-[teacher2](#)
+teacher1
 
-[teacher3](#)
+teacher2
+
+teacher3
 ''}
 ''}
 ''}
