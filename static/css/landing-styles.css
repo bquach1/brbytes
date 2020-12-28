@@ -58,10 +58,10 @@
 .accordion-box {
     width: 90%; 
     max-width: 500px;
-    margin: 24px auto; 
+    margin: 16px auto 0; 
     padding: 16px 0;
 }
-.accordion-box * {
+.accordion-box > * {
     text-align: left; 
     margin-top: 0;
     margin-bottom: 0;

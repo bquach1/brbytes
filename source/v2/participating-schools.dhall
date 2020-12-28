@@ -8,7 +8,7 @@ ${accordionBox "district1-1" "District1"
 ''
 ${accordionBox "school1" "School1"
 ''
-[website](#)
+<div>[website](#)</div>
 
 teacher1
 

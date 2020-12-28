@@ -20,7 +20,7 @@ let accordionBox =
     \(heading: Text)->
     \(content : Text)->
 ''
-<div class="w3-grey accordion-box plain-links">
+<div class="w3-grey accordion-box">
 <h2 class="w3-yellow w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
