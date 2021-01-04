@@ -64,43 +64,7 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let courseList =
-''
-<div class="w3-row">
-<div class="w3-col s0 l3 w3-container">
-</div>
-<div class="w3-col s12 l6">
-<div class="w3-cell-row">
-<div class="w3-cell plain-links">
-<ul class="pure-list">
-<li>
-<a class="pure-link" href="/courses/cew/20c/">Intro to STEM Pathways and Careers</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/cew/20b/lessons.html">Computing Everywhere (without Intro to STEM)</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/cyb/20c/">Cyber Security</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/dma/20c/">Data Manipulation and Analysis</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/ict/20c/index2012.html">Intro to Computational Thinking</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/prg/20c/">Programming for STEM</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="w3-col s0 l3 w3-container">
-</div>
-</div>''
+let courseList = ./courseList.txt as Text
 
 let fiveRings = 
     \(text1 : Text)->
