@@ -20,7 +20,7 @@ let accordionBox =
     \(heading: Text)->
     \(content : Text)->
 ''
-<div class="w3-grey accordion-box plain-links">
+<div class="w3-grey accordion-box">
 <h2 class="w3-yellow w3-text-xlarge clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
 <div id="${id}" class="w3-hide">${content}</div>
 </div>''
@@ -64,43 +64,7 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let courseList =
-''
-<div class="w3-row">
-<div class="w3-col s0 l3 w3-container">
-</div>
-<div class="w3-col s12 l6">
-<div class="w3-cell-row">
-<div class="w3-cell plain-links">
-<ul class="pure-list">
-<li>
-<a class="pure-link" href="/courses/cew/20c/">Intro to STEM Pathways and Careers</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/cew/20b/lessons.html">Computing Everywhere (without Intro to STEM)</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/cyb/20c/">Cyber Security</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/dma/20c/">Data Manipulation and Analysis</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/ict/20c/index2012.html">Intro to Computational Thinking</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/prg/20c/">Programming for STEM</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="w3-col s0 l3 w3-container">
-</div>
-</div>''
+let courseList = ./courseList.txt as Text
 
 let fiveRings = 
     \(text1 : Text)->
@@ -155,6 +119,15 @@ let flexBoxImage =
 \(filename : Text)->
 ''
 <img class="flexbox-item" src="images/${filename}" style="height:100%">''
+
+let headerDropdown =
+    \(id : Text)->
+    \(heading: Text)->
+    \(content : Text)->
+''
+<h2 class="clickable" onclick="toggleDropdown('${id}')">${heading}</h2>
+<div id="${id}" class="w3-hide">${content}</div>
+''  
 
 let image =
 \(filename : Text)->
@@ -222,8 +195,9 @@ ${coloredHeader "indigo" "xlarge" "${heading}"}
 
 let pdf =
     \(filename : Text) ->
+    \(name : Text)->
 ''
-<object
+<object class="w3-hide-small"
 data="${filename}"
 type="application/pdf"
 width="100%"
@@ -236,7 +210,8 @@ style="border: none;">
 <p>Your browser does not support PDFs.
 <a href = "${filename}">Download the PDF</a>.</p>
 </iframe>
-</object>''
+</object>
+<h3><a class="w3-hide-medium w3-hide-large" href="${filename}">${name}</a></h3>''
 
 let post = 
     \(title : Text) ->
@@ -244,12 +219,13 @@ let post =
     \(badgeList : List {color : Text, name : Text, link : Text}) ->
     \(content : Text) ->
 ''
-<div class="post w3-padding-16 w3-border-bottom">
+<div class="post w3-card w3-margin-bottom">
+<div class="accent-color w3-padding">
 <h2>${title}</h2>  
-<div>
-<span class="w3-text-grey w3-opacity">By ${author}</span>  
-${badges badgeList}  
-${content}</div>
+<div>By <span class="w3-text-indigo">${author}</span></div>
+${badges badgeList}
+</div>
+<div class="w3-padding">${content}</div>
 </div>''
 
 let purpleBackgroundContainer =
