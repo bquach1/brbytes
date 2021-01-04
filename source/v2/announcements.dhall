@@ -12,7 +12,7 @@ ${post "Community of Practice Meetings" "Juana Moreno" NONE
 ### Upcoming Meetings
 
 - Next meeting is one of these two dates (at your choice):
-    - **Thursday, Jan 21 at 6pm**
+    - **Tuesday, Jan 19 at 6pm**
     - **Saturday, Jan 23 at 9am**
 
 ### Past Meetings
