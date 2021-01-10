@@ -25,7 +25,7 @@ ${flexBoxContainer ''
             The BRBytes curriculum offers an array of courses that teach
             students skills to be successful in the 21st century job market.
             These courses fit the interests of a variety of students by providing
-            education on a different subjects, such as cybersecurity, programming,
+            education on different subjects, such as cybersecurity, programming,
             and data manipulation and analysis.
             ''}
         ''}
