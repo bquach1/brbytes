@@ -5,11 +5,10 @@ in
 ---
 title: "Landing"
 ---
-${slideshowImages "Banners/2101/"
-    [ "CommunityOfPracticeJanuary.png"
-    , "HackAThon.png"
-    , "NewsletterBannerDecember.png"
-    , "HackAThon2.png"
+${slideshowImages "Banners/2102/"
+    [ "CommunityOfPracticeFebruary.png"
+    , "TeacherSummerPD2021.png"
+    , "AprilHackAThon.png"
     ]}
 ${leftAlign
 ''
