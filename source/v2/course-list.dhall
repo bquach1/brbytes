@@ -4,7 +4,7 @@ title: "Courses"
 ---
 ${backgroundImage "hacking.jpg"}
 
-# Fall 2020
+# Spring 2021
 
 ### Computing Pathway Courses
 

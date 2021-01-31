@@ -138,6 +138,10 @@
     background-color: #e1e1e1;
 }
 
+.lightgrey-color {
+    background-color: #d8d8d8;
+}
+
 /* specific element classes */
 .my-slides {
     width: 100%;

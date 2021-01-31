@@ -3,11 +3,29 @@
 title: "Teacher Login"
 ---
 
-${coloredHeader "indigo" "xxlarge" "**Upcoming Community of Practice Meetings**"}
+${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
 
-### Saturday, Jan 23 from 9-11 a.m.
+${coloredHeader "indigo" "xlarge" "**Upcoming Community of Practice Meetings**"}
 
-### Tuesday, Jan 19 from 5-7 p.m.
+### Thursday, February 18 at 6pm  (alternative session)
 
+### Saturday, February 20 at 9am  (main session)
+
+
+${flexBoxContainer ''
+    ${flexBoxItem "Community Support" ''
+        - [Computing 20-21 Chat](https://chat.brbytes.org/computing-20-21/channels/town-square)
+        ''}
+    ${flexBoxItem "Academic Assessment" ''
+        - [PORTAL LOGIN](/cms/login)
+        ''}
+    ${flexBoxItem "Instructional Tools" ''
+        - [Pad](https://pad.brbytes.org/)
+        ''}
+    ''}
+
+${x ''
 ${loginForm}
+''}
+
 ''

@@ -108,7 +108,7 @@ let flexBoxItem =
     \(title : Text)->
     \(content : Text)->
 ''
-<div class="w3-grey w3-padding flexbox-item">
+<div class="lightgrey-color w3-padding flexbox-item">
 <div class="accent-color w3-text-indigo">
 <h3 class="w3-padding"><strong>${title}</strong></h3>
 </div>
@@ -200,8 +200,10 @@ let pdf =
 <object class="w3-hide-small"
 data="${filename}"
 type="application/pdf"
+style="border: 10px"
 width="100%"
-height="500px">
+height="500px"
+>
 <iframe
 src="${filename}"
 width="100%"
@@ -325,5 +327,7 @@ let underlinedColoredHeader =
     \(content : Text)->
 ''
 <h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;">${content}</h1>''
+
+let x = \(ignore : Text) -> ""
 
 in

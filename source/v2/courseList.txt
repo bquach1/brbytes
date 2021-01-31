@@ -12,22 +12,25 @@
 <a class="pure-link" href="/courses/cew/20b/lessons.html">Computing Everywhere (without Intro to STEM)</a>
 </li>
 <li>
-<a class="pure-link" href="/courses/cyb/20c/">Cyber Security</a>
+<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/b628ad1fe41ea2de/">Intro to Computational Thinking (For sections that started in January 2021)</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/964b80817c179618/">Intro to Computational Thinking (For sections that started in Fall 2020)</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/a3b5291e906f84c2/">Cyber Security (For sections that started in January 2021)</a>
+</li>
+<li>
+<a class="pure-link" href="/courses/cyb/20c/">Cyber Security (For sections that started in Fall 2020)</a>
 </li>
 <li>
 <a class="pure-link" href="/courses/dma/20c/">Data Manipulation and Analysis</a>
 </li>
 <li>
-<a class="pure-link" href="/courses/b628ad1fe41ea2de/index.html">Intro to Computational Thinking (For schools starting January 2021)</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/ict/20c/index2012.html">Intro to Computational Thinking (For schools following a yearlong course)</a>
-</li>
-<li>
 <a class="pure-link" href="/courses/prg/20c/">Programming for STEM</a>
-</li>
-<li>
-<a class="pure-link" href="/courses/scs/20c/">Survey of Computer Science</a>
 </li>
 </ul>
 </div>

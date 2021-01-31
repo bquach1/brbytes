@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BRBytes Main Page">
@@ -8,85 +8,84 @@
     <link rel="stylesheet" href="/assets/css/w3.css">
     <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
     <link rel="stylesheet" href="/assets/css/landing-styles.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="sticky accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
-        <div class="accent-color w3-bar w3-row">
-            <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
-                <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
-                    <a href="/index.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
-                </div>
-                <div id="navigation-logo-heading" class="w3-bar-item">
-                    <p class="no-margin">Baton Rouge:</p> 
-                    <p class="no-margin">Bringing Youth Technology,</p>
-                    <p class="no-margin">Education and Success</p>
-                </div>
-            </div>
-            <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right" style="padding-top: 0;">
-                <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
-            </div>
+      <div class="accent-color w3-bar w3-row">
+        <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
+          <div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
+            <a href="/index.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+          </div>
+          <div id="navigation-logo-heading" class="w3-bar-item">
+            <p class="no-margin">Baton Rouge:</p> 
+            <p class="no-margin">Bringing Youth Technology,</p>
+            <p class="no-margin">Education and Success</p>
+          </div>
+        </div>
+        <div id="navigation-hamburger" class="dropdown-button w3-bar-item w3-right" style="padding-top: 0;">
+          <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button" onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
+        </div>
 	    <div class="w3-bar-block w3-rest w3-right plain-links">
-                <div class="w3-row w3-right">
-			        <p id="navigation-contact"><em>Contact BRBytes: <a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
-                </div>        
-		        <div id="navigation-header" class="w3-row w3-text-indigo">
-                    <a class="w3-padding" href="/teacher-login.html"><strong>TEACHERS</strong></a>
-                    <a class="w3-padding" href="/school-list.html"><strong>STUDENTS</strong></a>
-		            <div class="dropdown-button" style="display: inline-block;">
-		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
-			            <div id="parents-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
-                            <a href="/pathways.html" class="w3-bar-item">Pathways</a>
-                            <a href="/course-descriptions.html" class="w3-bar-item">Course Descriptions</a>
-                            <a href="/coming-soon.html" class="w3-bar-item">Careers in Computing</a>
-			            </div>
-		            </div>
-		            <!-- <a class="w3-padding" href="/participating-schools.html"><strong>SCHOOLS</strong></a> -->
-		            <a class="w3-padding" href="/coming-soon.html"><strong>SCHOOLS</strong></a>
-                    <div class="dropdown-button" style="display: inline-block;">
-		    	        <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('news-dropdown'); return false;"><strong>NEWS</strong></a>
-			            <div id="news-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
-                            <a href="/newsletters.html" class="w3-bar-item">Newsletters</a>
-                            <a href="/announcements.html" class="w3-bar-item">Announcements</a>
-			            </div>
-		            </div>
-		            <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
-		    	        <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
-		                <div id="about-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block" style="right: 0;">
-                            <a href="/about.html" class="w3-bar-item">Overview</a>
-                            <a href="/goals.html" class="w3-bar-item">Our Goals</a>
-                            <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
-                            <!-- <a href="/team.html" class="w3-bar-item">Our Team</a> -->
-                            <a href="/coming-soon.html" class="w3-bar-item">Our Team</a>
-                            <a href="/contact.html" class="w3-bar-item">Contact</a>
-			            </div>
-		            </div>
-		        </div>
-            </div>
+          <div class="w3-row w3-right">
+			<p id="navigation-contact"><em>Contact BRBytes: <a href="mailto:info@brbytes.org">info@brbytes.org</a></em></p>
+          </div>        
+		  <div id="navigation-header" class="w3-row w3-text-indigo">
+            <a class="w3-padding" href="/teacher-login.html"><strong>TEACHERS</strong></a>
+            <a id="navigation-header-students" class="w3-padding" href="/"><strong>STUDENTS</strong></a>
+		    <div class="dropdown-button" style="display: inline-block;">
+		      <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('parents-dropdown'); return false;"><strong>PARENTS</strong></a>
+			  <div id="parents-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
+                <a href="/pathways.html" class="w3-bar-item">Pathways</a>
+                <a href="/course-descriptions.html" class="w3-bar-item">Course Descriptions</a>
+                <a href="/coming-soon.html" class="w3-bar-item">Careers in Computing</a>
+			  </div>
+		    </div>
+		    <!-- <a class="w3-padding" href="/participating-schools.html"><strong>SCHOOLS</strong></a> -->
+		    <a class="w3-padding" href="/coming-soon.html"><strong>SCHOOLS</strong></a>
+            <div class="dropdown-button" style="display: inline-block;">
+		      <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('news-dropdown'); return false;"><strong>NEWS</strong></a>
+			  <div id="news-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
+                <a href="/newsletters.html" class="w3-bar-item">Newsletters</a>
+                <a href="/announcements.html" class="w3-bar-item">Announcements</a>
+			  </div>
+		    </div>
+		    <div class="dropdown-button" style="display: inline-block; padding-left:16px;">
+		      <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown'); return false;"><strong>ABOUT</strong></a>
+		      <div id="about-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block" style="right: 0;">
+                <a href="/about.html" class="w3-bar-item">Overview</a>
+                <a href="/goals.html" class="w3-bar-item">Our Goals</a>
+                <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
+                <!-- <a href="/team.html" class="w3-bar-item">Our Team</a> -->
+                <a href="/contact.html" class="w3-bar-item">Contact</a>
+			  </div>
+		    </div>
+		  </div>
         </div>
-        <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large plain-links">
-            <a href="/teacher-login.html"><strong>TEACHERS</strong></a><br>
-            <a href="/school-list.html"><strong>STUDENTS</strong></a><br>
-            <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
+      </div>
+      <div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large plain-links">
+        <a href="/teacher-login.html"><strong>TEACHERS</strong></a><br>
+        <a id="navigation-menu-students" href="/"><strong>STUDENTS</strong></a><br>
+        <a class="dropdown-button" href="#" onclick="toggleDropdown('parent-dropdown-mobile'); return false;"><strong>PARENTS</strong></a><br>
 	    <div id="parent-dropdown-mobile" class="dropdown-content w3-hide">
-		<a href="/pathways.html">Pathways</a><br>
-		<a href="/course-descriptions.html">Course Descriptions</a><br>
-		<a href="/coming-soon.html">Careers in Computing</a><br>
+		  <a href="/pathways.html">Pathways</a><br>
+		  <a href="/course-descriptions.html">Course Descriptions</a><br>
+		  <a href="/coming-soon.html">Careers in Computing</a><br>
 	    </div>
-            <a href="/participating-schools.html"><strong>SCHOOLS</strong></a><br>
-            <a class="dropdown-button" href="#" onclick="toggleDropdown('news-dropdown-mobile'); return false;"><strong>NEWS</strong></a><br>
+        <a href="/participating-schools.html"><strong>SCHOOLS</strong></a><br>
+        <a class="dropdown-button" href="#" onclick="toggleDropdown('news-dropdown-mobile'); return false;"><strong>NEWS</strong></a><br>
 	    <div id="news-dropdown-mobile" class="dropdown-content w3-hide">
-		<a href="/newsletters.html">Newsletters</a><br>
-		<a href="/announcements.html">Announcements</a><br>
+		  <a href="/newsletters.html">Newsletters</a><br>
+		  <a href="/announcements.html">Announcements</a><br>
 	    </div>
-            <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
+        <a class="dropdown-button" href="#" onclick="toggleDropdown('about-dropdown-mobile'); return false;"><strong>ABOUT</strong></a><br>
 	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
-		<a href="/about.html">Overview</a><br>
-        <a href="/goals.html">Our Goals</a><br>
-		<a href="/coming-soon.html">Participating Schools</a><br>
-		<a href="/team.html">Our Team</a><br>
-        <a href="/contact.html">Contact</a><br>
+		  <a href="/about.html">Overview</a><br>
+          <a href="/goals.html">Our Goals</a><br>
+		  <a href="/coming-soon.html">Participating Schools</a><br>
+		  <!-- <a href="/team.html">Our Team</a><br> -->
+          <a href="/contact.html">Contact</a><br>
 	    </div>
-        </div>
+      </div>
     </div>
     <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
     <!--this div contains the body of the page-->
@@ -94,33 +93,43 @@
     <!--end of body-->
     </div>
     <div class="sticky footer accent-color w3-container w3-center w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
-            <img class="w3-margin-left w3-margin-right" src="/images/Logos/usdoe.png" height="40vh">
-            <img class="w3-margin-left w3-margin-right" src="/images/Logos/lsu.png" height="40vh">
-            <img class="w3-margin-left w3-margin-right" src="/images/Logos/ebrpss.png" height="40vh">
-            <img class="w3-margin-left w3-margin-right" src="/images/Logos/nsf.png" height="40vh">
+      <img class="w3-margin-left w3-margin-right" src="/images/Logos/usdoe.png" height="40vh">
+      <img class="w3-margin-left w3-margin-right" src="/images/Logos/lsu.png" height="40vh">
+      <img class="w3-margin-left w3-margin-right" src="/images/Logos/ebrpss.png" height="40vh">
+      <img class="w3-margin-left w3-margin-right" src="/images/Logos/nsf.png" height="40vh">
     </div>
     <script>
 	
-	window.addEventListener('click', function(e) { // closes all dropdown menus if user clicks outside a dropdown menu
-            var obj = e.target.parentNode
-            if(!(obj.className.includes("dropdown-content") || obj.className.includes("dropdown-button"))) {
-                x = document.getElementsByClassName("dropdown-content");
-                for(i = 0; i < x.length; i++) { // gets all dropdown-content objects and hides them
-                    if(x[i].className.includes("w3-show")) {
-                        x[i].className = x[i].className.replace(" w3-show","");
-                    }
-                }
-            }
-        })
-	function toggleDropdown(dropdown) {
+      function randomUrl(eid,base) {
+          let elem = document.getElementById(eid);
+          elem.href = base + '?v=' + Math.random().toString(36).slice(2);
+      }
+
+      window.addEventListener('load', function() { 
+          randomUrl("navigation-header-students", "/course-list.html"); // "/school-list.html"
+          randomUrl("navigation-menu-students", "/course-list.html"); // "/school-list.html"
+      });
+
+	  window.addEventListener('click', function(e) { // closes all dropdown menus if user clicks outside a dropdown menu
+          var obj = e.target.parentNode;
+          if(!(obj.className.includes("dropdown-content") || obj.className.includes("dropdown-button"))) {
+              x = document.getElementsByClassName("dropdown-content");
+              for(i = 0; i < x.length; i++) { // gets all dropdown-content objects and hides them
+                  if(x[i].className.includes("w3-show")) {
+                      x[i].className = x[i].className.replace(" w3-show","");
+                  }
+              }
+          }
+      })
+
+	  function toggleDropdown(dropdown) {
           var x = document.getElementById(dropdown);
           if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
+              x.className += " w3-show";
           } else { 
-            x.className = x.className.replace(" w3-show", "");
+              x.className = x.className.replace(" w3-show", "");
           }
         } 
     </script>
-</body>
+  </body>
 </html>
-
