@@ -15,6 +15,12 @@ let NONE = [] : List {color : Text, name : Text, link : Text}
 
 let ALL = [SCS, ICT, CEW, CYB, DMA]
 
+let linkOpen =
+    \(text : Text) ->
+    \(url : Text) ->
+''
+<a href="${url}" target="_blank">${text}</a>''
+
 let accordionBox =
     \(id : Text)->
     \(heading: Text)->

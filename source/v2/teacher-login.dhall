@@ -14,13 +14,16 @@ ${coloredHeader "indigo" "xlarge" "**Upcoming Community of Practice Meetings**"}
 
 ${flexBoxContainer ''
     ${flexBoxItem "Community Support" ''
-        - [Computing 20-21 Chat](https://chat.brbytes.org/computing-20-21/channels/town-square)
+        - ${linkOpen "Computing 20-21 Chat"
+            "https://chat.brbytes.org/computing-20-21/channels/town-square"}
         ''}
     ${flexBoxItem "Academic Assessment" ''
-        - [PORTAL LOGIN](/cms/login)
+        - ${linkOpen "PORTAL LOGIN"
+            "/cms/login"}
         ''}
     ${flexBoxItem "Instructional Tools" ''
-        - [Pad](https://pad.brbytes.org/)
+        - ${linkOpen "Pad"
+            "https://pad.brbytes.org/"}
         ''}
     ''}
 
