@@ -40,8 +40,7 @@
                 <a href="/coming-soon.html" class="w3-bar-item">Careers in Computing</a>
 			  </div>
 		    </div>
-		    <!-- <a class="w3-padding" href="/participating-schools.html"><strong>SCHOOLS</strong></a> -->
-		    <a class="w3-padding" href="/coming-soon.html"><strong>SCHOOLS</strong></a>
+		    <a class="w3-padding" href="/participating-schools.html"><strong>SCHOOLS</strong></a>
             <div class="dropdown-button" style="display: inline-block;">
 		      <a class="dropdown-button w3-padding" href="#" onclick="toggleDropdown('news-dropdown'); return false;"><strong>NEWS</strong></a>
 			  <div id="news-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
@@ -54,8 +53,8 @@
 		      <div id="about-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block" style="right: 0;">
                 <a href="/about.html" class="w3-bar-item">Overview</a>
                 <a href="/goals.html" class="w3-bar-item">Our Goals</a>
-                <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
-                <!-- <a href="/team.html" class="w3-bar-item">Our Team</a> -->
+                <a href="/participating-schools.html" class="w3-bar-item">Participating Schools</a>
+                <a href="/team.html" class="w3-bar-item">Our Team</a>
                 <a href="/contact.html" class="w3-bar-item">Contact</a>
 			  </div>
 		    </div>
@@ -82,7 +81,7 @@
 		  <a href="/about.html">Overview</a><br>
           <a href="/goals.html">Our Goals</a><br>
 		  <a href="/coming-soon.html">Participating Schools</a><br>
-		  <!-- <a href="/team.html">Our Team</a><br> -->
+		  <a href="/team.html">Our Team</a><br>
           <a href="/contact.html">Contact</a><br>
 	    </div>
       </div>
