@@ -17,6 +17,12 @@ let versions = [
     , hash = "964b80817c179618"
     , revision = "210125"
     },
+    { course = "ict"
+    , version = "20c"
+    , flavor = "teacher"
+    , hash = "12549780ba8282ab"
+    , revision = "210205"
+    },
     { course = "scs"
     , version = "20c"
     , flavor = "teacher"
