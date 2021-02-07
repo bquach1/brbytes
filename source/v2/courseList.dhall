@@ -21,12 +21,12 @@ let courses : List Course = [
 ,   { desc = "Survey of Computer Science"
     , course = "scs"
     , version = "20c"
-    , hash = ""
+    , hash = "a9fc3327b82d46ec"
     }
 ,   { desc = "Intro to Computational Thinking (For sections that started in January 2021)"
     , course = "ict"
     , version = "21a"
-    , hash = ""
+    , hash = "9ef469182691d008"
     }
 ,   { desc = "Intro to Computational Thinking (For sections that started in Fall 2020)"
     , course = "ict"
@@ -51,7 +51,7 @@ let courses : List Course = [
 ,   { desc = "Programming for STEM"
     , course = "prg"
     , version = "20c"
-    , hash = ""
+    , hash = "4c24169bcb4c324c"
     }
 
 ]
