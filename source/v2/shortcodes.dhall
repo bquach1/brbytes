@@ -70,7 +70,7 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let courseList = ./courseList.txt as Text
+let courseList = ./courseList.dhall
 
 let fiveRings = 
     \(text1 : Text)->
