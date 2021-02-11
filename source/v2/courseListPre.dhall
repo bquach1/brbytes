@@ -11,47 +11,47 @@ let courses : List Course = [
     { desc = "Intro to STEM Pathways and Careers"
     , course = "cew"
     , version = "20c"
-    , hash = "85e4eef9bf5e4a3c"
+    , hash = lessons-cew/20c
     }
 ,   { desc = "Computing Everywhere (without Intro to STEM)"
     , course = "cew"
     , version = "20b"
-    , hash = "cd1c69d9536ec340"
+    , hash = lessons-cew/20b
     }
 ,   { desc = "Survey of Computer Science"
     , course = "scs"
     , version = "20c"
-    , hash = "a9fc3327b82d46ec"
+    , hash = lessons-scs/20c
     }
 ,   { desc = "Intro to Computational Thinking (For sections that started in January 2021)"
     , course = "ict"
     , version = "21a"
-    , hash = "78e1b071fbfbd063"
+    , hash = lessons-ict/21a
     }
 ,   { desc = "Intro to Computational Thinking (For sections that started in Fall 2020)"
     , course = "ict"
     , version = "20c"
-    , hash = "349c342b10acee11"
+    , hash = lessons-ict/20c
     }
 ,   { desc = "Cyber Security (For sections that started in January 2021)"
     , course = "cyb"
     , version = "21a"
-    , hash = "815f835313394be3"
+    , hash = lessons-cyb-21a/21a
     }
 ,   { desc = "Cyber Security (For sections that started in Fall 2020)"
     , course = "cyb"
     , version = "20c"
-    , hash = "334912b5cdea76d8"
+    , hash = lessons-cyb-20c/20c
     }
 ,   { desc = "Data Manipulation and Analysis"
     , course = "dma"
     , version = "20c"
-    , hash = "51e58dec5d699dc9"
+    , hash = lessons-dma/20c
     }
 ,   { desc = "Programming for STEM"
     , course = "prg"
     , version = "20c"
-    , hash = "4c24169bcb4c324c"
+    , hash = lessons-prg/20c
     }
 
 ]
