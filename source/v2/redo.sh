@@ -17,7 +17,9 @@ build() {
     rm -f $filename.md
 }
 
-rebuild | awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' > courseList.dhall
+rebuild ./rebuild.conf | \
+  awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' > courseList.dhall
+
 cat courseListPre.dhall >> courseList.dhall
 
 build index.dhall 100px 10% 100px center

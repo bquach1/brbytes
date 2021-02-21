@@ -26,12 +26,12 @@ let courses : List Course = [
 ,   { desc = "Intro to Computational Thinking (For sections that started in January 2021)"
     , course = "ict"
     , version = "21a"
-    , hash = lessons-ict/21a
+    , hash = lessons-ict-21a/21a
     }
 ,   { desc = "Intro to Computational Thinking (For sections that started in Fall 2020)"
     , course = "ict"
     , version = "20c"
-    , hash = lessons-ict/20c
+    , hash = lessons-ict-21a/20c
     }
 ,   { desc = "Cyber Security (For sections that started in January 2021)"
     , course = "cyb"
