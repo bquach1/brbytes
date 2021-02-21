@@ -3,13 +3,34 @@ in
 
 ''
 ---
-title: "Landing"
+title: "BRBytes Home"
 ---
+
+<div class="w3-row-padding plain-links">
+<div class="w3-display-container" style="width: 100%;">
+
+<div class="w3-card">
+<header class="w3-container w3-blue">
+<h1>Community of Practice sessions will take place this week.</h1>
+</header>
+<div class="w3-container">
+<p>Please mark your calendar for one of these dates:
+<ul>
+<li>Thursday, February 25 at 6pm, or
+<li>Saturday, February 27 at 9am
+</p>
+</div>
+
+</div>
+</div>
+
+${x ''
 ${slideshowImages "Banners/2102/"
     [ "CommunityOfPracticeFebruary.png"
     , "TeacherSummerPD2021.png"
     , "AprilHackAThon.png"
     ]}
+''}
 ${leftAlign
 ''
 BRBytes was formed through a Research Practitioner Partnership between East
