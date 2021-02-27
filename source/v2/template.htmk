@@ -54,7 +54,7 @@
 		      <div id="about-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block" style="right: 0;">
                 <a href="/about.html" class="w3-bar-item">Overview</a>
                 <a href="/goals.html" class="w3-bar-item">Our Goals</a>
-                <a href="/coming-soon.html" class="w3-bar-item">Participating Schools</a>
+                <a href="https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE" class="w3-bar-item">Participating Schools</a>
                 <!-- <a href="/team.html" class="w3-bar-item">Our Team</a> -->
                 <a href="/contact.html" class="w3-bar-item">Contact</a>
 			  </div>
@@ -81,7 +81,7 @@
 	    <div id="about-dropdown-mobile" class="dropdown-content w3-hide">
 		  <a href="/about.html">Overview</a><br>
           <a href="/goals.html">Our Goals</a><br>
-		  <a href="/coming-soon.html">Participating Schools</a><br>
+		  <a href="https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE">Participating Schools</a><br>
 		  <!-- <a href="/team.html">Our Team</a><br> -->
           <a href="/contact.html">Contact</a><br>
 	    </div>
