@@ -10,14 +10,16 @@ title: "BRBytes Home"
 <div class="w3-display-container" style="width: 100%;">
 
 <div class="w3-card">
-<header class="w3-container w3-blue">
-<h1>Community of Practice sessions will take place this week.</h1>
+<header class="w3-container w3-brown">
+<h1>It is time to think about computing classes for next year.</h1>
 </header>
 <div class="w3-container">
-<p>Please mark your calendar for one of these dates:
+<p>Students, teachers, and everyone else can help spread the word
 <ul>
-<li>Thursday, February 25 at 6pm, or
-<li>Saturday, February 27 at 9am
+<li>Tell your peers
+<li>Tell your teachers
+<li>Tell your students
+<li>Tell your counselors
 </p>
 </div>
 
