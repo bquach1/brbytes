@@ -15,6 +15,12 @@ let NONE = [] : List {color : Text, name : Text, link : Text}
 
 let ALL = [SCS, ICT, CEW, CYB, DMA]
 
+let linkOpen =
+    \(text : Text) ->
+    \(url : Text) ->
+''
+<a href="${url}" target="_blank">${text}</a>''
+
 let accordionBox =
     \(id : Text)->
     \(heading: Text)->
@@ -64,7 +70,7 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let courseList = ./courseList.txt as Text
+let courseList = ./courseList.dhall
 
 let fiveRings = 
     \(text1 : Text)->
@@ -108,7 +114,7 @@ let flexBoxItem =
     \(title : Text)->
     \(content : Text)->
 ''
-<div class="w3-grey w3-padding flexbox-item">
+<div class="lightgrey-color w3-padding flexbox-item">
 <div class="accent-color w3-text-indigo">
 <h3 class="w3-padding"><strong>${title}</strong></h3>
 </div>
@@ -200,8 +206,10 @@ let pdf =
 <object class="w3-hide-small"
 data="${filename}"
 type="application/pdf"
+style="border: 10px"
 width="100%"
-height="500px">
+height="500px"
+>
 <iframe
 src="${filename}"
 width="100%"
@@ -275,9 +283,9 @@ let slideshowImage =
 ''
 <div class="my-slides w3-row-padding plain-links">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-display-hover w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
 <img src="images/${prefix}${filename}" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-display-hover w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
 </div>
 </div>''
 
@@ -325,5 +333,7 @@ let underlinedColoredHeader =
     \(content : Text)->
 ''
 <h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;">${content}</h1>''
+
+let x = \(ignore : Text) -> ""
 
 in
