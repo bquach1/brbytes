@@ -7,9 +7,9 @@ ${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
 
 ${coloredHeader "indigo" "xlarge" "**Upcoming Community of Practice Meetings**"}
 
-### Thursday, February 25 at 6pm  (alternative session)
+### Thursday, March 18 at 6pm  (alternative session)
 
-### Saturday, February 27 at 9am  (main session)
+### Saturday, March 20 at 9am  (main session)
 
 
 ${flexBoxContainer ''
