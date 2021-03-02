@@ -9,14 +9,12 @@ echo Sync static/ html/
 rsync -aSH static/ html/
 
 build() {
-    cd source/$1
+    cd source
     sh ./redo.sh
-    cp *.html ../../html/
-    cd ../..
+    cd ..
 }
 
-# build v1
-build v2
+build
 
 if [ -d $ROOTDIR/html.courses ]; then
     echo Previous build did not finish properly
