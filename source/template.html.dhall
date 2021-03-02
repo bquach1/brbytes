@@ -1,6 +1,9 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
 
+let b = \(text:Text) -> "<strong>${text}</strong>"
+let i = \(text:Text) -> "<em>${text}</em>"
+
 let MenuStyle = < Wide | Narrow >
 
 let navigation/logoImage = ''
@@ -14,15 +17,6 @@ let navigation/logoHeading = ''
   <p class="no-margin">Baton Rouge:</p> 
   <p class="no-margin">Bringing Youth Technology,</p>
   <p class="no-margin">Education and Success</p>
-</div>
-''
-
-let navigation/hamburger = ''
-<div id="navigation-hamburger"
-     class="dropdown-button w3-bar-item w3-right" 
-     style="padding-top: 0;">
-  <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
-     onclick="toggleDropdown('navigation-menu'); return false;"><strong>&#9776</strong></a>
 </div>
 ''
 
@@ -73,8 +67,18 @@ let navigation/wide =
 ''
 
 let navigation/narrow = 
-\(items : List (MenuStyle -> Text)) ->
-navigation items MenuStyle.Narrow
+\(items : List (MenuStyle -> Text)) -> ''
+<div>
+  <div id="navigation-hamburger"
+       class="dropdown-button w3-bar-item w3-right" 
+       style="padding-top: 0;">
+    <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
+       x-data="{ open: false }"
+       onclick="toggleDropdown('navigation-menu'); return false;">${b "&#9776"}</a>
+  </div>
+  ${navigation items MenuStyle.Narrow}
+</div>
+''
 
 let item =
 \(desc : Text) ->
@@ -82,9 +86,9 @@ let item =
 \(menu : MenuStyle) ->
 merge
 { Wide = ''
-<a class="w3-padding" href="${link}"><strong>${desc}</strong></a>''
+<a class="w3-padding" href="${link}">${b desc}</a>''
 , Narrow = ''
-<a href="${link}"><strong>${desc}</strong></a><br>''
+<a href="${link}">${b desc}</a><br>''
 } menu
 
 let random =
@@ -93,9 +97,9 @@ let random =
 \(menu : MenuStyle) ->
 merge
 { Wide = ''
-<a id="navigation-header-${label}" class="w3-padding" href="/"><strong>${desc}</strong></a>''
+<a id="navigation-header-${label}" class="w3-padding" href="/">${b desc}</a>''
 , Narrow = ''
-<a id="navigation-menu-${label}" href="/"><strong>${desc}</strong></a><br>''
+<a id="navigation-menu-${label}" href="/">${b desc}</a><br>''
 } menu
 
 let dropdown =
@@ -107,10 +111,13 @@ let dropdown =
 merge
 { Wide =
 ''
-<div class="dropdown-button" style="display: inline-block; ${extra}">
+<div class="dropdown-button" style="display: inline-block; ${extra}"
+     x-data="{ open: false }"
+     x-on:click.away="open = false">
   <a class="dropdown-button w3-padding" href="#" 
-     onclick="toggleDropdown('${lbl}-dropdown'); return false;"><strong>${desc}</strong></a>
-  <div id="${lbl}-dropdown" class="dropdown-content w3-dropdown-content accent-color w3-bar-block">
+     x-on:click="open = !open">${b desc}</a>
+  <div class="dropdown-content w3-dropdown-content accent-color w3-bar-block"
+       x-bind:class="{ 'w3-show': open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
   </div>
 </div>
@@ -118,8 +125,10 @@ merge
 , Narrow =
 ''
 <a class="dropdown-button" href="#" 
-   onclick="toggleDropdown('${lbl}-dropdown-mobile'); return false;"><strong>${desc}</strong></a><br>
-<div id="${lbl}-dropdown-mobile" class="dropdown-content w3-hide">
+   x-data="{ open: false }"
+   x-on:click="open = !open">${b desc}</a><br>
+<div class="dropdown-content"
+     x-bind:class="{ 'w3-hide': !open }">
   ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
 </div>
 ''
@@ -175,7 +184,8 @@ in
     <link rel="stylesheet" href="/assets/css/w3.css">
     <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
     <link rel="stylesheet" href="/assets/css/landing-styles.css">
-    <script src="/assets/js/alpine.min.js" defer></script> <!-- 2.8.1 -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
+    <script src="/assets/js/alpine.js" defer></script>
   </head>
   <body>
     <div class="sticky accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
@@ -184,13 +194,9 @@ in
           ${navigation/logoImage}
           ${navigation/logoHeading}
         </div>
-
-        ${navigation/hamburger}
+        ${navigation/narrow menuItems}
         ${navigation/wide menuItems}
       </div>
-
-      ${navigation/narrow menuItems}
-
     </div>
 
     <div id="main-div" style="padding: $padding$; text-align: $alignment$; overflow: auto;">

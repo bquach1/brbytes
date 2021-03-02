@@ -1,6 +1,8 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
 
+let x = \(ignore : Text) -> ""
+
 let SCS = {color = "green", name = "SCS", link = "#"}
 
 let ICT = {color = "indigo", name = "ICT", link = "#"}
@@ -255,7 +257,7 @@ let smallPadding =
 ${padding "8px 0" "${content}"}''
 
 let slideshowScript =
-''
+x ''
 <script>                                                                                                
 var slideIndex = 0;
 showDivs(slideIndex);                                                                                   
@@ -275,7 +277,8 @@ function showDivs(n) {
     }
     x[slideIndex].style.display = "table";
 }
-</script>''
+</script>
+''
 
 let slideshowImage =
     \(prefix : Text) ->
@@ -333,7 +336,5 @@ let underlinedColoredHeader =
     \(content : Text)->
 ''
 <h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;">${content}</h1>''
-
-let x = \(ignore : Text) -> ""
 
 in
