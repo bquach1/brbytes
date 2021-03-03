@@ -3,6 +3,7 @@ let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
 
 let b = \(text:Text) -> "<strong>${text}</strong>"
 let i = \(text:Text) -> "<em>${text}</em>"
+let x = \(text:Text) -> ""
 
 let MenuStyle = < Wide | Narrow >
 
@@ -48,14 +49,18 @@ let navigation =
 \(menu : MenuStyle) ->
 merge
 { Wide = ''
-<div id="navigation-header" class="w3-row w3-text-indigo">''
+<div id="navigation-header" class="w3-row w3-text-indigo">
+${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
+</div>''
 , Narrow = ''
-<div id="navigation-menu" class="dropdown-content w3-hide w3-text-indigo w3-center w3-padding w3-large plain-links">''
+<div x-data="{ open: false }">
+  <div class="dropdown-content w3-text-indigo w3-center w3-padding w3-large plain-links"
+       x-on:hamburger.window="console.log('hamburger:'+open);open = !open"
+       x-bind:class="{ 'w3-hide': !open }">
+    ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
+  </div>
+</div>''
 } menu
-++
-concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items
-++
-"</div>"
 
 let navigation/wide = 
 \(items : List (MenuStyle -> Text)) ->
@@ -66,17 +71,18 @@ let navigation/wide =
 </div>
 ''
 
-let navigation/narrow = 
-\(items : List (MenuStyle -> Text)) -> ''
-<div>
-  <div id="navigation-hamburger"
-       class="dropdown-button w3-bar-item w3-right" 
-       style="padding-top: 0;">
-    <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
-       x-data="{ open: false }"
-       onclick="toggleDropdown('navigation-menu'); return false;">${b "&#9776"}</a>
-  </div>
-  ${navigation items MenuStyle.Narrow}
+let navigation/narrow =
+\(items : List (MenuStyle -> Text)) ->
+navigation items MenuStyle.Narrow
+
+let navigation/hamburger = 
+''
+<div id="navigation-hamburger"
+     class="dropdown-button w3-bar-item w3-right" 
+     style="padding-top: 0;">
+  <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
+     x-data
+     x-on:click="console.log('sending hamburger');$dispatch$('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
@@ -124,12 +130,13 @@ merge
 ''
 , Narrow =
 ''
-<a class="dropdown-button" href="#" 
-   x-data="{ open: false }"
-   x-on:click="open = !open">${b desc}</a><br>
-<div class="dropdown-content"
-     x-bind:class="{ 'w3-hide': !open }">
-  ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
+<div x-data="{ open: false }">
+  <a class="dropdown-button" href="#" 
+     x-on:click="open = !open">${b desc}</a><br>
+  <div class="dropdown-content"
+       x-bind:class="{ 'w3-hide': !open }">
+    ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
+  </div>
 </div>
 ''
 } menu
@@ -194,9 +201,10 @@ in
           ${navigation/logoImage}
           ${navigation/logoHeading}
         </div>
-        ${navigation/narrow menuItems}
+        ${navigation/hamburger}
         ${navigation/wide menuItems}
       </div>
+      ${navigation/narrow menuItems}
     </div>
 
     <div id="main-div" style="padding: $padding$; text-align: $alignment$; overflow: auto;">

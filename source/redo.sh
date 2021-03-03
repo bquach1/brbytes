@@ -19,6 +19,7 @@ build() {
     # $5 is the text alignment
     pandoc --variable padding="$2 $3 $4" \
            --variable alignment=$5 \
+           --variable dispatch='$dispatch' \
            --template template.html \
            -s -o $DYN/$filename.html $DYN/$filename.md
     rm -f $DYN/$filename.md
