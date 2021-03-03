@@ -158,7 +158,7 @@ merge
 
 let menuItems =
   [ item "TEACHERS" "teachers.html"
-  , random "STUDENTS" "students"
+  , item "STUDENTS" "students.html"
   , dropdown "PARENTS" "parents" ""
         [ subitem "Pathways" "pathways.html"
         , subitem "Course Descriptions" "course-descriptions.html"
