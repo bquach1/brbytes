@@ -187,7 +187,7 @@ in
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BRBytes Main Page">
-    <title>BRBytes &ndash; LSU Computing Pathway &ndash; Fall 2020</title>
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; $title$</title>
     <link rel="stylesheet" href="/assets/css/w3.css">
     <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
     <link rel="stylesheet" href="/assets/css/landing-styles.css">

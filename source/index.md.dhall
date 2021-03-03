@@ -3,7 +3,7 @@ in
 
 ''
 ---
-title: "BRBytes Home"
+title: Home
 ---
 
 <div class="w3-row-padding plain-links">

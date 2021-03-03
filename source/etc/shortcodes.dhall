@@ -1,6 +1,9 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
 
+let b = \(text:Text) -> "<strong>${text}</strong>"
+let i = \(text:Text) -> "<em>${text}</em>"
+let w = \(elm:Text) -> \(text:Text) -> "<${elm}>${text}</${elm}>"
 let x = \(ignore : Text) -> ""
 
 let SCS = {color = "green", name = "SCS", link = "#"}
@@ -72,7 +75,7 @@ let coloredHeader =
 ''
 <h1 class="w3-text-${color} w3-${size}">${content}</h1>''
 
-let courseList = ./courseList.dhall
+let courseList = ../dynamic/courseList.dhall
 
 let fiveRings = 
     \(text1 : Text)->

@@ -1,14 +1,20 @@
 #!/bin/sh
 
-DYN=../html
+DYN=../dynamic
 
-mkdir -p $DYN
+mkdir -p $DYN ../html
 
 build() {
     echo build "$@"
     pathname=$(dirname $1)
     filename=$(basename $1 .dhall)
-    htmlname=$(basename $(basename $1 .md) .html)
+    htmlname=$(basename $(basename $filename .md) .html)
+
+    if [ "x$6" = "x" ]; then
+        titleopt=""
+    else
+        titleopt="--metadata title=\"$6\""
+    fi
 
     cat etc/shortcodes.dhall \
         $1 | \
@@ -18,24 +24,27 @@ build() {
     # $1 is the base file,
     # $2-$4 are the padding,
     # $5 is the text alignment
+    echo pandoc -o ../html/$htmlname.html $DYN/$filename
     pandoc --variable padding="$2 $3 $4" \
            --variable alignment=$5 \
            --variable dispatch='$dispatch' \
-           --template template.html \
-           -s -o $DYN/$htmlname.html $DYN/$filename
-    rm -f $DYN/$filename
+           $titleopt \
+           --template $DYN/template.html \
+           -s -o ../html/$htmlname.html $DYN/$filename
+    #rm -f $DYN/$filename
 }
 
-cat template.html.dhall | premd-exe > template.html
+cat template.html.dhall | premd-exe > $DYN/template.html
 
 rebuild ./rebuild.conf | \
-  awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' > courseList.dhall
+  awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
+  > $DYN/courseList.dhall
 
-cat etc/courseListPre.dhall >> courseList.dhall
+cat etc/courseListPre.dhall >> $DYN/courseList.dhall
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
-build students.html.dhall                  100px  0  100px center
+build students.md.dhall                  100px  0  100px center
 build parents/pathways.md.dhall            100px  4% 100px left
 build parents/course-descriptions.md.dhall 100px  4% 100px left
 build news/newsletters.md.dhall            100px 10% 100px center
@@ -48,5 +57,3 @@ build about/contact.md.dhall               100px  0  100px center
 #build participating-schools.dhall       100px 10% 100px left
 #build school-list.dhall                 100px 10% 100px left
 #build team.dhall                        100px  0  100px center
-
-rm -f template.html courseList.dhall
