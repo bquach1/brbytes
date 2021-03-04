@@ -1,3 +1,4 @@
+
 function loginForm() {
     return {
         formData: {
@@ -5,13 +6,27 @@ function loginForm() {
             stu: ''
         },
         message: '',
-        loading: false,
-        submitLabel: 'Submit',
         foundLink: false,
+        loading: false,
         courseUrl: '',
 
+        /*
+        time: new Date(),
+
+        init() {
+            setInterval(function(){
+                this.time = new Date();
+            },1000);
+        },
+
+        getTime() {
+            return "Hello";
+            return moment(this.time).format('DD MMMM, YYYY HH:mm:ss');
+        },
+
+        */
+
         submitData() {
-            this.submitLabel = "Please wait...";
             this.loading = true;
             this.message = '';
 
@@ -28,6 +43,7 @@ function loginForm() {
                    && this.courseUrl.startsWith('/courses')) {
                     this.message = "Link to your course";
                     this.foundLink = true;
+                    window.location.replace(this.courseUrl);
                 }
                 else this.message = "";
             })
@@ -36,8 +52,12 @@ function loginForm() {
             })
             .finally(() => {
                 this.loading = false;
-                this.submitLabel = 'Submit';
             });
+        },
+        
+        submitLabel() {
+            if(this.loading) { return 'Please wait...'; }
+            return 'Submit';
         }
     };
 }
