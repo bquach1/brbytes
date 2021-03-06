@@ -1,6 +1,9 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
 
+let padding = env:T_PADDING as Text
+let alignment = env:T_ALIGNMENT as Text
+
 let b = \(text:Text) -> "<strong>${text}</strong>"
 let i = \(text:Text) -> "<em>${text}</em>"
 let x = \(text:Text) -> ""
@@ -82,7 +85,7 @@ let navigation/hamburger =
      style="padding-top: 0;">
   <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
-     x-on:click="console.log('sending hamburger');$dispatch$('hamburger',null)">${b "&#9776"}</a>
+     x-on:click="console.log('sending hamburger');$dispatch('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
@@ -187,7 +190,7 @@ in
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BRBytes Main Page">
-    <title>BRBytes &ndash; LSU Computing Pathway &ndash; $title$</title>
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; ${title}</title>
     <link rel="stylesheet" href="/assets/css/w3.css">
     <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
     <link rel="stylesheet" href="/assets/css/landing-styles.css">
@@ -207,7 +210,7 @@ in
       ${navigation/narrow menuItems}
     </div>
 
-    <div id="main-div" style="padding: $padding$; text-align: $alignment$; overflow: auto;">
+    <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
       <!--this div contains the body of the page-->
     ${body}
       <!--end of body-->

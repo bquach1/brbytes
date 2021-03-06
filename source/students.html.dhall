@@ -1,3 +1,4 @@
+let title = "Students"
 let body =
 ''
 <div class="w3-container w3-center"
@@ -27,20 +28,7 @@ ${w "h3" "Computing Pathway Courses"}
     <a x-text="message" x-bind:href="courseUrl"></a>
   </div>
 
-  <div x-show="problem">
-
-    <div class="w3-panel w3-pale-green">
-      <p>
-        If the form above does not take you to your course,
-        please select it from the list below
-      </p>
-    </div>
-  
-    <div style="background-image: url('images/hacking.jpg');background-size: cover; transform: scale(0.75);">
-      ${courseList}
-    </div>
-
-  </div>
+  <img src="images/hacking.jpg" style="width: 50%; margin-top: 4ex; " alt="classroom photo">
 </div>
 
 <script src="assets/js/students.js"></script>

@@ -38,6 +38,8 @@ build() {
             ;;
 
         *.html)
+            export T_PADDING="$2 $3 $4"
+            export T_ALIGNMENT="$5"
             echo "premd-exec $1 > ../html/$htmlname.html"
             cat etc/shortcodes.dhall \
                 $1 \
@@ -66,6 +68,7 @@ cat etc/courseListPre.dhall >> $DYN/courseList.dhall
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
 build students.html.dhall                  100px  0  100px center
+build students-wait.html.dhall             100px 20% 100px center
 build parents/pathways.md.dhall            100px  4% 100px left
 build parents/course-descriptions.md.dhall 100px  4% 100px left
 build news/newsletters.md.dhall            100px 10% 100px center
