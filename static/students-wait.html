@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRBytes Main Page">
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; $title$</title>
+    <link rel="stylesheet" href="/assets/css/w3.css">
+    <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
+    <link rel="stylesheet" href="/assets/css/landing-styles.css">
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
+    <script src="/assets/js/alpine.js" defer></script>
+  </head>
+  <body>
+    <div class="w3-card w3-center" style="font-size: 100%; font-family: serif;">
+
+      <header><span id="timer">WARNING!</span></header>
+
+      <p>The credentials you entered do not exist.</p>
+    
+      <p>Please check your spelling, and in particular to characters that are
+        similar. The following is a list of characters that you should check:
+        <ul>
+          <li><strong>0</strong> and <strong>O</strong></li>
+          <li><strong>1</strong>, <strong>l</strong>, and <strong>I</strong></li>
+          <li>Uppercase and lowercase versions, such as <strong>k</strong> and <strong>K</strong>
+        </ul>
+      </p>
+
+      <p>Wait <span id="initial"></span> seconds before trying again.</p>
+
+    </div>
+
+    <script src="assets/js/moment.js"></script>
+    <script>
+      let time = 10;
+      document.getElementById('initial').innerText = time;
+      setInterval(() => {
+          if(time > 0) { document.getElementById('timer').innerText = time; time--; }
+          else { window.location.replace('students.html'); }
+      }, 1000);
+      
+    </script>
+  </body>
+</html>

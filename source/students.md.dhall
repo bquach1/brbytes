@@ -7,9 +7,10 @@ ${w "h1" "Spring 2021"}
 
 ${w "h3" "Computing Pathway Courses"}
 
-<form action="/invalid" method="POST"
-    x-data="loginForm()"
-    x-on:submit.prevent="submitData">
+<div class="w3-container"
+    x-data="loginForm()">
+
+SubmitLabel 1 is <span x-text="message"></span>
 
   <div class="w3-panel">
     <label>Section Code:</label>
@@ -21,6 +22,8 @@ ${w "h3" "Computing Pathway Courses"}
     <input type="text" name="stu" x-model="formData.stu">
   </div>
 
+SubmitLabel 2 is <span x-text="message"></span>
+
   <div x-show="!foundLink">
   <button x-text="submitLabel()" :disabled="loading"></button>
   </div>
@@ -30,6 +33,8 @@ ${w "h3" "Computing Pathway Courses"}
   </div>
 
 </form>
+
+SubmitLabel 3 is <span x-text="message"></span>
 
 <div class="w3-panel w3-pale-green">
 <p>
@@ -42,7 +47,8 @@ please select it from the list below
 ${courseList}
 </div>
 
-<script src="assets/js/moment.js"></script>
+</div>
+
 <script src="assets/js/students.js"></script>
 
 ''

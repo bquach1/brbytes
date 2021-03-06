@@ -16,25 +16,46 @@ build() {
         titleopt="--metadata title=\"$6\""
     fi
 
-    cat etc/shortcodes.dhall \
-        $1 | \
-        premd-exe > $DYN/$filename
+    case $filename in
 
-    # each template requires 5 parameters.
-    # $1 is the base file,
-    # $2-$4 are the padding,
-    # $5 is the text alignment
-    echo pandoc -o ../html/$htmlname.html $DYN/$filename
-    pandoc --variable padding="$2 $3 $4" \
-           --variable alignment=$5 \
-           --variable dispatch='$dispatch' \
-           $titleopt \
-           --template $DYN/template.html \
-           -s -o ../html/$htmlname.html $DYN/$filename
-    #rm -f $DYN/$filename
+        *.md)
+            cat etc/shortcodes.dhall \
+                $1 | \
+                premd-exe > $DYN/$filename
+
+            # each template requires 5 parameters.
+            # $1 is the base file,
+            # $2-$4 are the padding,
+            # $5 is the text alignment
+            echo pandoc -o ../html/$htmlname.html $DYN/$filename
+            pandoc --variable padding="$2 $3 $4" \
+                   --variable alignment=$5 \
+                   --variable dispatch='$dispatch' \
+                   $titleopt \
+                   --template $DYN/template.html \
+                   -s -o ../html/$htmlname.html $DYN/$filename
+            #rm -f $DYN/$filename
+            ;;
+
+        *.html)
+            echo "premd-exec $1 > ../html/$htmlname.html"
+            cat etc/shortcodes.dhall \
+                $1 \
+                template.direct.dhall \
+                | premd-exe \
+                      > ../html/$htmlname.html
+            ;;
+
+        *)
+            echo Not processing $filename
+            ;;
+
+    esac
+
+    echo ""
 }
 
-cat template.html.dhall | premd-exe > $DYN/template.html
+cat template.pandoc.html.dhall | premd-exe > $DYN/template.html
 
 rebuild ./rebuild.conf | \
   awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
@@ -44,7 +65,7 @@ cat etc/courseListPre.dhall >> $DYN/courseList.dhall
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
-build students.md.dhall                  100px  0  100px center
+build students.html.dhall                  100px  0  100px center
 build parents/pathways.md.dhall            100px  4% 100px left
 build parents/course-descriptions.md.dhall 100px  4% 100px left
 build news/newsletters.md.dhall            100px 10% 100px center

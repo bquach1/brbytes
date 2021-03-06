@@ -1,4 +1,9 @@
 
+function saveCredentials(sectionCode, studentCode){
+     sessionStorage.setItem("section_code", sectionCode);
+     sessionStorage.setItem("student_code", studentCode);
+}
+
 function loginForm() {
     return {
         formData: {
@@ -8,24 +13,22 @@ function loginForm() {
         message: '',
         foundLink: false,
         loading: false,
+        problem: false,
         courseUrl: '',
-
         /*
         time: new Date(),
 
         init() {
             setInterval(function(){
                 this.time = new Date();
+                console.log(this.time);
             },1000);
         },
 
         getTime() {
-            return "Hello";
             return moment(this.time).format('DD MMMM, YYYY HH:mm:ss');
         },
-
         */
-
         submitData() {
             this.loading = true;
             this.message = '';
@@ -37,12 +40,14 @@ function loginForm() {
             })
             .then((res) => res.json())
             .then((res) => {
+                console.log(`fetch: ${res}`);
                 this.courseUrl = res;
                 if(this.courseUrl
                    && typeof(this.courseUrl) === 'string'
                    && this.courseUrl.startsWith('/courses')) {
                     this.message = "Link to your course";
                     this.foundLink = true;
+                    saveCredentials(this.formData.sec,this.formData.stu);
                     window.location.replace(this.courseUrl);
                 }
                 else this.message = "";
@@ -51,6 +56,11 @@ function loginForm() {
                 console.log(`ERROR: ${err}`);
             })
             .finally(() => {
+                window.location.replace('students-wait.html');
+                //setTimeout(function(){this.loading=false},3000);
+                this.problem = true;
+                this.stu='';
+                this.sec='';
                 this.loading = false;
             });
         },
