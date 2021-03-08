@@ -55,7 +55,7 @@ ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
 , Narrow = ''
 <div x-data="{ open: false }">
   <div class="dropdown-content w3-text-indigo w3-center w3-padding w3-large plain-links"
-       x-on:hamburger.window="console.log('hamburger:'+open);open = !open"
+       x-on:hamburger.window="open = !open"
        x-bind:class="{ 'w3-hide': !open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
   </div>
@@ -82,7 +82,7 @@ let navigation/hamburger =
      style="padding-top: 0;">
   <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
-     x-on:click="console.log('sending hamburger');$dispatch$('hamburger',null)">${b "&#9776"}</a>
+     x-on:click="$dispatch$('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
