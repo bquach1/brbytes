@@ -24,6 +24,11 @@ let body = ''
     </div>
   </p>
 
+  <p>
+    If the problem persists, please try choosing the course
+    from the <a href="students-fallback.html">course list.</a>
+  </p>
+
   <footer class="w3-container w3-red">
     Wait <span id="initial"></span> seconds before trying again.
   </footer>

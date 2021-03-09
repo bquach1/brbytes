@@ -6,6 +6,8 @@ in
 title: Home
 ---
 
+${x ''
+
 <div class="w3-row-padding plain-links">
 <div class="w3-display-container" style="width: 100%;">
 
@@ -26,14 +28,17 @@ title: Home
 </div>
 </div>
 </div>
+''}
+
+${slideshowImages "Banners/2103/"
+    [ "CommunityOfPracticeMarch.png"
+    ]}
 
 ${x ''
-${slideshowImages "Banners/2102/"
-    [ "CommunityOfPracticeFebruary.png"
-    , "TeacherSummerPD2021.png"
-    , "AprilHackAThon.png"
-    ]}
+    , "Computing21-22.png"
+    , "Computing21-22Students.png"
 ''}
+
 ${leftAlign
 ''
 BRBytes was formed through a Research Practitioner Partnership between East

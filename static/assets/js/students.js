@@ -50,13 +50,13 @@ function loginForm() {
                     saveCredentials(this.formData.sec,this.formData.stu);
                     window.location.replace(this.courseUrl);
                 }
-                else this.message = "";
+                else window.location.replace('students-wait.html');
+                // else this.message = "";
             })
             .catch((err) => {
                 console.log(`ERROR: ${err}`);
             })
             .finally(() => {
-                window.location.replace('students-wait.html');
                 //setTimeout(function(){this.loading=false},3000);
                 this.problem = true;
                 this.stu='';
