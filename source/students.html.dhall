@@ -1,6 +1,12 @@
 let title = "Students"
 let body =
 ''
+
+${slideshowImages "Banners/2103/"
+    [ "Computing21-22Students.png"
+    ]}
+
+
 <div class="w3-container w3-center"
      x-data="loginForm()"
 >

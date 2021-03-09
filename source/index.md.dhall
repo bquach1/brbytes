@@ -31,12 +31,13 @@ ${x ''
 ''}
 
 ${slideshowImages "Banners/2103/"
-    [ "CommunityOfPracticeMarch.png"
+    [ "Computing21-22.png"
     ]}
 
 ${x ''
     , "Computing21-22.png"
     , "Computing21-22Students.png"
+    , "CommunityOfPracticeMarch.png"
 ''}
 
 ${leftAlign
