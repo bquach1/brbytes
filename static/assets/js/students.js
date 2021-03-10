@@ -1,4 +1,41 @@
 
+const characters =
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+const charactersLength = characters.length;
+
+function anchor(link,desc) { return `<a href="${link}">${desc}</a>`; }
+
+function makeid(length) {
+    let result = '';
+
+    for ( let i = 0; i < length; i++ ) {
+        let idx = Math.floor(Math.random() * charactersLength);
+        result += characters.charAt(idx);
+    }
+
+    return result;
+}
+
+function studentsWait() {
+    let linkon = false;
+    let time = 15;
+    document.getElementById('initial').innerText = time;
+    setInterval(() => {
+        if(time > 0) {
+            document.getElementById('timer').innerText = time;
+            time--; 
+        }
+        else { window.location.replace('students.html'); }
+        if(time < 10 && !linkon) {
+            let fallback = "students-fallback.html?v=" + makeid(7);
+            let newLink = anchor(fallback,"course list.");
+            document.getElementById('courselist').innerHTML = newLink;
+            linkon = true;
+        }
+    }, 1000);
+}
+
 function saveCredentials(sectionCode, studentCode){
      sessionStorage.setItem("section_code", sectionCode);
      sessionStorage.setItem("student_code", studentCode);
@@ -50,7 +87,10 @@ function loginForm() {
                     saveCredentials(this.formData.sec,this.formData.stu);
                     window.location.replace(this.courseUrl);
                 }
-                else window.location.replace('students-wait.html');
+                else {
+                    let waitUrl = "students-wait.html?v=" + makeid(7);
+                    window.location.replace(waitUrl);
+                }
                 // else this.message = "";
             })
             .catch((err) => {

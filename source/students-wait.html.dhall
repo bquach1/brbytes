@@ -35,19 +35,7 @@ let body = ''
 
 </div>
 
-<script src="assets/js/moment.js"></script>
-<script>
-  let linkon = false;
-  let time = 15;
-  document.getElementById('initial').innerText = time;
-  setInterval(() => {
-  if(time > 0) { document.getElementById('timer').innerText = time; time--; }
-  else { window.location.replace('students.html'); }
-  if(time < 10 && !linkon) {
-  document.getElementById('courselist').innerHTML = '<a href="students-fallback.html">course list.</a>';
-  linkon = true;
-  }
-  }, 1000);
-  
-</script>
+<script src="assets/js/students.js"></script>
+<script>studentsWait();</script>
+
 ''
