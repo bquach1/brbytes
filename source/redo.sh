@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 DYN=../dynamic
 
 mkdir -p $DYN ../html
@@ -59,7 +61,7 @@ build() {
 
 cat template.pandoc.html.dhall | premd-exe > $DYN/template.html
 
-rebuild ./rebuild.conf | \
+rebuild | \
   awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
   > $DYN/courseList.dhall
 
