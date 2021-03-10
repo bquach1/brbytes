@@ -1,8 +1,14 @@
 #!/bin/sh
 
 ROOTDIR=${ROOTDIR:-${HOME}}
+ASSETS=../website-assets
 
 cd $(dirname $0)
+
+if [ ! -d $ASSETS ]; then
+    echo "Please install website-assets"
+    exit 1
+fi
 
 rm -rf html
 echo Sync static/ html/
@@ -30,3 +36,6 @@ echo Sync html/ $ROOTDIR/html/
 rsync -aSH html/ $ROOTDIR/html/
 
 mv     $ROOTDIR/html.courses $ROOTDIR/html/courses
+
+cd $ASSETS
+sh deploy.sh
