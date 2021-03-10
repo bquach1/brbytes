@@ -45,7 +45,7 @@ build() {
             echo "premd-exec $1 > ../html/$htmlname.html"
             cat etc/shortcodes.dhall \
                 $1 \
-                template.direct.dhall \
+                template.direct.html.dhall \
                 | premd-exe \
                       > ../html/$htmlname.html
             ;;

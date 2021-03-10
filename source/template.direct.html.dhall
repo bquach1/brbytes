@@ -220,7 +220,7 @@ in
     ${footer/logos ["usdoe","lsu","ebrpss","nsf"]}
     </div>
 
-    <!-- <script src="assets/js/brbytes.js"></script> -->
+    <script src="assets/js/brbytes.js"></script>
   </body>
 </html>
 ''
