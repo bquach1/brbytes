@@ -26,7 +26,7 @@ let body = ''
 
   <p>
     If the problem persists, please try choosing the course
-    from the <a href="students-fallback.html">course list.</a>
+    from the <span id='courselist'>course list.</span>
   </p>
 
   <footer class="w3-container w3-red">
@@ -37,11 +37,16 @@ let body = ''
 
 <script src="assets/js/moment.js"></script>
 <script>
+  let linkon = false;
   let time = 15;
   document.getElementById('initial').innerText = time;
   setInterval(() => {
   if(time > 0) { document.getElementById('timer').innerText = time; time--; }
   else { window.location.replace('students.html'); }
+  if(time < 10 && !linkon) {
+  document.getElementById('courselist').innerHTML = '<a href="students-fallback.html">course list.</a>';
+  linkon = true;
+  }
   }, 1000);
   
 </script>
