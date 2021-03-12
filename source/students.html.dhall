@@ -11,9 +11,9 @@ ${slideshowImages "Banners/2103/"
      x-data="loginForm()"
 >
 
-${w "h1" "Spring 2021"}
+${w "h1" "Computing Pathway Courses"}
 
-${w "h3" "Computing Pathway Courses"}
+${w "h3" "Please enter your section code and student code here"}
 
   <div class="w3-panel">
     <label>Section Code:</label>
