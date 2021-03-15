@@ -42,10 +42,11 @@ build() {
         *.html)
             export T_PADDING="$2 $3 $4"
             export T_ALIGNMENT="$5"
+            export T_DISPATCH='$dispatch'
             echo "premd-exec $1 > ../html/$htmlname.html"
             cat etc/shortcodes.dhall \
                 $1 \
-                template.direct.html.dhall \
+                template.html.dhall \
                 | premd-exe \
                       > ../html/$htmlname.html
             ;;
@@ -59,7 +60,11 @@ build() {
     echo ""
 }
 
-cat template.pandoc.html.dhall | premd-exe > $DYN/template.html
+export T_PADDING='$padding$'
+export T_ALIGNMENT='$alignment$'
+export T_DISPATCH='$dispatch$'
+cat tpandoc.dhall template.html.dhall | \
+    premd-exe > $DYN/template.html
 
 rebuild | \
   awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \

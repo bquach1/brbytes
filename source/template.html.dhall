@@ -1,6 +1,10 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
 
+let padding = env:T_PADDING as Text
+let alignment = env:T_ALIGNMENT as Text
+let dispatch = env:T_DISPATCH as Text
+
 let b = \(text:Text) -> "<strong>${text}</strong>"
 let i = \(text:Text) -> "<em>${text}</em>"
 let x = \(text:Text) -> ""
@@ -82,7 +86,7 @@ let navigation/hamburger =
      style="padding-top: 0;">
   <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
-     x-on:click="$dispatch$('hamburger',null)">${b "&#9776"}</a>
+     x-on:click="${dispatch}('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
@@ -161,11 +165,15 @@ let menuItems =
   , item "STUDENTS" "students.html"
   , dropdown "PARENTS" "parents" ""
         [ subitem "Pathways" "pathways.html"
+        , subitem "LSU Computing Brief" "/ComputingBrief.pdf"
         , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
-  , item "SCHOOLS" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+  , dropdown "SCHOOLS" "schools" ""
+        [ subitem "LSU Computing Brief" "/ComputingBrief.pdf"
+        , subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+        ]
   , dropdown "NEWS" "news" ""
         [ subitem "Newsletters" "newsletters.html"
         , subitem "Announcements" "announcements.html"
@@ -187,7 +195,7 @@ in
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BRBytes Main Page">
-    <title>BRBytes &ndash; LSU Computing Pathway &ndash; $title$</title>
+    <title>BRBytes &ndash; LSU Computing Pathway &ndash; ${title}</title>
     <link rel="stylesheet" href="/assets/css/w3.css">
     <link rel="stylesheet" href="/assets/css/w3-theme-indigo.css">
     <link rel="stylesheet" href="/assets/css/landing-styles.css">
@@ -207,9 +215,9 @@ in
       ${navigation/narrow menuItems}
     </div>
 
-    <div id="main-div" style="padding: $padding$; text-align: $alignment$; overflow: auto;">
+    <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
       <!--this div contains the body of the page-->
-$body$       
+${body}
       <!--end of body-->
     </div>
 
