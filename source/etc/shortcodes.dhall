@@ -1,10 +1,38 @@
 let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
 let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
+let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
 
 let b = \(text:Text) -> "<strong>${text}</strong>"
 let i = \(text:Text) -> "<em>${text}</em>"
 let w = \(elm:Text) -> \(text:Text) -> "<${elm}>${text}</${elm}>"
 let x = \(ignore : Text) -> ""
+let p = \(text:Text) -> "<p>${text}</p>"
+let a = \(link:Text) -> \(desc:Text) -> ''
+<a href="${link}">${desc}</a>''
+let ma = \(desc:Text) -> \(link:Text) -> a link desc
+
+let ul = \(items:List Text) ->
+    let makeItem = \(item:Text) -> w "li" item
+    in
+''
+<ul>
+${concatMapSep "\n" Text makeItem items}
+</ul>
+''
+
+let blockquote =
+    \(author : Text) ->
+    \(quote : Text) ->
+''
+<blockquote class="w3-panel w3-leftbar w3-light-grey">
+<p class="w3-serif"><i>"${quote}"</i></p>
+<p>${author}</p>
+</blockquote>
+''
+
+
+
+-------------------------------------------------------------------
 
 let SCS = {color = "green", name = "SCS", link = "#"}
 

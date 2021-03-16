@@ -6,8 +6,8 @@ let alignment = env:T_ALIGNMENT as Text
 let dispatch = env:T_DISPATCH as Text
 
 let b = \(text:Text) -> "<strong>${text}</strong>"
-let i = \(text:Text) -> "<em>${text}</em>"
-let x = \(text:Text) -> ""
+-- let i = \(text:Text) -> "<em>${text}</em>"
+-- let x = \(text:Text) -> ""
 
 let MenuStyle = < Wide | Narrow >
 
@@ -160,6 +160,8 @@ merge
 -- Main
 ------------------------------------------------------------
 
+let hold1 = subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+
 let menuItems =
   [ item "TEACHERS" "teachers.html"
   , item "STUDENTS" "students.html"
@@ -172,7 +174,7 @@ let menuItems =
         ]
   , dropdown "SCHOOLS" "schools" ""
         [ subitem "LSU Computing Brief" "/ComputingBrief.pdf"
-        , subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+        , subitem "BRBytes research study" "schools.html"
         ]
   , dropdown "NEWS" "news" ""
         [ subitem "Newsletters" "newsletters.html"
@@ -180,7 +182,7 @@ let menuItems =
         ]
   , dropdown "ABOUT" "about" "padding-left:16px;"
         [ subitem "Overview" "overview.html"
-        , subitem "Our Goals" "goals"
+        , subitem "Our Goals" "goals.html"
         , subitem "Participating Schools"
                   "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
         , subitem "Contact" "contact.html" 
