@@ -33,22 +33,21 @@ the two subjects. This is a high-stakes study with possible
 long term benefits.
 ''
 
-, w "h4" "School requirements"
+, w "h2" "School requirements"
 
-, p ''
-<ul>
-<li> Offer the ${brbseq} in your course catalog for at least 2 years
-<li> Recruit 2 teachers to teach the BRBytes courses
-<li> Designate 1 counselor as point of contact
-<li> Enroll between 20% and 50% of students who are taking
-${b "Algebra I"} to take a BRBytes course concurrently
-</ul>
-''
+, ul
+[ "Offer the ${brbseq} in your course catalog for at least 2 years"
+, "Recruit 2 teachers to teach the BRBytes courses"
+, "Designate 1 counselor as point of contact"
+, ''
+  Enroll between 20% and 50% of students who are taking
+  ${b "Algebra I"} to take a BRBytes course concurrently''
+]
 
 , p ''
 <script>
 let preamble = "your school will need "
-let postamble = " students enrolled in the BRBytes Sequence."
+let postamble = " students enrolled in the ${brbseq}."
 
 function need(lo,hi) {
     if(Math.abs(lo-hi)<4)
@@ -102,7 +101,7 @@ ${x ''
 ''}
 ''
 
-, w "h2" 
+, w "h3" 
   "Suggested language to include in your student course catalog"
 
 , blockquote "" ''
