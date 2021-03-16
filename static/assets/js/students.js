@@ -19,7 +19,7 @@ function makeid(length) {
 
 function studentsWait() {
     let linkon = false;
-    let time = 15;
+    let time = 30;
     document.getElementById('initial').innerText = time;
     setInterval(() => {
         if(time > 0) {
