@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.form.io/formiojs/formio.full.min.css'>
+    <script src='https://cdn.form.io/formiojs/formio.full.min.js'></script>
+    <script type='text/javascript'>
+      let form;
+      window.onload = function() {
+        form = Formio.builder(document.getElementById('builder'), {}, {}).then(function(form) {
+  // Defaults are provided as follows.
+  form.submission = {
+    data: {
+      firstName: 'Joe',
+      lastName: 'Smith'
+    }
+  };
+  
+  // Register for the submit event to get the completed submission.
+  form.on('submit', function(submission) {
+    console.log('Submission was made!', submission);
+  });
+  
+  // Everytime the form changes, this will fire.
+  form.on('change', function(changed) {
+    console.log('Form was changed', changed);
+  });
+});
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Form Builder</h1>
+    <div id='builder'></div>
+
+    <h1>Output</h1>
+
+  </body>
+</html>
