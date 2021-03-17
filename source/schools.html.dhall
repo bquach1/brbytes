@@ -1,4 +1,4 @@
-let brbseq = i "BRBytes Sequence"
+let brbseq = ma (i "BRBytes Sequence") "#brbseq"
 
 let title = "Participating in the BRBytes study"
 let body = concatSep "\n"
@@ -28,7 +28,7 @@ two Federal grants:
 The US Dept. of Education granted LSU $4M to study the
 impact of ${b "Computational Thinking"} in the learning of
 ${b "Mathematics"}. If successful, this study will inform
-development of future courses Nationwide that integrate
+development of future courses nationwide that integrate
 the two subjects. This is a high-stakes study with possible
 long term benefits.
 ''
@@ -46,8 +46,9 @@ long term benefits.
 
 , p ''
 <script>
-let preamble = "your school will need "
-let postamble = " students enrolled in the ${brbseq}."
+let preamble = "your school will need ";
+let postamble = " students enrolled in the "
+              + "<a href=#brbseq>BRBytes Sequence</a>.";
 
 function need(lo,hi) {
     if(Math.abs(lo-hi)<4)
@@ -105,14 +106,17 @@ ${x ''
   "Suggested language to include in your student course catalog"
 
 , blockquote "" ''
-${brbseq}: This is a unique course pairing that is offered in our
-school. Students will complete two classes focusing on essential
+${brbseq}: This is a unique course pairing offered in our
+school, which provides students the opportunity to
+take two courses:
+${b "Introduction to Computational Thinking"}
+and another introductory
+LSU STEM Pathways course.
+Students who join the sequence will take one of the
+courses the first year and the other course in the following year.
+The two courses focus on essential
 STEM skills that are appropriate for career technical education and
-for college bound students. The ${brbseq} includes two courses:
-Introduction to Computational Thinking and a second
-BRBytes elective. Students who join the sequence will be sorted
-and assigned to take one course the first year and the second
-course in the following year.
+for college bound students.
 ''
 
 , w "h2" "Teacher requirements"
@@ -131,6 +135,9 @@ participating (individual deductions vary).
   for the BRBytes courses''
 , "Participate in monthly Community of Practice sessions"
 , "Agree to on-site follow-up for two years"
+, ''
+  Maintain an open line of communication with the
+  LSU Computing Pathway staff''
 ]
 
 , w "h2" "Counselor requirements"
@@ -145,8 +152,8 @@ participating.''
 [ "Help recruit students for the study"
 , ''
   Coordinate with our team to assign participating students
-  to the courses according to the lottery''
-, "Track BRbytes students in their progression"
+  to the courses''
+, "Track BRBytes students in their progression"
 , "About 30 minutes once a month needed for above work"
 , ''
   In addition, they will need:
@@ -160,7 +167,7 @@ participating.''
   ''
 ]
 
-, w "h1" "The BRBytes Sequence"
+, "<h1 id=brbseq>The BRBytes Sequence</h1>"
 
 , p ''
 The ${brbseq} is two-year, two-course sequence containing:

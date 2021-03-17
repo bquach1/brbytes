@@ -74,7 +74,7 @@ cat etc/courseListPre.dhall >> $DYN/courseList.dhall
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
-build schools.html.dhall                     100px 30%  100px left
+build schools.html.dhall                     100px 10%  100px left
 build students.html.dhall                  100px  0  100px center
 build students-fallback.md.dhall           100px  0  100px center
 build students-wait.html.dhall             100px 20% 100px center
