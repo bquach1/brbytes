@@ -1,18 +1,20 @@
-let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
-let concatMap = https://prelude.dhall-lang.org/v9.0.0/Text/concatMap
-let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
+let prelude/Text = https://prelude.dhall-lang.org/Text/package.dhall
 
-let b = \(text:Text) -> "<strong>${text}</strong>"
-let i = \(text:Text) -> "<em>${text}</em>"
-let w = \(elm:Text) -> \(text:Text) -> "<${elm}>${text}</${elm}>"
+let concatMapSep = prelude/Text.concatMapSep
+let concatMap = prelude/Text.concatMap
+let concatSep = prelude/Text.concatSep
+
+let b = \(text: Text) -> "<strong>${text}</strong>"
+let i = \(text: Text) -> "<em>${text}</em>"
+let w = \(elm: Text) -> \(text: Text) -> "<${elm}>${text}</${elm}>"
 let x = \(ignore : Text) -> ""
-let p = \(text:Text) -> "<p>${text}</p>"
-let a = \(link:Text) -> \(desc:Text) -> ''
+let p = \(text: Text) -> "<p>${text}</p>"
+let a = \(link: Text) -> \(desc: Text) -> ''
 <a href="${link}">${desc}</a>''
-let ma = \(desc:Text) -> \(link:Text) -> a link desc
+let ma = \(desc: Text) -> \(link: Text) -> a link desc
 
-let ul = \(items:List Text) ->
-    let makeItem = \(item:Text) -> w "li" item
+let ul = \(items: List Text) ->
+    let makeItem = \(item: Text) -> w "li" item
     in
 ''
 <ul>

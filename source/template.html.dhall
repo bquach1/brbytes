@@ -1,11 +1,11 @@
-let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
-let concatSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatSep
+let concatMapSep = https://prelude.dhall-lang.org/Text/concatMapSep
+let concatSep = https://prelude.dhall-lang.org/Text/concatSep
 
 let padding = env:T_PADDING as Text
 let alignment = env:T_ALIGNMENT as Text
 let dispatch = env:T_DISPATCH as Text
 
-let b = \(text:Text) -> "<strong>${text}</strong>"
+let b = \(text : Text) -> "<strong>${text}</strong>"
 -- let i = \(text:Text) -> "<em>${text}</em>"
 -- let x = \(text:Text) -> ""
 

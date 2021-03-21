@@ -1,4 +1,4 @@
-let concatMapSep = https://prelude.dhall-lang.org/v9.0.0/Text/concatMapSep
+let concatMapSep = https://prelude.dhall-lang.org/Text/concatMapSep
 
 let Course =
     { desc : Text

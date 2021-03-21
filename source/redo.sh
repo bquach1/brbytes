@@ -18,47 +18,52 @@ build() {
         titleopt="--metadata title=\"$6\""
     fi
 
-    case $filename in
+    if [ -f ../html/$htmlname.html \
+         -a ../html/$htmlname.html -nt $1 ]; then
+        echo "Not rebuilding $1"
+    else
+        case $filename in
 
-        *.md)
-            cat etc/shortcodes.dhall \
-                $1 | \
-                premd-exe > $DYN/$filename
+            *.md)
+                cat etc/shortcodes.dhall \
+                    $1 | \
+                    premd-exe > $DYN/$filename
 
-            # each template requires 5 parameters.
-            # $1 is the base file,
-            # $2-$4 are the padding,
-            # $5 is the text alignment
-            echo pandoc -o ../html/$htmlname.html $DYN/$filename
-            pandoc --variable padding="$2 $3 $4" \
-                   --variable alignment=$5 \
-                   --variable dispatch='$dispatch' \
-                   $titleopt \
-                   --template $DYN/template.html \
-                   -s -o ../html/$htmlname.html $DYN/$filename
-            #rm -f $DYN/$filename
-            ;;
+                # each template requires 5 parameters.
+                # $1 is the base file,
+                # $2-$4 are the padding,
+                # $5 is the text alignment
+                echo pandoc -o ../html/$htmlname.html $DYN/$filename
+                pandoc --variable padding="$2 $3 $4" \
+                       --variable alignment=$5 \
+                       --variable dispatch='$dispatch' \
+                       $titleopt \
+                       --template $DYN/template.html \
+                       -s -o ../html/$htmlname.html $DYN/$filename
+                #rm -f $DYN/$filename
+                ;;
 
-        *.html)
-            export T_PADDING="$2 $3 $4"
-            export T_ALIGNMENT="$5"
-            export T_DISPATCH='$dispatch'
-            echo "premd-exec $1 > ../html/$htmlname.html"
-            cat etc/shortcodes.dhall \
-                $1 \
-                template.html.dhall \
-                | premd-exe \
-                      > ../html/$htmlname.html
-            ;;
+            *.html)
+                export T_PADDING="$2 $3 $4"
+                export T_ALIGNMENT="$5"
+                export T_DISPATCH='$dispatch'
+                echo "premd-exec $1 > ../html/$htmlname.html"
+                cat etc/shortcodes.dhall \
+                    $1 \
+                    template.html.dhall \
+                    | premd-exe \
+                          > ../html/$htmlname.html
+                ;;
 
-        *)
-            echo Not processing $filename
-            ;;
+            *)
+                echo Not processing $filename
+                ;;
 
-    esac
-
-    echo ""
+        esac
+    fi
 }
+
+echo "Rebuilding template"
 
 export T_PADDING='$padding$'
 export T_ALIGNMENT='$alignment$'
@@ -66,11 +71,14 @@ export T_DISPATCH='$dispatch$'
 cat tpandoc.dhall template.html.dhall | \
     premd-exe > $DYN/template.html
 
+echo "Rebuilding courseList"
 rebuild | \
   awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
   > $DYN/courseList.dhall
 
 cat etc/courseListPre.dhall >> $DYN/courseList.dhall
+
+echo "Rebuilding pages"
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
