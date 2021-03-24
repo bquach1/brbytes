@@ -3,14 +3,15 @@
 set -e
 
 DYN=../dynamic
+REBUILD=no
 
 mkdir -p $DYN ../html
 
 build() {
-    echo build "$@"
     pathname=$(dirname $1)
     filename=$(basename $1 .dhall)
     htmlname=$(basename $(basename $filename .md) .html)
+    outfile=../html/$htmlname.html
 
     if [ "x$6" = "x" ]; then
         titleopt=""
@@ -18,10 +19,17 @@ build() {
         titleopt="--metadata title=\"$6\""
     fi
 
-    if [ -f ../html/$htmlname.html \
-         -a ../html/$htmlname.html -nt $1 ]; then
+    if [ -f $outfile ]; then
+        if [ $1 -nt $outfile ]; then REBUILD=yes ; fi
+        if [ etc/shortcodes.dhall -nt $outfile ]; then REBUILD=yes ; fi
+    else
+        REBUILD=yes
+    fi
+
+    if [ $REBUILD = no ]; then
         echo "Not rebuilding $1"
     else
+        echo Building $outfile # "$@"
         case $filename in
 
             *.md)
@@ -33,13 +41,13 @@ build() {
                 # $1 is the base file,
                 # $2-$4 are the padding,
                 # $5 is the text alignment
-                echo pandoc -o ../html/$htmlname.html $DYN/$filename
+                #echo pandoc -o $outfile $DYN/$filename
                 pandoc --variable padding="$2 $3 $4" \
                        --variable alignment=$5 \
                        --variable dispatch='$dispatch' \
                        $titleopt \
                        --template $DYN/template.html \
-                       -s -o ../html/$htmlname.html $DYN/$filename
+                       -s -o $outfile $DYN/$filename
                 #rm -f $DYN/$filename
                 ;;
 
@@ -47,12 +55,12 @@ build() {
                 export T_PADDING="$2 $3 $4"
                 export T_ALIGNMENT="$5"
                 export T_DISPATCH='$dispatch'
-                echo "premd-exec $1 > ../html/$htmlname.html"
+                #echo "premd-exec $1 > $outfile"
                 cat etc/shortcodes.dhall \
                     $1 \
                     template.html.dhall \
                     | premd-exe \
-                          > ../html/$htmlname.html
+                          > $outfile
                 ;;
 
             *)
@@ -63,22 +71,32 @@ build() {
     fi
 }
 
-echo "Rebuilding template"
+if [ -f $DYN/template.html \
+        -a $DYN/template.html -nt template.html.dhall \
+   ]; then
+    echo "Skipping rebuild template"
+else
+    REBUILD=yes
+    echo "Rebuilding template"
 
-export T_PADDING='$padding$'
-export T_ALIGNMENT='$alignment$'
-export T_DISPATCH='$dispatch$'
-cat tpandoc.dhall template.html.dhall | \
-    premd-exe > $DYN/template.html
+    export T_PADDING='$padding$'
+    export T_ALIGNMENT='$alignment$'
+    export T_DISPATCH='$dispatch$'
+    cat tpandoc.dhall template.html.dhall | \
+        premd-exe > $DYN/template.html
+fi
 
-echo "Rebuilding courseList"
-rebuild | \
-  awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
-  > $DYN/courseList.dhall
-
-cat etc/courseListPre.dhall >> $DYN/courseList.dhall
-
-echo "Rebuilding pages"
+if [ -f $DYN/courseList.dhall \
+        -a $DYN/courseList.dhall -nt etc/courseListPre.dhall \
+   ]; then
+    echo "Skipping rebuild courseList"
+else
+    echo "Rebuilding courseList"
+    rebuild | \
+        awk '/^lessons-/ { print "let " $1 " = \"" $3 "\""}' \
+            > $DYN/courseList.dhall
+    cat etc/courseListPre.dhall >> $DYN/courseList.dhall
+fi
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
