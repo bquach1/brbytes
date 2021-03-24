@@ -1,0 +1,28 @@
+section {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+header {
+  background: tomato;
+  /* no flex rules, it will grow */
+}
+
+div {
+  flex: 1;
+  /* 1 and it will fill whole space left if no flex value are set to other children*/
+  background: gold;
+  overflow: auto;
+}
+
+footer {
+    background: lightgreen;
+    min-height: 60px;
+    width: 100%;
+  /* min-height has its purpose :) , unless you meant height*/
+}
+
+body {
+  margin: 0;
+}

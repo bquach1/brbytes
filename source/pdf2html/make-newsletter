@@ -1,0 +1,1 @@
+rm NewsLetter-Mar21.html && pdf2htmlEX --dpi 72 --external-hint-tool=ttfautohint --fit-width 1024 NewsLetter-Mar21.pdf 
