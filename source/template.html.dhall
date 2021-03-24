@@ -31,13 +31,17 @@ let navigation/contact = ''
 </div>
 ''
 
+let ImgLink = { file : Text, ref : Text }
+
 let footer/logos =
-\(imgs : List Text) ->
-let logo = \(img : Text) -> ''
+\(imgs : List ImgLink) ->
+let logo = \(img : ImgLink) -> ''
+<a href="${img.ref}">
 <img class="w3-margin-left w3-margin-right"
-     src="/images/Logos/${img}.png" height="40vh">''
+     src="/images/Logos/${img.file}.png" height="40vh">
+</a>''
 in
-concatMapSep "\n" Text logo imgs
+concatMapSep "\n" ImgLink logo imgs
 
 ------------------------------------------------------------
 -- MenuStyle components
@@ -114,7 +118,6 @@ merge
 
 let dropdown =
 \(desc : Text) ->
-\(lbl : Text) ->
 \(extra : Text) ->
 \(items : List (MenuStyle -> Text)) ->
 \(menu : MenuStyle) ->
@@ -165,22 +168,23 @@ let hold1 = subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYX
 let menuItems =
   [ item "TEACHERS" "teachers.html"
   , item "STUDENTS" "students.html"
-  , dropdown "PARENTS" "parents" ""
+  , dropdown "PARENTS" ""
         [ subitem "Pathways" "pathways.html"
-        , subitem "LSU Computing Brief" "/ComputingBrief.pdf"
+        , subitem "LSU Computing Brief" "ComputingBrief.pdf"
         , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
-  , dropdown "SCHOOLS" "schools" ""
-        [ subitem "LSU Computing Brief" "/ComputingBrief.pdf"
+  , dropdown "SCHOOLS" ""
+        [ subitem "LSU Computing Brief" "ComputingBrief.pdf"
         , subitem "BRBytes research study" "schools.html"
         ]
-  , dropdown "NEWS" "news" ""
-        [ subitem "Newsletters" "newsletters.html"
+  , dropdown "NEWS" ""
+        [ subitem "March 2021" "docs/nl/NewsLetter-Mar21.pdf"
+        , subitem "Newsletters" "newsletters.html"
         , subitem "Announcements" "announcements.html"
         ]
-  , dropdown "ABOUT" "about" "padding-left:16px;"
+  , dropdown "ABOUT" "padding-left:16px;"
         [ subitem "Overview" "overview.html"
         , subitem "Our Goals" "goals.html"
         , subitem "Participating Schools"
@@ -188,6 +192,18 @@ let menuItems =
         , subitem "Contact" "contact.html" 
         ]
   ]
+
+let navigation/content = ''
+<div class="accent-color w3-bar w3-row">
+  <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
+    ${navigation/logoImage}
+    ${navigation/logoHeading}
+  </div>
+  ${navigation/hamburger}
+  ${navigation/wide menuItems}
+</div>
+${navigation/narrow menuItems}
+''
 
 in
 ''
@@ -206,15 +222,10 @@ in
   </head>
   <body>
     <div class="sticky accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
-      <div class="accent-color w3-bar w3-row">
-        <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
-          ${navigation/logoImage}
-          ${navigation/logoHeading}
-        </div>
-        ${navigation/hamburger}
-        ${navigation/wide menuItems}
-      </div>
-      ${navigation/narrow menuItems}
+      ${navigation/content}
+    </div>
+    <div class="accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
+      ${navigation/content}
     </div>
 
     <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
@@ -224,7 +235,11 @@ ${body}
     </div>
 
     <div class="sticky footer accent-color w3-center w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
-    ${footer/logos ["usdoe","lsu","ebrpss","nsf"]}
+    ${footer/logos [ { file = "usdoe", ref = "https://www.ed.gov/" }
+                   , { file = "lsu",   ref = "https://www.lsu.edu/" }
+                   , { file = "ebrpss",ref = "https://ebrschools.org/" }
+                   , { file = "nsf",   ref = "https://www.nsf.gov/" }
+                   ]}
     </div>
 
     <script src="assets/js/brbytes.js"></script>
