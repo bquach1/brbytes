@@ -188,7 +188,7 @@ All students will be able to take both courses by the end of 10th grade, but the
 , p "A detailed description can be found here:"
 
 , ul [ ma "The BRBytes Sequence"
-          "https://cloud.brbytes.org/s/TBb7oGWT9sq3oQE" ]
+          "https://cloud.brbytes.org/s/rZAC8TwPk9qBHqA" ]
 ]
 
 in
