@@ -164,11 +164,33 @@ html {
 
 /* responsiveness */
 @media only screen and (max-width: 500px) {
+    .header {
+        padding: 0!important;
+        margin: 0!important;
+    }
+    #navigation-logo-brbytes {
+        height: 2vh!important;
+    }
+    #navigation-hamburger {
+        height: 2vh!important;
+    }
     #navigation-contact {
+        display: none;
+    }
+    #sticky-footer {
         display: none;
     }
 }
 @media only screen and (max-width: 600px) {
+    #navigation-logo-brbytes {
+        height: 5vh!important;
+    }
+    #navigation-hamburger {
+        height: 2vh!important;
+    }
+    #navigation-contact {
+        display: none;
+    }
     .absolute-position-image {
         position: relative;
         padding-left: 0;
@@ -181,9 +203,15 @@ html {
     .left-padded-div {
     	padding-left: 0;
     }
+    #sticky-footer {
+        display: none;
+    }
 }
 @media only screen and (max-width: 700px) {
     #navigation-logo-heading {
+        display: none;
+    }
+    #sticky-footer {
         display: none;
     }
 }

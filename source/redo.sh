@@ -117,7 +117,7 @@ build about/overview.md.dhall              100px  1% 100px left
 build about/goals.md.dhall                 100px  0   50px left
 build about/contact.md.dhall               100px  0  100px center
 
-#build nl2103.html.dhall                    100px  0  100px center
+build pdf2html/nl2103.html.dhall                    100px  0  100px center
 
 #build coming-soon.dhall                 100px  5% 100px center
 #build participating-schools.dhall       100px 10% 100px left

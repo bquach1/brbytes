@@ -12,8 +12,9 @@ let b = \(text : Text) -> "<strong>${text}</strong>"
 let MenuStyle = < Wide | Narrow >
 
 let navigation/logoImage = ''
-<div id="navigation-logo-image" class="w3-bar-item" style="padding-right: 0;">
-  <a href="/index.html"><img src="/images/Logos/brbytes.png" height="50vh"></a>
+<div id="navigation-logo-image" class="header w3-bar-item" style="padding-right: 0;">
+  <a href="/index.html"><img id="navigation-logo-brbytes"
+                             src="/images/Logos/brbytes.png" height="50vh"></a>
 </div>
 ''
 
@@ -86,9 +87,9 @@ navigation items MenuStyle.Narrow
 let navigation/hamburger = 
 ''
 <div id="navigation-hamburger"
-     class="dropdown-button w3-bar-item w3-right" 
+     class="header dropdown-button w3-bar-item w3-right" 
      style="padding-top: 0;">
-  <a href="#" class="dropdown-button w3-xlarge w3-bar-item w3-button"
+  <a href="#" class="header dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
      x-on:click="${dispatch}('hamburger',null)">${b "&#9776"}</a>
 </div>
@@ -180,7 +181,7 @@ let menuItems =
         , subitem "BRBytes research study" "schools.html"
         ]
   , dropdown "NEWS" ""
-        [ subitem "March 2021" "docs/nl/NewsLetter-Mar21.pdf"
+        [ subitem "March 2021" "nl2103.html"
         , subitem "Newsletters" "newsletters.html"
         , subitem "Announcements" "announcements.html"
         ]
@@ -194,7 +195,7 @@ let menuItems =
   ]
 
 let navigation/content = ''
-<div class="accent-color w3-bar w3-row">
+<div class="header accent-color w3-bar w3-row">
   <div class="w3-col" style="width: fit-content; width: -moz-fit-content;">
     ${navigation/logoImage}
     ${navigation/logoHeading}
@@ -203,6 +204,14 @@ let navigation/content = ''
   ${navigation/wide menuItems}
 </div>
 ${navigation/narrow menuItems}
+''
+
+let navigation/footer = ''
+${footer/logos [ { file = "usdoe", ref = "https://www.ed.gov/" }
+               , { file = "lsu",   ref = "https://www.lsu.edu/" }
+               , { file = "ebrpss",ref = "https://ebrschools.org/" }
+               , { file = "nsf",   ref = "https://www.nsf.gov/" }
+               ]}
 ''
 
 in
@@ -221,25 +230,27 @@ in
     <script src="/assets/js/alpine.js" defer></script>
   </head>
   <body>
-    <div class="sticky accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
+    <div class="header accent-color w3-bottombar w3-border-yellow w3-small sticky"
+         style="padding: 8px 16px 0;">
       ${navigation/content}
     </div>
-    <div class="accent-color w3-bottombar w3-border-yellow w3-small" style="padding: 8px 16px 0;">
+    <div class="header accent-color w3-bottombar w3-border-yellow w3-small"
+         style="padding: 8px 16px 0;">
       ${navigation/content}
     </div>
 
-    <div id="main-div" style="padding: ${padding}; text-align: ${alignment}; overflow: auto;">
+    <div id="main-div" style="padding: ${padding}; text-align: ${alignment};">
       <!--this div contains the body of the page-->
 ${body}
       <!--end of body-->
     </div>
 
-    <div class="sticky footer accent-color w3-center w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
-    ${footer/logos [ { file = "usdoe", ref = "https://www.ed.gov/" }
-                   , { file = "lsu",   ref = "https://www.lsu.edu/" }
-                   , { file = "ebrpss",ref = "https://ebrschools.org/" }
-                   , { file = "nsf",   ref = "https://www.nsf.gov/" }
-                   ]}
+    <div class="accent-color w3-center w3-topbar w3-border-yellow w3-padding-large">
+      ${navigation/footer}
+    </div>
+    <div id="sticky-footer"
+         class="sticky footer accent-color w3-center w3-topbar w3-border-yellow w3-padding-large w3-hide-small">
+      ${navigation/footer}
     </div>
 
     <script src="assets/js/brbytes.js"></script>

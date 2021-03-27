@@ -7,7 +7,7 @@ let body = concatSep "\n"
 [ ''
   <embed type="text/html" 
          src="docs/nl/NewsLetter-Mar21.html"
-         style="display: block; width: 100%; height: 100vh;">
+         style="display: block; width: 98vw; height: 98vh;">
   ''
 
 , ''
