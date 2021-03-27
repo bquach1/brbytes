@@ -3,11 +3,13 @@
 set -e
 
 DYN=../dynamic
-REBUILD=no
+REBUILDALL=no
 
 mkdir -p $DYN ../html
 
 build() {
+    REBUILD=$REBUILDALL
+
     pathname=$(dirname $1)
     filename=$(basename $1 .dhall)
     htmlname=$(basename $(basename $filename .md) .html)
@@ -30,7 +32,8 @@ build() {
         echo "Not rebuilding $1"
     else
         echo Building $outfile # "$@"
-        export T_PADDING="$2 $3 $4"
+        #export T_PADDING="$2 $3 $4"
+        export T_PADDING="0 $3 0"
         export T_ALIGNMENT="$5"
         export T_DISPATCH='$dispatch'
         case $filename in
@@ -47,7 +50,7 @@ build() {
                 #echo pandoc -o $outfile $DYN/$filename
                 pandoc --variable padding="${T_PADDING}" \
                        --variable alignment="${T_ALIGNMENT}" \
-                       --variable dispatch="'${T_DISPATCH}'" \
+                       --variable dispatch="${T_DISPATCH}" \
                        $titleopt \
                        --template $DYN/template.html \
                        -s -o $outfile $DYN/$filename
@@ -76,7 +79,7 @@ if [ -f $DYN/template.html \
    ]; then
     echo "Skipping rebuild template"
 else
-    REBUILD=yes
+    REBUILDALL=yes
     echo "Rebuilding template"
 
     export T_PADDING='$padding$'
@@ -86,6 +89,7 @@ else
         premd-exe > $DYN/template.html
 fi
 
+if false ; then
 if [ -f $DYN/courseList.dhall \
         -a $DYN/courseList.dhall -nt etc/courseListPre.dhall \
    ]; then
@@ -97,12 +101,13 @@ else
             > $DYN/courseList.dhall
     cat etc/courseListPre.dhall >> $DYN/courseList.dhall
 fi
+fi
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
 build schools.html.dhall                     100px 10%  100px left
 build students.html.dhall                  100px  0  100px center
-build students-fallback.md.dhall           100px  0  100px center
+#build students-fallback.md.dhall           100px  0  100px center
 build students-wait.html.dhall             100px 20% 100px center
 build parents/pathways.md.dhall            100px  4% 100px left
 build parents/course-descriptions.md.dhall 100px  4% 100px left
