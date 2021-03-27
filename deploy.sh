@@ -10,15 +10,15 @@ if [ ! -d $ASSETS ]; then
     exit 1
 fi
 
-rm -rf html
-echo Sync static/ html/
-rsync -aSH static/ html/
-
 build() {
     cd source
     sh ./redo.sh
     cd ..
 }
+
+#rm -rf html
+echo Sync static/ html/
+rsync -aSH static/ html/
 
 build
 

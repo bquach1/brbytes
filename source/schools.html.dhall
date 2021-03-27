@@ -115,15 +115,15 @@ LSU STEM Pathways course.
 Students who join the sequence will take one of the
 courses the first year and the other course in the following year.
 The two courses focus on essential
-STEM skills that are appropriate for career technical education and
-for college bound students.
+STEM skills that are appropriate either for career technical education or
+for college preparation.
 ''
 
 , w "h2" "Teacher requirements"
 
 , p ''
-Teachers will receive a $4,100 gross stipend per year for
-participating (individual deductions vary).
+Teachers will receive a $4,100 stipend${w "sup" "1"}
+per year for participating.
 ''
 
 , p "Teachers will:"
@@ -140,11 +140,14 @@ participating (individual deductions vary).
   LSU Computing Pathway staff''
 ]
 
+, p "1: The stipend is subject to state-mandated deductions."
+
 , w "h2" "Counselor requirements"
 
 , p ''
-Counselors will receive a $450 net stipend per year for
-participating.''
+Counselors will receive a $450 stipend
+per year for participating.
+''
 
 , p "Counselors will:"
 
@@ -176,19 +179,37 @@ The ${brbseq} is two-year, two-course sequence containing:
 , ul
 [ "Introduction to Computational Thinking, and"
 , ''
-  An introductory STEM Pathway course from: Cybersecurity,
-  Survey of Computer Science, Introduction to Engineering Design,
-  or Introduction to Biomedical Sciences.''
+  An LSU STEM Pathways course that counts as a ${b "BRBytes elective"}.<br>
+  Depending on what each school offers, the options are:
+    ${ul [ "Cybersecurity"
+         , "Introduction to Engineering Design"
+         , "Introduction to Biomedical Sciences, or"
+         , "Survey of Computer Science"
+         ]}
+  ''
 ]
 
 , p ''
-All students will be able to take both courses by the end of 10th grade, but the order may differ. The order will be randomly determined. Students and parents will need to be informed that the course sequence is two years and that the order of the courses will be determined by a lottery. 
+All students will be able to take both courses,
+but the order in which each student takes each course
+will be determined by a coin flip.
+Students and parents will be informed that the course sequence
+is two years and that students will be assigned to each
+individual course by the school.
 ''
 
-, p "A detailed description can be found here:"
+, p ''
+The sequence begins the year the student takes Algebra I. All the
+participating students will be divided into 2 groups, and the
+courses that the student takes will depend on which group the
+student is in, as the following tables illustrate:
+''
 
-, ul [ ma "The BRBytes Sequence"
-          "https://cloud.brbytes.org/s/TBb7oGWT9sq3oQE" ]
+, p ''
+<img src="images/bb_seq09.png" style="width:60%">
+<img src="images/bb_seq10.png" style="width:60%">
+''
+
 ]
 
 in
