@@ -30,6 +30,9 @@ build() {
         echo "Not rebuilding $1"
     else
         echo Building $outfile # "$@"
+        export T_PADDING="$2 $3 $4"
+        export T_ALIGNMENT="$5"
+        export T_DISPATCH='$dispatch'
         case $filename in
 
             *.md)
@@ -42,9 +45,9 @@ build() {
                 # $2-$4 are the padding,
                 # $5 is the text alignment
                 #echo pandoc -o $outfile $DYN/$filename
-                pandoc --variable padding="$2 $3 $4" \
-                       --variable alignment=$5 \
-                       --variable dispatch='$dispatch' \
+                pandoc --variable padding="${T_PADDING}" \
+                       --variable alignment="${T_ALIGNMENT}" \
+                       --variable dispatch="'${T_DISPATCH}'" \
                        $titleopt \
                        --template $DYN/template.html \
                        -s -o $outfile $DYN/$filename
@@ -52,9 +55,6 @@ build() {
                 ;;
 
             *.html)
-                export T_PADDING="$2 $3 $4"
-                export T_ALIGNMENT="$5"
-                export T_DISPATCH='$dispatch'
                 #echo "premd-exec $1 > $outfile"
                 cat etc/shortcodes.dhall \
                     $1 \
