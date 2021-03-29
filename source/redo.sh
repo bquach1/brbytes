@@ -74,6 +74,35 @@ build() {
     fi
 }
 
+buildir() {
+    REBUILD=no
+
+    fullname=$1/$2
+    pathname=$(dirname $fullname)
+    filename=$(basename $fullname .dhall)
+    htmlname=$(basename $(basename $filename .md) .html)
+    outfile=../html/$htmlname.html
+
+    if [ -f $outfile ]; then
+        if [ $1/template.html.dhall -nt $outfile ]; then REBUILD=yes
+        elif [ $fullname -nt $outfile ]; then REBUILD=yes
+        elif [ etc/shortcodes.dhall -nt $outfile ]; then REBUILD=yes
+        fi
+    else
+        REBUILD=yes
+    fi
+
+    if [ $REBUILD = yes ]; then
+        echo "Building $fullname"
+        cat etc/shortcodes.dhall \
+            $fullname \
+            $1/template.html.dhall \
+            | premd-exe > $outfile
+    else
+        echo "Skipping $fullname"
+    fi
+}
+
 if [ -f $DYN/template.html \
         -a $DYN/template.html -nt template.html.dhall \
    ]; then
@@ -118,6 +147,8 @@ build about/goals.md.dhall                 100px  0   50px left
 build about/contact.md.dhall               100px  0  100px center
 
 build pdf2html/nl2103.html.dhall                    100px  0  100px center
+
+buildir caincenter sti-confirmation.html.dhall
 
 #build coming-soon.dhall                 100px  5% 100px center
 #build participating-schools.dhall       100px 10% 100px left
