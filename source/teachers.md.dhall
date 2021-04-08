@@ -11,10 +11,9 @@ ${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
 
 ${coloredHeader "indigo" "xlarge" "**Upcoming Community of Practice Meetings**"}
 
-### Thursday, March 18 at 6pm  (alternative session)
+### Thursday, April 22 at 6pm  (alternative session)
 
-### Saturday, March 20 at 9am  (main session)
-
+### Saturday, April 24 at 9am  (main session)
 
 ${flexBoxContainer ''
     ${flexBoxItem "Community Support" ''
