@@ -81,7 +81,9 @@ buildir() {
     pathname=$(dirname $fullname)
     filename=$(basename $fullname .dhall)
     htmlname=$(basename $(basename $filename .md) .html)
-    outfile=../html/$htmlname.html
+    outfile=../html/$1/$htmlname.html
+
+    mkdir -p ../html/$1
 
     if [ -f $outfile ]; then
         if [ $1/template.html.dhall -nt $outfile ]; then REBUILD=yes
@@ -148,7 +150,7 @@ build about/contact.md.dhall               100px  0  100px center
 
 build pdf2html/nl2103.html.dhall                    100px  0  100px center
 
-#buildir caincenter sti-confirmation.html.dhall
+buildir caincenter sti-confirmation.html.dhall
 
 #build coming-soon.dhall                 100px  5% 100px center
 #build participating-schools.dhall       100px 10% 100px left
