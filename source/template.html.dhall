@@ -37,7 +37,7 @@ let ImgLink = { file : Text, ref : Text }
 let footer/logos =
 \(imgs : List ImgLink) ->
 let logo = \(img : ImgLink) -> ''
-<a href="${img.ref}">
+<a href="${img.ref}" target="_blank">
 <img class="w3-margin-left w3-margin-right"
      src="/images/Logos/${img.file}.png" height="40vh">
 </a>''
@@ -211,6 +211,7 @@ ${footer/logos [ { file = "usdoe", ref = "https://www.ed.gov/" }
                , { file = "lsu",   ref = "https://www.lsu.edu/" }
                , { file = "ebrpss",ref = "https://ebrschools.org/" }
                , { file = "nsf",   ref = "https://www.nsf.gov/" }
+               , { file = "csforall", ref = "https://www.csforall.org/" }
                ]}
 ''
 
