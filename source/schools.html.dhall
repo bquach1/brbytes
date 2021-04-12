@@ -103,7 +103,10 @@ ${x ''
 ''
 
 , w "h3" 
-  "Suggested language to include in your student course catalog"
+  ''
+  Suggested language to include in your recruitment
+  pamphlets, course request forms and other
+  student or parent facing materials:''
 
 , blockquote "" ''
 ${brbseq}: This is a unique course pairing offered in our
@@ -118,57 +121,6 @@ The two courses focus on essential
 STEM skills that are appropriate either for career technical education or
 for college preparation.
 ''
-
-, w "h2" "Teacher requirements"
-
-, p ''
-Teachers will receive a $4,100 stipend${w "sup" "1"}
-per year for participating.
-''
-
-, p "Teachers will:"
-
-, ul
-[ "Commit to teach BRBytes courses for at least 2 years"
-, ''
-  Attend the 5-week virtual summer training institute
-  for the BRBytes courses''
-, "Participate in monthly Community of Practice sessions"
-, "Agree to on-site follow-up for two years"
-, ''
-  Maintain an open line of communication with the
-  LSU Computing Pathway staff''
-]
-
-, p "1: The stipend is subject to state-mandated deductions."
-
-, w "h2" "Counselor requirements"
-
-, p ''
-Counselors will receive a $450 stipend
-per year for participating.
-''
-
-, p "Counselors will:"
-
-, ul
-[ "Help recruit students for the study"
-, ''
-  Coordinate with our team to assign participating students
-  to the courses''
-, "Track BRBytes students in their progression"
-, "About 30 minutes once a month needed for above work"
-, ''
-  In addition, they will need:
-  ${ul [ ''
-         Half a day during the recruitment period
-         to coordinate enrollment with the BRBytes team''
-       , ''
-         Half a day before final scheduling (typically July/August)
-         for schedule review of BRBytes students''
-       ]}
-  ''
-]
 
 , "<h1 id=brbseq>The BRBytes Sequence</h1>"
 
@@ -209,6 +161,57 @@ student is in, as the following tables illustrate:
 <img src="images/bb_seq09.png" style="width:60%">
 <img src="images/bb_seq10.png" style="width:60%">
 ''
+
+, w "h2" "Counselor requirements"
+
+, p ''
+Counselors will receive a $450 stipend
+per year for participating.
+''
+
+, p "Counselors will:"
+
+, ul
+[ "Help recruit students for the study"
+, ''
+  Coordinate with our team to assign participating students
+  to the courses''
+, "Track BRBytes students in their progression"
+, "About 30 minutes once a month needed for above work"
+, ''
+  In addition, they will need:
+  ${ul [ ''
+         Half a day during the recruitment period
+         to coordinate enrollment with the BRBytes team''
+       , ''
+         Half a day before final scheduling (typically July/August)
+         for schedule review of BRBytes students''
+       ]}
+  ''
+]
+
+, w "h2" "Teacher requirements"
+
+, p ''
+Teachers will receive a $4,100 stipend${w "sup" "1"}
+per year for participating.
+''
+
+, p "Teachers will:"
+
+, ul
+[ "Commit to teach BRBytes courses for at least 2 years"
+, ''
+  Attend the 5-week virtual summer training institute
+  for the BRBytes courses''
+, "Participate in monthly Community of Practice sessions"
+, "Agree to on-site follow-up for two years"
+, ''
+  Maintain an open line of communication with the
+  LSU Computing Pathway staff''
+]
+
+, p "1: The stipend is subject to state-mandated deductions."
 
 ]
 
