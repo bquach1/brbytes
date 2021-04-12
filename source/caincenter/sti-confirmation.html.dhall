@@ -18,6 +18,10 @@ let desc = ''
 </div>
 ''
 
+let email = ''
+<a href="mailto:info@lsupathways.org"
+   style="text-decoration: underline">send us an email</a>''
+
 let main = ''
 <div class="w3-container"
      x-data="mainForm()">
@@ -42,11 +46,12 @@ let main = ''
       </div>
 
       <div x-show="state === 2">
-        Your school has you teaching the following courses:
+        According to our records,
+        your school has you teaching the following courses:
         <div class="w3-container w3-border">
           <ul class="w3-ul">
             <template x-for="item in teacherInfo" :key="item">
-              <li x-text="item.course" class="w3-light-green"></li>
+              <li x-html="showCourse(item)"></li>
             </template>
           </ul>
         </div>
@@ -54,8 +59,10 @@ let main = ''
           <p>
             Please select one of these options:
           </p>
-          <button class="w3-green">Confirm these courses</button>
-          <button class="w3-red">The list is incomplete or incorrect</button>
+          <button class="w3-green"
+                  x-on:click="submitConfirm('confirmed')">Confirm these courses</button>
+          <button class="w3-red"
+                  x-on:click="submitConfirm('rejected')">The list is incomplete or incorrect</button>
         </div>
       </div>
 
@@ -65,9 +72,48 @@ let main = ''
 
       <div x-show="state === 3">
         <h1>NOT FOUND</h1>
+
+        <p>
+        We could not find your email address in our records.<br>
+        If you think this is a mistake, please ${email},
+        and we will try to assist you.
+        </p>
+        <p>
+        You can also try again by clicking the button below.
+        </p>
         <button x-on:click="tryAgain()">Try Again</button>
       </div>
-        
+
+      <div x-show="state === 5">
+        <h1>THANK YOU</h1>
+
+        <p>
+          Your confirmation has been recorded. You will be
+          contacted by the summer instructors regarding the
+          training for the courses.
+        </p>
+      </div>
+
+      <div x-show="state === 6">
+        <h1>We are sorry</h1>
+
+        <p>
+          We apologize for the inconsistency of our records.
+          Please ${email},
+          and we will to set you up correctly.
+        </p>
+      </div>
+
+      <div x-show="state === 7">
+        <h1>ERROR</h1>
+
+        <p>
+          An error occurred while trying to register your response.
+          Please ${email},
+          and we will assist you in finishing the registration.
+        </p>
+      </div>
+
     </p>
   </div>
 </div>
@@ -99,6 +145,11 @@ let body =
 ''
 
 ${layout}
+
+<div>
+For any question, problem or concern, please send us an email
+to <a href="mailto:info@lsupathways.org">info@lsupathways.org</a>
+</div>
 
 <script src="assets/js/caincenter.js"></script>
 

@@ -36,25 +36,40 @@ function studentsWait() {
     }, 1000);
 }
 
-function saveCredentials(sectionCode, studentCode){
-     sessionStorage.setItem("section_code", sectionCode);
-     sessionStorage.setItem("student_code", studentCode);
+function showCourse(item) {
+    let dColor = 'w3-light-green';
+    if(item.needs_training === 'yes') dColor = 'w3-orange';
+    let dTraining = '';
+    if(item.needs_training === 'yes')
+        dTraining = '<br><b>You need to attend the LSU Summer Institute before you can teach this course</b>';
+
+    return `<div class="${dColor}">${item.course} ${dTraining}</div>`;
 }
 
 function mainForm() {
+    let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiY2FpbmNlbnRlciJ9._UZFmVmDzJpuiKidPcKPVvfL1yO8K6QezcJ1OYjrin8";
     return {
         formData: {
             email: ''
         },
-        state: 0, // 0:not submitted, 1:waiting, 2:returned info, 3:returned failure
+        // 0:not submitted, 1:waiting, 2:returned info, 3:returned failure
+        // 4:confirmed 5:confirmation registered 6:rejection registered
+        // 7:unknown error
+        state: 0, 
         teacherInfo: null,
         loading: false,
         tryAgain() { window.location.reload(); },
         submitEmail() {
             this.state = 1;
-            let url = '/caincenter/loi21_submitted_teachers'
+            let url = '/api2/loi21_teacher_submissions'
                 + `?teacher_email=eq.${this.formData.email}`;
-            fetch(url)
+            fetch(url, {
+                method: "GET",
+                headers: {
+                    "Authorization": `Bearer ${token}`,
+                    "Accept-Profile": "caincenter"
+                }
+            })
                 .then((res) => res.json())
                 .then((res) => {
                     if(res.length > 0) {
@@ -67,77 +82,33 @@ function mainForm() {
         submitLabel() {
             if(this.state === 1) { return 'Please wait...'; }
             return 'Submit';
-        }
-    };
-}
-
-function loginForm() {
-    return {
-        formData: {
-            sec: '',
-            stu: ''
         },
-        message: '',
-        foundLink: false,
-        loading: false,
-        problem: false,
-        courseUrl: '',
-        /*
-        time: new Date(),
-
-        init() {
-            setInterval(function(){
-                this.time = new Date();
-                console.log(this.time);
-            },1000);
-        },
-
-        getTime() {
-            return moment(this.time).format('DD MMMM, YYYY HH:mm:ss');
-        },
-        */
-        submitData() {
-            this.loading = true;
-            this.message = '';
-
-            fetch('/coursesapi/rpc/section_url', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(this.formData)
-            })
-            .then((res) => res.json())
-            .then((res) => {
-                console.log(`fetch: ${res}`);
-                this.courseUrl = res;
-                if(this.courseUrl
-                   && typeof(this.courseUrl) === 'string'
-                   && this.courseUrl.startsWith('/courses')) {
-                    this.message = "Link to your course";
-                    this.foundLink = true;
-                    saveCredentials(this.formData.sec,this.formData.stu);
-                    window.location.replace(this.courseUrl);
+        async submitConfirm(status) {
+            let timestamp = (new Date()).toUTCString();
+            let url = '/api2/loi21_teacher_submissions';
+            let options = {
+                method: 'PATCH',
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": `Bearer ${token}`,
+                    "Content-Profile": "caincenter",
                 }
-                else {
-                    let waitUrl = "students-wait.html?v=" + makeid(7);
-                    window.location.replace(waitUrl);
-                }
-                // else this.message = "";
-            })
-            .catch((err) => {
-                console.log(`ERROR: ${err}`);
-            })
-            .finally(() => {
-                //setTimeout(function(){this.loading=false},3000);
-                this.problem = true;
-                this.stu='';
-                this.sec='';
-                this.loading = false;
-            });
-        },
-        
-        submitLabel() {
-            if(this.loading) { return 'Please wait...'; }
-            return 'Submit';
+            };
+            let success = true;
+            for(let item of this.teacherInfo) {
+                let record = {
+                    confirmation_status: status,
+                    confirmation_date: timestamp
+                };
+                options.body = JSON.stringify(record);
+
+                await fetch(url + '?id=eq.' + item.id, options)
+                    .then((res) => { success = success && true; })
+                    .catch((err) => { success = false; });
+            };
+            if(success && status === 'confirmed') { this.state = 5; }
+            else if(success && status === 'rejected') { this.state = 6; }
+            else { this.state = 7; }
         }
     };
 }
