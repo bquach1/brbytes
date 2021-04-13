@@ -116,6 +116,7 @@ let main = ''
 
     </p>
   </div>
+
 </div>
 ''
 
@@ -146,7 +147,25 @@ let body =
 
 ${layout}
 
-<div>
+<div class="w3-card">
+  <style>
+    a { text-decoration: underline }
+  </style>
+
+  <h4>LSU Summer Institute Information</h4>
+
+  <p class="w3-left-align">
+    For additional information about the LSU Summer Institute, please
+    consult the following links:
+    
+    <ul class="w3-left-align">
+      <li><a href="https://lsupathways.org">LSU Pathways Web site</a></li>
+      <li><a href="sti-catalog.pdf">Course Catalog</a></li>
+    </ul>
+  </p>
+</div>
+
+<div class="w3-panel">
 For any question, problem or concern, please send us an email
 to <a href="mailto:info@lsupathways.org">info@lsupathways.org</a>
 </div>
