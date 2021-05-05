@@ -313,15 +313,27 @@ function showDivs(n) {
 </script>
 ''
 
+let slideshowImageSingle =
+    \(prefix : Text) ->
+    \(filename : Text) ->
+''
+<div class="my-slides w3-row-padding plain-links">
+<div class="w3-display-container" style="width: 100%;">
+<img src="images/${prefix}${filename}" style="width: 100%;">
+</div>
+</div>''
+
 let slideshowImage =
     \(prefix : Text) ->
     \(filename : Text) ->
 ''
 <div class="my-slides w3-row-padding plain-links">
 <div class="w3-display-container" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-display-hover w3-hover-opacity" onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-left w3-display-hover w3-hover-opacity"
+   onclick="plusDivs(-1); return false;"><strong>&#10094;</strong></a>
 <img src="images/${prefix}${filename}" style="width: 100%;">
-<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-display-hover w3-hover-opacity" onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
+<a href="#" class="w3-text-indigo w3-jumbo w3-display-right w3-display-hover w3-hover-opacity"
+   onclick="plusDivs(+1); return false;"><strong>&#10095;</strong></a>
 </div>
 </div>''
 

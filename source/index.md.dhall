@@ -30,9 +30,9 @@ ${x ''
 </div>
 ''}
 
-${slideshowImages "Banners/2103/"
-    [ "Computing21-22.png"
-    ]}
+${slideshowImageSingle "Banners/2105/"
+    "TeacherAppreciation2021.png"
+    }
 
 ${x ''
     , "Computing21-22.png"
