@@ -22,7 +22,7 @@ ${w "h3" "Please enter your section code and student code here"}
 
   <div class="w3-panel">
     <label>Student Code:</label>
-    <input type="text" name="stu" x-model="formData.stu">
+    <input type="password" name="stu" x-model="formData.stu">
   </div>
 
   <div x-show="!foundLink">

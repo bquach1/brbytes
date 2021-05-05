@@ -3,9 +3,9 @@
 title: "Teacher Login"
 ---
 
-${slideshowImages "Banners/2102/"
-    [ "TeacherSummerPD2021.png"
-    ]}
+${slideshowImageSingle "Banners/2105/"
+    "TeacherAppreciation2021.png"
+    }
 
 ${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
 
