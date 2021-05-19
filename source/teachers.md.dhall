@@ -4,7 +4,7 @@ title: "Teacher Login"
 ---
 
 ${slideshowImageSingle "Banners/2105/"
-    "TeacherAppreciation2021.png"
+    "SummerTraining2021.png"
     }
 
 ${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
@@ -21,7 +21,7 @@ ${flexBoxContainer ''
             "https://chat.brbytes.org/computing-20-21/channels/town-square"}
         ''}
     ${flexBoxItem "Academic Assessment" ''
-        - ${linkOpen "PORTAL LOGIN"
+        - ${linkOpen "Portal Login"
             "/cms/login"}
         ''}
     ${flexBoxItem "Instructional Tools" ''

@@ -31,7 +31,7 @@ ${x ''
 ''}
 
 ${slideshowImageSingle "Banners/2105/"
-    "TeacherAppreciation2021.png"
+    "HaveaGreatSummer.png"
     }
 
 ${x ''
