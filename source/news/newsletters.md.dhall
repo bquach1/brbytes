@@ -1,12 +1,13 @@
 let part1 = ''
     ${coloredHeader "indigo" "xxlarge" "Current Newsletter"}
 
-    ${pdf "docs/nl/NewsLetter-Mar21.pdf" "February 2021"}
+    ${pdf "docs/nl/NewsLetter-May21.pdf" "May 2021"}
     ''
 
 let part2 = ''
     ${coloredHeader "indigo" "xxlarge" "All Newsletters"}
 
+    ### [May 2021](docs/nl/NewsLetter-May21.pdf)
     ### [March 2021](docs/nl/NewsLetter-Mar21.pdf)
     ### [February 2021](docs/nl/NewsLetter-Feb21.pdf)
     ### [December 2020](docs/nl/NewsLetter-Dec20.pdf)

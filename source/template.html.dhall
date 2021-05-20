@@ -181,7 +181,7 @@ let menuItems =
         , subitem "BRBytes research study" "schools.html"
         ]
   , dropdown "NEWS" ""
-        [ subitem "March 2021" "nl2103.html"
+        [ subitem "May 2021" "nlLatest.html"
         , subitem "Newsletters" "newsletters.html"
         , subitem "Announcements" "announcements.html"
         ]

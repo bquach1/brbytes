@@ -40,6 +40,8 @@ ${x ''
     , "CommunityOfPracticeMarch.png"
 ''}
 
+# [Vote for BRBytes Video!](https://stemforall2021.videohall.com/presentations/2215)
+
 ${leftAlign
 ''
 <b>
