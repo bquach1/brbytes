@@ -43,6 +43,6 @@ ${paragraphBlock "IBM CY-TECH Magnet Academy at Tara High School"
 ''
 #### Tara High School's CY-TECH Magnet Academy is a six-year program that allows students to earn their high school diploma, as well as an Associate in Computer Science Degree in Software Development from Baton Rouge Community College.
 
-#### For more information about CY-TECH, visit [https://sites.google.com/ebrschools.org/cy-techmagnetacademy/home?authuser=0](https://sites.google.com/ebrschools.org/cy-techmagnetacademy/home?authuser=0).
+#### For more information about CY-TECH, visit [https://taratrojans.org/departments-programs/cytech/](https://taratrojans.org/departments-programs/cytech/).
 ''}
 ''

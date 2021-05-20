@@ -42,7 +42,7 @@ ${paragraphBlock "INTERACTIVE COMPUTING: GRADES 10-12"
 ''
 #### *Prerequisite: Introduction to Computational Thinking*
 
-#### This year-long course is for students in 10th grade and up. It focuses on the nuisances of programming for interacting with the real world in two representative areas: autonomous robots and the front end of web applications. Students learn how to iteratively approximate a software model to the realities of the physical hardware, how to write test suites and how to systematically debug their programs. Through fun and engaging projects, the students learn problem solving skills, such as programming robots to navigate mazes and play soccer, developing on-line pages to read sensors and control actuators in greenhouses, and automating devices at home with Internet of Things (IoT) technologies.
+#### This year-long course is for students in 10th grade and up. It focuses on the nuances of programming for interacting with the real world in two representative areas: autonomous robots and the front end of web applications. Students learn how to iteratively approximate a software model to the realities of the physical hardware, how to write test suites and how to systematically debug their programs. Through fun and engaging projects, the students learn problem solving skills, such as programming robots to navigate mazes and play soccer, developing on-line pages to read sensors and control actuators in greenhouses, and automating devices at home with Internet of Things (IoT) technologies.
 ''}
 
 ${paragraphBlock "PROGRAMMING FOR STEM: GRADES 11-12"
