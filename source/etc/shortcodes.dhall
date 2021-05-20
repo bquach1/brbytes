@@ -103,7 +103,7 @@ let coloredHeader =
     \(size : Text)->
     \(content : Text)->
 ''
-<h1 class="w3-text-${color} w3-${size}">${content}</h1>''
+<h1 class="w3-text-${color} w3-${size}"><strong>${content}</strong></h1>''
 
 -- let courseList = ../dynamic/courseList.dhall
 

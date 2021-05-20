@@ -172,7 +172,6 @@ let menuItems =
   , dropdown "PARENTS" ""
         [ subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
-        , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
@@ -191,6 +190,7 @@ let menuItems =
         , subitem "Participating Schools"
                   "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
         , subitem "Contact" "contact.html" 
+        , subitem "Course Descriptions" "course-descriptions.html"
         ]
   ]
 
