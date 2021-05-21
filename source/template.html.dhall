@@ -164,7 +164,7 @@ merge
 -- Main
 ------------------------------------------------------------
 
-let hold1 = subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+let hold1 = subitem "BRBytes Research Study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
 
 let menuItems =
   [ item "TEACHERS" "teachers.html"
@@ -178,7 +178,7 @@ let menuItems =
         ]
   , dropdown "SCHOOLS" ""
         [ subitem "LSU Computing Brief" "ComputingBrief.pdf"
-        , subitem "BRBytes research study" "schools.html"
+        , subitem "BRBytes Research Study" "schools.html"
         ]
   , dropdown "NEWS" ""
         [ subitem "March 2021" "nl2103.html"
@@ -246,7 +246,7 @@ ${body}
       <!--end of body-->
     </div>
 
-    <div class="accent-color w3-center w3-topbar w3-border-yellow w3-padding-large">
+<div class="accent-color w3-center w3-topbar w3-border-yellow w3-padding-large">
       ${navigation/footer}
     </div>
     <div id="sticky-footer"
