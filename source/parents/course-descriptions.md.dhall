@@ -4,14 +4,17 @@ title: "Course Descriptions"
 ---
 ${underlinedColoredHeader "indigo" "xxlarge" "**BRBytes Courses**"}
 
-${paragraphBlock "COMPUTING EVERYWHERE: GRADE 7"
-''
-#### This semester course will cover basic computer terminology and usage, and connections of computing and society, including ethics, security and privacy in online communication. Projects will include block-based programming, programmable devices (micro:bit) and unplugged activities. The primary goal of the course is that students reflect on how the Big Ideas in Computing (creativity, abstraction, data and information, algorithms, programming, the Internet, and global impact) are relevant in their lives and want to learn more about them.
-''}
-
 ${paragraphBlock "INTRODUCTION TO STEM PATHWAYS AND CAREERS: GRADE 7"
 ''
-#### Description needed.
+#### This year-long course is offered to middle school students for high school credit and serves as a universal course elective for the LSU STEM Pathways as well as JUMPSTART 2.0 and PLTW. The course explores four main pathways of STEM education and possible careers in the fields of 1) Computing and Computer Science, 2) Pre-Engineering, 3) Digital Design and Emergent Media, and 4) Biomedical Sciences. The course exposes students to these overarching concepts:
+
+#### - To expand awareness of various careers and occupational pathways related to STEM.
+
+#### - To stimulate the understanding of higher order thinking processes such as the engineering design process, the scientific method, and computational thinking.
+
+#### - To develop foundational knowledge and skills in the JumpStart pathways and careers as related to STEM, and utilize the knowledge and skills in their current educational setting.
+
+#### - To increase interest in the four core areas of STEM related to this class through project-based activities that are also standards based.
 ''}
 
 ${paragraphBlock "SURVEY OF COMPUTER SCIENCE: GRADE 8-9"
@@ -32,7 +35,7 @@ ${paragraphBlock "DATA MANIPULATION AND ANALYSIS: GRADES 10-11"
 #### This year-long course introduces students to the emerging field of Data Science. Instructional units cover the standard practices for effective data manipulation, analysis and interpretation as well as necessary concepts in the three disciplines involved (mathematics, statistics and computing). Numerous examples of typical scenarios are provided. The emphasis on this course is in the application of the concepts rather than the theory. In the second semester, students will work in teams on large projects in which they will use programming to analyze large datasets and create models. The students will summarize their findings for each project in a written report and will also present them orally.
 ''}
 
-${paragraphBlock "INTRODUCTION TO CYBERSECURITY AND NETWORKING: GRADES 10-12" 
+${paragraphBlock "CYBERSECURITY: GRADES 10-12" 
 ''
 This year-long course is for students in 10th grade and above. It is designed to foster interest in Information Technology and networking careers. Through hands-on projects, students learn to install and administer operating systems, to have computers communicate with each other and to detect and repair vulnerabilities in systems and networks. This course also covers connections of computing and society, including ethics, security and privacy in on-line communication. Students taking this course will be expected to take the CompTIA ETF+ and
 CompTIA A+ certification exams.

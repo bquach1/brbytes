@@ -172,6 +172,7 @@ let menuItems =
   , dropdown "PARENTS" ""
         [ subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
+        , subitem "Course Descriptons" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
