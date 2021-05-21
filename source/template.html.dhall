@@ -91,7 +91,7 @@ let navigation/hamburger =
      style="padding-top: 0;">
   <a href="#" class="header dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
-     x-on:mouseover="${dispatch}('hamburger',null)">${b "&#9776"}</a>
+     x-on:click="${dispatch}('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
@@ -127,9 +127,9 @@ merge
 ''
 <div class="dropdown-button" style="display: inline-block; ${extra}"
      x-data="{ open: false }"
-     x-on:mouseover.away="open = false">
+     x-on:click.away="open = false">
   <a class="dropdown-button w3-padding" href="#" 
-     x-on:mouseover="open = !open">${b desc}</a>
+     x-on:click="open = !open">${b desc}</a>
   <div class="dropdown-content w3-dropdown-content accent-color w3-bar-block"
        x-bind:class="{ 'w3-show': open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
@@ -140,7 +140,7 @@ merge
 ''
 <div x-data="{ open: false }">
   <a class="dropdown-button" href="#" 
-     x-on:mouseover="open = !open">${b desc}</a><br>
+     x-on:click="open = !open">${b desc}</a><br>
   <div class="dropdown-content"
        x-bind:class="{ 'w3-hide': !open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
