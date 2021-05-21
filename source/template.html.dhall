@@ -186,7 +186,6 @@ let menuItems =
         ]
   , dropdown "ABOUT" "padding-left:16px;"
         [ subitem "About BRBytes" "overview.html"
-        , subitem "Our Goals" "goals.html"
         , subitem "Participating Schools"
                   "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
         , subitem "Contact" "contact.html" 
