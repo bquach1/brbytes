@@ -128,7 +128,7 @@ merge
 <div class="dropdown-button" style="display: inline-block; ${extra}"
      x-data="{ open: false }"
      x-on:click.away="open = false">
-  <a class="dropdown-button w3-padding" href="#" 
+     <a class="dropdown-button w3-padding" href="#" 
      x-on:click="open = !open">${b desc}</a>
   <div class="dropdown-content w3-dropdown-content accent-color w3-bar-block"
        x-bind:class="{ 'w3-show': open }">
