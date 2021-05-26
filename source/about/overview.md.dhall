@@ -21,6 +21,7 @@ ${coloredHeader "indigo" "xxlarge" "Our Goals"}
 3. Encourage the use of culturally responsive practices and pedagogies to inspire traditionally underrepresented groups to enter the field of computer science
 4. Increase student engagement in computing courses and their preparedness for further computing programs
 5. Promote student awareness and aspirations towards computing careers starting in middle school
+6. Provide the workforce needed for current businesses in Louisiana and attract more businesses to the state by offering an outstanding pool of computer-trained and ready employees.  
 
 ${coloredHeader "indigo" "xxlarge" "History"}
 In 2015, a partnership between EBRPSS and the LSU Cain Center was formed to create curricula and academic support structures for Liberty High School, a college preparatory STEM high school. The school is arranged into three academies: digital media, biomedical, and pre-engineering. Each academy includes BRBytes computing courses. Since this partnership began, Liberty High has been the pilot site for all courses developed by LSU.
