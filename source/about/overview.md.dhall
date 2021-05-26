@@ -5,15 +5,23 @@ title: "About"
 ${twoThirdsContainer
 ''
 ${coloredHeader "indigo" "xxlarge" "Who are we?"}
-BRBytes is a Research Practitioner Partnership between the East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU). It was formed to design, study and support a pathway of computational thinking and computer science courses for 7-10th grade students. Our partnership also intends to provide a role model for deployment of computing education in Louisiana. In addition to developing and implementing computing courses for students, BRBytes is committed to supporting teachers and developing a community of computer science teachers in Louisiana.
+BRBytes is a Research Practitioner Partnership between the East Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU). It was formed to design, study and support a pathway of computational thinking and computer science courses for 7-12th grade students. Our partnership also intends to provide a role model for deployment of computing education in Louisiana. In addition to developing and implementing computing courses for students, BRBytes is committed to supporting teachers and developing a community of computer science teachers in Louisiana.
 
 ${fiveRings
 "7 Courses Created"
-"41 Teachers Trained"
-"1837 Students"
-"6 Districts"
+"60+ Teachers Trained"
+"2,000+ Students"
+"14 Districts"
 "30 Schools"
 }
+
+${coloredHeader "indigo" "xxlarge" "Our Goals"}
+1. Increase principal, counselor and parent awareness about careers in computing and the importance of equity in the recruiting and advising of students in the area of computer science
+2. Increase the number of minority teachers from the existing pool of teachers who are willing and ready to teach computing courses
+3. Encourage the use of culturally responsive practices and pedagogies to inspire traditionally underrepresented groups to enter the field of computer science
+4. Increase student engagement in computing courses and their preparedness for further computing programs
+5. Promote student awareness and aspirations towards computing careers starting in middle school
+6. Provide the workforce needed for current businesses in Louisiana and attract more businesses to the state by offering an outstanding pool of computer-trained and ready employees.  
 
 ${coloredHeader "indigo" "xxlarge" "History"}
 In 2015, a partnership between EBRPSS and the LSU Cain Center was formed to create curricula and academic support structures for Liberty High School, a college preparatory STEM high school. The school is arranged into three academies: digital media, biomedical, and pre-engineering. Each academy includes BRBytes computing courses. Since this partnership began, Liberty High has been the pilot site for all courses developed by LSU.

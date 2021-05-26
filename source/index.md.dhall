@@ -49,7 +49,7 @@ BRBytes was formed through a Research Practitioner Partnership between East
 Baton Rouge Parish School System (EBRPSS) and Louisiana State University (LSU)
 to bridge the gap in computer science and computational thinking education in
 Louisiana. The program does this by developing and implementing several middle
-and high school courses in EBRPSS and surrounding school districts.
+and high school courses in EBRPSS and the state of Louisiana.
 </b>
 ''}
 
@@ -83,9 +83,9 @@ ${flexBoxContainer ''
     ${flexBoxItem "Progress We Have Made" ''
         ${leftAlign ''
             - Developed 7 computer science and computational thinking courses for 7-12th grade students
-            - Implemented BRBytes curriculum in 30 schools across 6 districts in Louisiana
-            - Trained 41 teachers
-            - Currently educating 1837 students
+            - Implemented BRBytes curriculum in 30 schools across 14 districts in Louisiana
+            - Trained 60+ teachers
+            - Currently educating 2,000+ students
             ''}
         ''}
     ${flexBoxItem "Student Gallery" ''

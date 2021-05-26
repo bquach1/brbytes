@@ -91,7 +91,7 @@ let navigation/hamburger =
      style="padding-top: 0;">
   <a href="#" class="header dropdown-button w3-xlarge w3-bar-item w3-button"
      x-data
-     x-on:mouseover="${dispatch}('hamburger',null)">${b "&#9776"}</a>
+     x-on:click="${dispatch}('hamburger',null)">${b "&#9776"}</a>
 </div>
 ''
 
@@ -127,9 +127,9 @@ merge
 ''
 <div class="dropdown-button" style="display: inline-block; ${extra}"
      x-data="{ open: false }"
-     x-on:mouseover.away="open = false">
-  <a class="dropdown-button w3-padding" href="#" 
-     x-on:mouseover="open = !open">${b desc}</a>
+     x-on:click.away="open = false">
+     <a class="dropdown-button w3-padding" href="#" 
+     x-on:click="open = !open">${b desc}</a>
   <div class="dropdown-content w3-dropdown-content accent-color w3-bar-block"
        x-bind:class="{ 'w3-show': open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
@@ -140,7 +140,7 @@ merge
 ''
 <div x-data="{ open: false }">
   <a class="dropdown-button" href="#" 
-     x-on:mouseover="open = !open">${b desc}</a><br>
+     x-on:click="open = !open">${b desc}</a><br>
   <div class="dropdown-content"
        x-bind:class="{ 'w3-hide': !open }">
     ${concatMapSep "\n" (MenuStyle -> Text) (makeMenu menu) items}
@@ -164,7 +164,7 @@ merge
 -- Main
 ------------------------------------------------------------
 
-let hold1 = subitem "BRBytes research study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
+let hold1 = subitem "BRBytes Research Study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
 
 let menuItems =
   [ item "TEACHERS" "teachers.html"
@@ -172,13 +172,13 @@ let menuItems =
   , dropdown "PARENTS" ""
         [ subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
-        , subitem "Course Descriptions" "course-descriptions.html"
+        , subitem "Course Descriptons" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
   , dropdown "SCHOOLS" ""
         [ subitem "LSU Computing Brief" "ComputingBrief.pdf"
-        , subitem "BRBytes research study" "schools.html"
+        , subitem "BRBytes Research Study" "schools.html"
         ]
   , dropdown "NEWS" ""
         [ subitem "May 2021" "nlLatest.html"
@@ -187,10 +187,10 @@ let menuItems =
         ]
   , dropdown "ABOUT" "padding-left:16px;"
         [ subitem "About BRBytes" "overview.html"
-        , subitem "Our Goals" "goals.html"
         , subitem "Participating Schools"
                   "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
         , subitem "Contact" "contact.html" 
+        , subitem "Course Descriptions" "course-descriptions.html"
         ]
   ]
 
@@ -246,7 +246,7 @@ ${body}
       <!--end of body-->
     </div>
 
-    <div class="accent-color w3-center w3-topbar w3-border-yellow w3-padding-large">
+<div class="accent-color w3-center w3-topbar w3-border-yellow w3-padding-large">
       ${navigation/footer}
     </div>
     <div id="sticky-footer"
