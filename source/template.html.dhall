@@ -189,7 +189,7 @@ let menuItems =
         , subitem "Newsletters" "newsletters.html"
         , subitem "Announcements" "announcements.html"
         ]
-  , dropdown "ABOUT" "padding-left:16px;"
+  , dropdown "ABOUT" ""
         [ subitem "About BRBytes" "overview.html"
         , subitem "Participating Schools"
                   "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
