@@ -169,6 +169,10 @@ let hold1 = subitem "BRBytes Research Study" "https://cloud.brbytes.org/s/zamoYX
 let menuItems =
   [ item "TEACHERS" "teachers.html"
   , item "STUDENTS" "students.html"
+  , dropdown "SUMMER TRAINING" ""
+        [ subitem "Trainees" "trainees.html"
+        , subitem "Instructors" "instructors.html"
+        ]
   , dropdown "PARENTS" ""
         [ subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
