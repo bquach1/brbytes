@@ -9,12 +9,6 @@ ${slideshowImageSingle "Banners/2105/"
 
 ${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
 
-${coloredHeader "indigo" "xlarge" "**Upcoming Community of Practice Meetings**"}
-
-### Thursday, April 22 at 6pm  (alternative session)
-
-### Saturday, April 24 at 9am  (main session)
-
 ${flexBoxContainer ''
     ${flexBoxItem "Community Support" ''
         ${linkOpen "Computing 20-21 Chat"
