@@ -7,6 +7,8 @@ ${slideshowImageSingle "Banners/2105/"
     "SummerTraining2021.png"
     }
 
+${coloredHeader "indigo" "xxlarge" "**BRBytes Teacher Area**"}
+
 ${flexBoxContainer ''
     ${flexBoxItem "Community Support" ''
         ${linkOpen "Computing 20-21 Chat"
