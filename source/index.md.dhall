@@ -34,14 +34,6 @@ ${slideshowImageSingle "Banners/2105/"
     "HaveaGreatSummer.png"
     }
 
-${x ''
-    , "Computing21-22.png"
-    , "Computing21-22Students.png"
-    , "CommunityOfPracticeMarch.png"
-''}
-
-# [Vote for BRBytes Video!](https://stemforall2021.videohall.com/presentations/2215)
-
 ${leftAlign
 ''
 <b>
