@@ -6,7 +6,7 @@ ${underlinedColoredHeader "indigo" "xxlarge" "**Louisiana Education Pathways and
 
 ${smallPadding 
 ''
-#### The middle school BRBytes courses (Computing Everywhere, Introduction to STEM Pathways and Careers, and Survey of Computer Science) are not required for any of the following pathway options. However, they will give students a head start on preparing for all of these pathways. The BRBytes 9th grade Introduction to Computational Thinking course is only a requirement for the LSU STEM Pathways, but is helpful for the other two pathways as well.
+#### The middle school BRBytes courses (Introduction to STEM Pathways and Careers and Survey of Computer Science) are not required for any of the following pathway options. However, they will give students a head start on preparing for all of these pathways. The BRBytes 9th grade Introduction to Computational Thinking course is only a requirement for the LSU STEM Pathways, but is helpful for the other two pathways as well.
 ''}
 
 ${paragraphBlock "LSU STEM Certification Pathways"
@@ -31,8 +31,8 @@ ${paragraphBlock "East Baton Rouge Parish School System and Baton Rouge Communit
 
 #### CTEC offers two programs of study for Computer Science.
 
-#### - IT Programming coursework focuses on creating and compiling your own programs. It includes training in C++ and JAVA.
-#### - IT Networking focuses on building computers, networking and secure infrastructure. It provides opportunities to earn certifications in CompTia and CIW, as well as dual enrollment with BRCC.
+- IT Programming coursework focuses on creating and compiling your own programs. It includes training in C++ and JAVA.
+- IT Networking focuses on building computers, networking and secure infrastructure. It provides opportunities to earn certifications in CompTia and CIW, as well as dual enrollment with BRCC.
 
 #### Both programs of study include apprenticeships, internships, volunteer opportunities, Hack-A-Thon competitions, and small class sizes.
 
