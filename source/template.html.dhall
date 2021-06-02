@@ -170,9 +170,9 @@ let menuItems =
   [ item "TEACHERS" "teachers.html"
   , item "STUDENTS" "students.html"
   , dropdown "PARENTS" ""
-        [ subitem "Pathways" "pathways.html"
+        [ subitem "Course Descriptons" "course-descriptions.html"
+        , subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
-        , subitem "Course Descriptons" "course-descriptions.html"
         , subitem "Careers in Computing"
                   "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
         ]
@@ -181,9 +181,8 @@ let menuItems =
         , subitem "BRBytes Research Study" "schools.html"
         ]
   , dropdown "NEWS" ""
-        [ subitem "May 2021" "nlLatest.html"
-        , subitem "Newsletters" "newsletters.html"
-        , subitem "Announcements" "announcements.html"
+        [ subitem "Current Newsletter" "nlLatest.html"
+        , subitem "Newsletter Archive" "newsletters.html"
         ]
   , dropdown "ABOUT" ""
         [ subitem "About BRBytes" "overview.html"
