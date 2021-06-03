@@ -174,7 +174,7 @@ let menuItems =
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
         , subitem "Course Descriptons" "course-descriptions.html"
         , subitem "Careers in Computing"
-                  "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
+                  "careers.html"
         ]
   , dropdown "SCHOOLS" ""
         [ subitem "LSU Computing Brief" "ComputingBrief.pdf"
