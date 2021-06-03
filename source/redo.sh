@@ -145,6 +145,7 @@ build parents/course-descriptions.md.dhall 100px  4% 100px left
 build news/newsletters.md.dhall            100px 10% 100px center
 build news/announcements.md.dhall          100px 10% 100px center
 build about/overview.md.dhall              100px  1% 100px left
+build about/participating.md.dhall         100px  4% 100px left
 build about/goals.md.dhall                 100px  0   50px left
 build about/contact.md.dhall               100px  0  100px center
 

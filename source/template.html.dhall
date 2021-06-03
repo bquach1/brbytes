@@ -188,7 +188,7 @@ let menuItems =
   , dropdown "ABOUT" ""
         [ subitem "About BRBytes" "overview.html"
         , subitem "Participating Schools"
-                  "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
+                  "participating.html"
         , subitem "Contact" "contact.html" 
         , subitem "Course Descriptions" "course-descriptions.html"
         ]
