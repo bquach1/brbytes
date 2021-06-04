@@ -174,7 +174,7 @@ let menuItems =
         , subitem "Pathways" "pathways.html"
         , subitem "LSU Computing Brief" "ComputingBrief.pdf"
         , subitem "Careers in Computing"
-                  "https://cloud.brbytes.org/s/DEA47SQAbw7Rwws"
+                  "careers.html"
         ]
   , dropdown "SCHOOLS" ""
         [ subitem "LSU Computing Brief" "ComputingBrief.pdf"
@@ -188,7 +188,7 @@ let menuItems =
   , dropdown "ABOUT" ""
         [ subitem "About BRBytes" "overview.html"
         , subitem "Participating Schools"
-                  "https://cloud.brbytes.org/s/5ZkGY4PkZTNXWqE"
+                  "participating.html"
         , subitem "Contact" "contact.html" 
         , subitem "Course Descriptions" "course-descriptions.html"
         ]
