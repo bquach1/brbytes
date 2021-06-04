@@ -380,6 +380,6 @@ let underlinedColoredHeader =
     \(size : Text)->
     \(content : Text)->
 ''
-<h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;">${content}</h1>''
+<h1 class="w3-text-${color} w3-${size} w3-bottombar w3-border-yellow" style="width: fit-content; padding: 8px 0;"><strong>${content}</strong></h1>''
 
 in
