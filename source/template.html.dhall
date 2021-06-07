@@ -181,9 +181,8 @@ let menuItems =
         , subitem "BRBytes Research Study" "schools.html"
         ]
   , dropdown "NEWS" ""
-        [ subitem "May 2021" "nlLatest.html"
-        , subitem "Newsletters" "newsletters.html"
-        , subitem "Announcements" "announcements.html"
+        [ subitem "Current Newsletter" "nlLatest.html"
+        , subitem "Newsletter Archive" "newsletters.html"
         ]
   , dropdown "ABOUT" ""
         [ subitem "About BRBytes" "overview.html"
