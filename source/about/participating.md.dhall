@@ -1,8 +1,5 @@
-''
----
-title: "Participating Schools"
----
-${underlinedColoredHeader "indigo" "xxlarge" "**List of Participating Schools**"}
+let part1 = ''
+${underlinedColoredHeader "indigo" "xxlarge" "**Participating High Schools**"}
 
 ${paragraphBlock "High Schools"
 ''
@@ -98,6 +95,10 @@ ${paragraphBlock "High Schools"
 
 - Zachary High School
 ''}
+''
+
+let part2 = ''
+${underlinedColoredHeader "indigo" "xxlarge" "**Participating Middle Schools**"}
 
 ${paragraphBlock "Middle Schools"
 ''
@@ -147,6 +148,14 @@ ${paragraphBlock "Middle Schools"
 
 - Pine Junior High School
 ''}
+''
 
+in
 
+''
+---
+title: Participating Schools
+---
+
+${halfContainer part1 part2}
 ''

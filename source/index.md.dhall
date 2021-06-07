@@ -60,7 +60,7 @@ ${flexBoxContainer ''
         ${leftAlign ''
             Computer and mathematical occupations are projected to have
             the largest 10-year growth in Louisiana. However, currently
-            only 16% of public schools are teaching computer science courses.
+            only 23% of public schools are teaching computer science courses.
             BRBytes is working to expand the reach of computer science until
             all Louisiana public schools offer these courses.
             ''}
