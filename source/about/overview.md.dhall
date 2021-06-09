@@ -9,10 +9,10 @@ BRBytes is a Research Practitioner Partnership between the East Baton Rouge Pari
 
 ${fiveRings
 "7 Courses Created"
-"60+ Teachers Trained"
-"2,000+ Students"
 "14 Districts"
 "30 Schools"
+"60+ Teachers Trained"
+"2,000+ Students"
 }
 
 ${underlinedColoredHeader "indigo" "xxlarge" "Why computational thinking and computer science?"}

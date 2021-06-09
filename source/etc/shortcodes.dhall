@@ -125,18 +125,15 @@ ${text2}
 <span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text3}
 </span>
-</span>
-</span>
-<span class="table-container">
-<span style="display: table-row">
-<span class ="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+<span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text4}
 </span>
 <span class="table-item item-small w3-circle w3-border-yellow w3-bottombar w3-topbar w3-leftbar w3-rightbar">
 ${text5}
 </span>
 </span>
-</span>''
+</span>
+''
 
 let flexBoxContainer = 
     \(content : Text)->
