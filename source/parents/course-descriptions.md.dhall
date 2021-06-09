@@ -8,13 +8,13 @@ ${paragraphBlock "INTRODUCTION TO STEM PATHWAYS AND CAREERS: GRADE 7"
 ''
 #### This year-long course is offered to middle school students for high school credit and serves as a universal course elective for the LSU STEM Pathways as well as JUMPSTART 2.0 and PLTW. The course explores four main pathways of STEM education and possible careers in the fields of 1) Computing and Computer Science, 2) Pre-Engineering, 3) Digital Design and Emergent Media, and 4) Biomedical Sciences. The course exposes students to these overarching concepts:
 
-#### - To expand awareness of various careers and occupational pathways related to STEM.
+- To expand awareness of various careers and occupational pathways related to STEM.
 
-#### - To stimulate the understanding of higher order thinking processes such as the engineering design process, the scientific method, and computational thinking.
+- To stimulate the understanding of higher order thinking processes such as the engineering design process, the scientific method, and computational thinking.
 
-#### - To develop foundational knowledge and skills in the JumpStart pathways and careers as related to STEM, and utilize the knowledge and skills in their current educational setting.
+- To develop foundational knowledge and skills in the JumpStart pathways and careers as related to STEM, and utilize the knowledge and skills in their current educational setting.
 
-#### - To increase interest in the four core areas of STEM related to this class through project-based activities that are also standards based.
+- To increase interest in the four core areas of STEM related to this class through project-based activities that are also standards based.
 ''}
 
 ${paragraphBlock "SURVEY OF COMPUTER SCIENCE: GRADE 8-9"
@@ -50,7 +50,7 @@ ${paragraphBlock "INTERACTIVE COMPUTING: GRADES 10-12"
 
 ${paragraphBlock "PROGRAMMING FOR STEM: GRADES 11-12"
 ''
-#### *Prerequisite: Intro to Computational Thinking and either Data Manipulation and Analysis or Interactive Computing*
+#### *Prerequisites: Intro to Computational Thinking and either Data Manipulation and Analysis or Interactive Computing*
 
 #### This year-long course expands the practice of software development in a variety of settings, so that students acquire a broad set of programming skills and a deeper understanding of software engineering principles. Students learn to plan, design and implement relatively large programming projects that require background research and teamwork. Topics include simulations, games and interactive online applications. Robust program design and sound software engineering practices are emphasized throughout the course.
 ''}
