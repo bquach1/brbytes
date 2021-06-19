@@ -189,6 +189,7 @@ let menuItems =
         , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Participating Schools"
                   "participating.html"
+        , subitem "Summer Training Teachers" "bios.html"
         , subitem "Contact" "contact.html" 
         ]
   ]

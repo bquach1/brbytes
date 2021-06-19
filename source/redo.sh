@@ -148,6 +148,7 @@ build news/announcements.md.dhall          100px 10% 100px center
 build about/overview.md.dhall              100px  1% 100px left
 build about/participating.md.dhall         100px  4% 100px left
 build about/goals.md.dhall                 100px  0   50px left
+build about/bios.md.dhall                  100px  0  100px center
 build about/contact.md.dhall               100px  0  100px center
 
 build pdf2html/nlLatest.html.dhall                    100px  0  100px center
