@@ -368,6 +368,17 @@ t: cover;">
 <h4 style="width: 70%; margin: auto;">${about}</h4>
 </div>''
 
+let minTeacherBio =
+    \(name : Text)->
+    \(school : Text)->
+    \(parish : Text)->
+''
+<div class="w3-cell w3-mobile w3-center" style="width: 33.3%; padding: 32px 0;">
+<h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
+<h3 class="no-margin" style="font-weight: lighter;"><em>${school}</em></h3>
+<h3 class="no-margin" style="font-weight: lighter;"><em>${parish}</em></h3>
+</div>''
+
 let halfContainer =
     \(firstContent : Text)->
     \(secondContent : Text)->
