@@ -167,7 +167,10 @@ merge
 let hold1 = subitem "BRBytes Research Study" "https://cloud.brbytes.org/s/zamoYXtqBNs3GCs"
 
 let menuItems =
-  [ item "TEACHERS" "teachers.html"
+  [ dropdown "TEACHERS" ""
+        [ subitem "Current Teachers" "teachers.html"
+        , subitem "About the New Teachers" "bios.html"
+        ]
   , item "STUDENTS" "students.html"
   , dropdown "PARENTS" ""
         [ subitem "Course Descriptons" "course-descriptions.html"
@@ -189,7 +192,6 @@ let menuItems =
         , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Participating Schools"
                   "participating.html"
-        , subitem "Summer Training Teachers" "bios.html"
         , subitem "Contact" "contact.html" 
         ]
   ]

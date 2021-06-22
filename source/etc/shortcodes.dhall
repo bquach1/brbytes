@@ -360,8 +360,7 @@ let teacherBio =
     \(about : Text) ->
 ''
 <div class="w3-cell w3-mobile w3-center" style="width: 33.3%; padding: 32px 0;">
-<img class="w3-circle item-medium" src="images/ParticipantHeadshots/${image}" style="object-fi\
-t: cover;">
+<img class="w3-circle item-large" src="images/ParticipantHeadshots/${image}" style="object-fit: cover;">
 <h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${school}</em></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${parish}</em></h3>
@@ -369,11 +368,13 @@ t: cover;">
 </div>''
 
 let minTeacherBio =
+    \(image : Text)->
     \(name : Text)->
     \(school : Text)->
     \(parish : Text)->
 ''
 <div class="w3-cell w3-mobile w3-center" style="width: 33.3%; padding: 32px 0;">
+<img class="w3-circle item-large" src="images/ParticipantHeadshots/${image}" style="object-fit: contain;">
 <h3 class="w3-text-indigo no-margin w3-margin-top"><strong>${name}</strong></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${school}</em></h3>
 <h3 class="no-margin" style="font-weight: lighter;"><em>${parish}</em></h3>
