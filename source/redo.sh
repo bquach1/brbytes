@@ -136,6 +136,7 @@ fi
 
 build index.md.dhall                       100px 10% 100px center
 build teachers.md.dhall                    100px  0  100px center
+build bios.md.dhall                        100px  0  100px center
 build schools.html.dhall                     100px 10%  100px left
 build students.html.dhall                  100px  0  100px center
 #build students-fallback.md.dhall           100px  0  100px center
