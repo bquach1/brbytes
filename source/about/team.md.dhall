@@ -3,7 +3,8 @@
 title: "Team"
 ---
 ${coloredHeader "indigo" "xxxlarge" "**OUR TEAM**"}
-${cellRow 
+${cellRow
+''
 ${teamBio "VictoriaChan.jpg" "Victoria Chan" "Full Stack Developer" "Victoria is a senior studying computer science and international studies at LSU. She is a full stack software developer for BRBytes. Her job is to maintain and add functions to the backend of the website."}
 ${teamBio "IanChen.jpg" "Ian Chen" "Frontend Developer" "Ian is a junior computer science major at LSU. He created the BRBytes homepage."}
 ${teamBio "WilliamDines.jpg" "William Dines" "Curriculum Designer" "William is a junior computer science major at LSU. He is working on editing course information and creating end-of-lesson exercises, an end-of-year project, and a mini-project for the high school data science course."}''}

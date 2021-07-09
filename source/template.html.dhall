@@ -192,6 +192,7 @@ let menuItems =
         , subitem "Course Descriptions" "course-descriptions.html"
         , subitem "Participating Schools"
                   "participating.html"
+        , subitem "Our Team" "team.html"
         , subitem "Contact" "contact.html" 
         ]
   ]
