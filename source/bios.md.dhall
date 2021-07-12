@@ -11,7 +11,7 @@ ${teacherBio "WilliamBankston.jpg" "William Bankston" "Glasgow Middle School" "E
 
 ${cellRow
 ''
-${minTeacherBio "SocialMediaLogo.png" "Rachel Barient" "Breaux Bridge High School" "St. Martin Parish Schools"}
+${teacherBio "RachelBarient.jpeg" "Rachel Barient" "Breaux Bridge High School" "St. Martin Parish Schools" "I have seven years of teaching experience and have been at Breaux Bridge High School for my entire teaching career. I teach Speech 1 & 2 and well as Fine Art Survey. I'm looking forward to the new and challenging experience while teaching ICT."}
 ${teacherBio "RyanBrady.jpg" "Ryan Brady" "Juban Parc Junior High" "Livingston Parish" "I am going into my 8th year of teaching middle school. I teach and coach. I am looking forward to bringing more STEM opportunities to our students."}
 ${teacherBio "KathyCaldwell.jpg" "Kathy Caldwell" "Bastrop High School" "Morehouse Parish Schools" "A small northeast Louisiana town know as Bastrop is where I call home. I am a business education instructor at The Bastrop High School and I have been an educator for 22 years. Subjects I have taught include middle school math, Business Computer Applications, Cooperative Office Education, Web Mastering, Journey to Careers, and Customer Service. I am a forever student and I look forward to gaining knowledge that I can impart into my students during the upcoming school year. I am the humble mother of two adult children and one handsome grandson. The best advice that have for the young and young at heart -- Life is a classroom. Live it!"
 }''}
@@ -33,7 +33,7 @@ ${cellRow
 ''
 ${teacherBio "MichaelDelahoussaye.jpeg" "Michael Delahoussaye" "Port Barre High School" "St. Landry Parish Schools" "I am a teacher and coach. Looking forward to learning more about computational thinking."}
 ${teacherBio "AlliDouet.jpg" "Alli Douet" "St. Martinville Jr. High School" "St. Martin Parish Schools" "I just finished my full year of teaching. What a great way to start my career in education! I currently teach 8th grade science, but I am looking forward to teaching STEM next year. I am super excited to gain this experience and to pass on that knowledge to my students!"}
-${minTeacherBio "SocialMediaLogo.png" "Laura Efferson" "Glen Oaks Senior High School" "East Baton Rouge Parish School System"}''}
+${teacherBio "LauraEfferson.png" "Laura Efferson" "Glen Oaks Senior High School" "East Baton Rouge Parish School System" "This is my 10th year of teaching and my 6th year at Glen Oaks Magnet High School.  I am super excited about teaching ICT this coming year. I think this couse will hlep students to become better problem solver and more cofident in their abilites to solve problems."}''}
 
 ${cellRow
 ''
@@ -43,7 +43,7 @@ ${teacherBio "LaurenFranklin.jpg" "Lauren Franklin" "McKinley Senior High School
 
 ${cellRow
 ''
-${minTeacherBio "SocialMediaLogo.png" "Eymel Gant" "Scotlandville Magnet High School" "East Baton Rouge Parish School System"}
+${teacherBio "EymelGant.jpeg" "Eymel Gant" "Scotlandville Magnet High School" "East Baton Rouge Parish School System" "I am a teacher at Scotlandville Magnet High School. I teach several courses in the Engineering Magnet Program."}
 ${teacherBio "MarioGarnica.jpg" "Mario Garnica" "General Trass High School" "East Carroll Parish Schools" "I am a Spanish Teacher with a masters degree in technology leadership with ULM. I am really excited for this opportunity!!"}
 ${teacherBio "ThereseGianfala.jpeg" "Therese Gianfala" "Eunice High School" "St. Landry Parish Schools" "I teach chemistry. This is my 25th year of teaching. I’m currently enrolled in graduate classes to complete my doctorate in Education and am writing my dissertation on the STEM program. I look forward to collaborating with everyone."}''}
 
@@ -88,7 +88,7 @@ ${cellRow
 ''
 ${teacherBio "MandyMcCann.jpg" "Mandy McCann" "Denham Springs Junior High" "Livingston Parish" "I just finished my 7th year teaching 7th grade Science. I am a graduate of LSU and lover of all things Disney!! I am so excited to learn new content for my kids next year."}
 ${teacherBio "KathrinMcGregor.jpg" "Kathrin McGregor" "Southeast Middle School" "East Baton Rouge Parish School System" "I just transferred to middle school after 17 amazing years at Shenandoah Elem., where I revived the Gifted Resource program in 2007, and taught upper elem grades through the gifted resource pull-out and most recently 5th grade gifted self contained. I have been STEM-centric since before STEM was a consistent term! I love challenging young students to embrace their inner-engi-nerd with CPS, Destination ImagiNation, Coding, Genius Hour & many forms of Project Based Learning. I am 2 weeks away from submitting my NationalBoards Cert Renewal and I enjoy 3D printing in my 'spare time'. Can't wait to learn from everyone!!"}
-${minTeacherBio "SocialMediaLogo.png" "Brandon McQuirter" "Tara High School" "East Baton Rouge Parish School System"}''}
+${teacherBio "BrandonMcQuirter.jpeg" "Brandon McQuirter" "Tara High School" "East Baton Rouge Parish School System" "I believe the BRBYTES program is both intriguing and adaptable, thus making it easier for someone like myself with a business and technology background, and no prior knowledge of computer science."}''}
 
 ${cellRow
 ''
