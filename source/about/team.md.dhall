@@ -6,25 +6,55 @@ ${coloredHeader "indigo" "xxxlarge" "**OUR TEAM**"}
 ${cellRow
 ''
 ${teamBio "JuanaMoreno.jpg" "Juana Moreno" "Associate Professor of Physics at Louisiana State University" "LSU Principal Investigator"}
-${teamBio "IanChen.jpg" "Ian Chen" "Frontend Developer" "Ian is a junior computer science major at LSU. He created the BRBytes homepage."}
-${teamBio "WilliamDines.jpg" "William Dines" "Curriculum Designer" "William is a junior computer science major at LSU. He is working on editing course information and creating end-of-lesson exercises, an end-of-year project, and a mini-project for the high school data science course."}''}
+${teamBio "BenjaminNecaise.jpg" "Benjamin Necaise" "Associate Superintendent in the East Baton Rouge Parish School System" "EBRPSS Principal Investigator"}
+${teamBio "FernandoAlegre.jpg" "Fernando Alegre" "Associate Director of the Gordon A. Cain Center for STEM Literacy at Louisiana State University" "LSU Co-Principal Investigator"}''}
+
 ${cellRow 
 ''
-${teamBio "MichaelGee.jpg" "Michael Gee" "Server Engineer" "Michael is a senior software engineering major at LSU. He helped during the online summer professional development session for teachers. He also works on LSU’s servers, installing and testing out new services to improve the current system."}
-${teamBio "ChristophLarson.jpg" "Christopher Larson" "Job Title" "Christoph is a senior computer science and education major at LSU. He works to ensure the BRBytes website is readable, usable, and accessible. He uses teacher feedback to make changes, writes answer keys for most exercises, and provides occasional input on curriculum."}
-${teamBio "BryceLee.png" "Bryce Lee" "Job Student Systems Administrator" "Bryce is a junior computer science major at LSU. He works as a student system administrator for BRBytes."}''}
+${teamBio "SocialMediaLogo.png" "Summer Dann" "Executive Director of the East Baton Rouge Career and Technical Education Center" "EBRPSS Co-Principal Investigator"}
+${teamBio "DavidKirshner.jpg" "David Kirshner" "Professor of Mathematics Education in the School of Education, Associate Director of the Gordon A. Cain Center for STEM Literacy, and Co-Director of the GeauxTeach STEM Teacher Certification Programs at Louisiana State University" "LSU Co-Principal Investigator"}
+${teamBio "LoriMartin.jpg" "Lori Martin" "Professor of African and African American Studies and Sociology at Louisiana State University" "LSU Co-Principal Investigator"}''}
+
 ${cellRow 
 ''
-${teamBio "TimothyLee.jpg" "Timothy Lee" "Backend Developer" "Timothy is a senior computer science major at LSU. He is working on the integration of the Mattermost platform with the BRBytes website."}
-${teamBio "ModhuparnaManna.png" "Modhuparna Manna" "Curriculum Designer" "Modhuparna is a PhD candidate in computer science. Her dissertation research is based on cybersecurity topics such as memory forensics and malware analysis. She is working towards developing a suitable computer science curriculum for K-12 schools because she believes high school students should be introduced to basic concepts of computer security early so they are aware of security threats and contribute towards a safer world in the future."}
-${teamBio "JessicaMoon.jpg" "Jessica Moon" "Web Designer/ Recruiter" "Jessica is a graduate student in the Department of Environmental Sciences at LSU. She writes and designs the BRBytes newsletter. She also works on website design, public relations and recruitment."}''}
+${teamBio "SuzanneNavo.jpg" "Suzanne Navo" "Grant Writer and Manager for the East Baton Rouge Parish School System" "EBRPSS Co-Principal Investigator"}
+${teamBio "FrankNeubrander.jpg" "Frank Neubrander" "Executive Director of the Gordon A. Cain Center for STEM Literacy at Louisiana State University" "LSU Co-Principal Investigator"}
+${teamBio "AndreaOKonski.png" "Andrea O'Konski" "Chief of Accountability, Assessment and Evaluation for the East Baton Rouge Parish School System" "EBRPSS Co-Principal Investigator"}''}
+
 ${cellRow 
 ''
-${teamBio "DeborahNorman.jpeg" "Deb Norman" "Staff Coordinator" "Deb is the staff coordinator for our group working with teacher communication and data gathering. She also assists with other areas including website development, travel and purchasing."}
-${teamBio "TomilolaOlaoye.jpg" "Tomilola Olaoye" "Server Engineer" "Tomilola is a sophomore majoring in computer science software engineering at LSU. He is currently building a proxy server for the brbytes.org website."}
-${teamBio "JackThibodeaux.jpg" "Jack Thibodeaux" "Job Title" "Jack is a senior mechanical engineering major at LSU. For BRBytes, he creates and maintains the course webpages, and has helped with the transition of course activities from physical handouts to paperless, virtual assignments."}''}
+${teamBio "SharmayneRutledge.png" "Sharmayne Rutledge" "Executive Director for School Leadership for the East Baton Rouge Parish School System" "EBRPSS Co-Principal Investigator"}
+${teamBio "SocialMediaLogo.png" "Leanna Cupit" "Research Associate for the Social Research and Evaluation Center at Louisiana State University" "Evaluator"}
+${teamBio "SocialMediaLogo.png" "Malissa Drake" "District Instructional Specialist at East Baton Rouge Parish School System" "Math Coordinator"}''}
+
 ${cellRow 
 ''
-${teamBio "SirazumTisha.jpg" "Sirazuma Tisha" "Job Title" "Sirazum is a PhD student in the division of computer science and engineering at LSU. She is researching and developing an automated grading system for programming assignments in BRBytes’ Introduction to Computational Thinking course."}
-${teamBio "KhanhVu.png" "Khanh Vu" "Full Stack Developer" "Khanh is a senior geography major at LSU. She is working to create a Django website to make database management more effective."}''}
+${teamBio "SocialMediaLogo.png" "Taylor Halsey" "Director Of Communications at East Baton Rouge Parish School System" "EBRPSS Public Relations"}
+${teamBio "DeborahNorman.jpeg" "Deb Norman" "Coordinator for Education, Innovation and Research Initiative in the Department of Physics & Astronomy at Louisiana State University" "Staff Coordinator"}
+${teamBio "JudithRhodes.png" "Judith Rhodes" "Associate Professor of Research and Director of the Social Research and Evaluation Center in the College of Human Sciences and Education at Louisiana State University" "Evaluator"}''}
+
+${cellRow
+''
+${teamBio "AmyArneson.jpg" "Amy Arneson" "Senior Researcher in Quantitative Methods at Education Northwest" "Independent Evaluator"}
+${teamBio "MichelleHodara.jpg" "Michelle Hodara" "Manager at Education Northwest" "Independent Evaluator"}
+${teamBio "AngelaRoccograndi.jpg" "Angela Roccograndi" "Senior Researcher at Education Northwest" "Independent Evaluator"}''}
+
+${cellRow
+''
+${teamBio "ChristophLarson.jpg" "Christoph Larson" "Senior Computer Science & Education Major" "Curriculum Design & Professional Development"}
+${teamBio "BryceLee.png" "Bryce Lee" "Junior Computer Science Major" "System Administration"}
+${teamBio "ModhuparnaManna.png" "Modhuparna Manna" "PhD Student in Computer Science" "Curriculum Development"}''}
+
+${cellRow
+''
+${teamBio "JessicaMoon.jpg" "Jessica Moon" "Masters Student in Environmental Science" "Public Relations & Recruitment"}
+${teamBio "JustinNichols.JPG" "Justin Nichols" "Junior Computer Science Software Engineering Major" "Curriculum Development"}
+${teamBio "TomilolaOlaoye.jpg" "Tomilola Olaoye" "Sophomore Computer Science Software Engineering Major" "Server Construction"}''}
+
+${cellRow
+''
+${teamBio "HaronTemam.jpeg" "Haron Temam" "Sophomore Computer Science Major" "Full Stack Development"}
+${teamBio "SirazumTisha.jpg" "Sirazum Tisha" "PhD Student in Computer Science & Engineering" "Curriculum Development"}
+${teamBio "AliciaWhidden.jpg" "Alicia Whidden" "PhD Student in Education" "Math Education Researcher"}''}
+
 ''
